@@ -11,6 +11,7 @@ import About from "./screens/About/About";
 import Contact from "./screens/Contact/Contact";
 import NotFound from "./screens/NotFound/NotFound";
 import BlogListing from "./screens/Blog/BlogListing";
+import BlogDetails from "./screens/Blog/BlogDetails";
 
 createRoot(document.getElementById("app") as HTMLElement).render(
   <StrictMode>
@@ -23,6 +24,7 @@ createRoot(document.getElementById("app") as HTMLElement).render(
           <Route path="sales-engine" element={<SalesEngine />} />
           <Route path="insights" element={<Insights />} />
           <Route path="blog" element={<BlogListing />} />
+          <Route path="blog/:slug" element={<BlogDetails />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />

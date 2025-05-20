@@ -3,6 +3,7 @@ import { fetchPosts, fetchAuthors, formatWordPressDate, WordPressPost, WordPress
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
 import { VideoCarousel } from "../Desktop/sections/VideoCarousel";
+import { Link } from "react-router-dom";
 
 // Always use fallback data for now until WordPress API is configured
 const USE_FALLBACK_DATA = false;
@@ -108,7 +109,8 @@ useEffect(() => {
       _embedded: {
         "wp:featuredmedia": [{ source_url: "/mask-group-13.png" }],
         author: [{ name: "Saurav Mishra" }]
-      }
+      },
+      slug: "stop-wishing-start-doing"
     },
     {
       id: 2,
@@ -117,7 +119,8 @@ useEffect(() => {
       _embedded: {
         "wp:featuredmedia": [{ source_url: "/mask-group-14.png" }],
         author: [{ name: "Saurav Mishra" }]
-      }
+      },
+      slug: "15-reasons-why-relying-100-percent-remote-work"
     },
     {
       id: 3,
@@ -126,7 +129,8 @@ useEffect(() => {
       _embedded: {
         "wp:featuredmedia": [{ source_url: "/mask-group-4.png" }],
         author: [{ name: "Saurav Mishra" }]
-      }
+      },
+      slug: "a-case-for-b-players"
     },
     {
       id: 4,
@@ -135,7 +139,8 @@ useEffect(() => {
       _embedded: {
         "wp:featuredmedia": [{ source_url: "/mask-group-10.png" }],
         author: [{ name: "Saurav Mishra" }]
-      }
+      },
+      slug: "corporate-politics-vs-perception"
     },
     {
       id: 5,
@@ -144,7 +149,8 @@ useEffect(() => {
       _embedded: {
         "wp:featuredmedia": [{ source_url: "/mask-group-7.png" }],
         author: [{ name: "Saurav Mishra" }]
-      }
+      },
+      slug: "notes-on-human-interaction-101"
     },
     {
       id: 6,
@@ -153,7 +159,8 @@ useEffect(() => {
       _embedded: {
         "wp:featuredmedia": [{ source_url: "/mask-group-8.png" }],
         author: [{ name: "Saurav Mishra" }]
-      }
+      },
+      slug: "becoming-a-dragonfly"
     }
   ];
 
@@ -165,7 +172,8 @@ useEffect(() => {
       _embedded: {
         "wp:featuredmedia": [{ source_url: "/photo-2024-09-04-23-12-19-1-1024x682.png" }],
         author: [{ name: "Saurav Mishra" }]
-      }
+      },
+      slug: "lorem-ipsum-dolor-sit-amet-1"
     },
     {
       id: 8,
@@ -174,7 +182,8 @@ useEffect(() => {
       _embedded: {
         "wp:featuredmedia": [{ source_url: "/mask-group-9.png" }],
         author: [{ name: "Saurav Mishra" }]
-      }
+      },
+      slug: "lorem-ipsum-dolor-sit-amet-2"
     },
     {
       id: 9,
@@ -183,7 +192,8 @@ useEffect(() => {
       _embedded: {
         "wp:featuredmedia": [{ source_url: "/mask-group-9.png" }],
         author: [{ name: "Saurav Mishra" }]
-      }
+      },
+      slug: "lorem-ipsum-dolor-sit-amet-3"
     }
   ];
 
@@ -204,38 +214,44 @@ useEffect(() => {
     <div className="w-full font-['Roboto',Helvetica] pt-24">
       {/* Featured Articles Section */}
       <section className="px-4 py-8 md:py-10 md:px-16">
-        <h2 className="text-4xl font-bold mb-6 font-['Roboto',Helvetica]">Featured</h2>
+        <h2 className="text-4xl font-bold mb-6 font-['Playfair',Helvetica]">Featured</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {displayedFeatured.map((post) => (
-            <div 
+            <Link 
               key={post.id} 
-              className="bg-gray-200 aspect-square relative overflow-hidden rounded-lg" 
+              to={`/blog/${post.slug}`}
+              className="bg-gray-200 aspect-square relative overflow-hidden rounded-lg cursor-pointer" 
             >
               <img 
                 src={post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "/mask-group.png"} 
                 alt={post.title.rendered}
                 className="w-full h-full object-cover"
               />
-            </div>
+              <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 hover:opacity-100 transition-opacity flex items-end">
+                <div className="p-4 text-white">
+                  <h3 className="font-bold text-lg">{post.title.rendered}</h3>
+                </div>
+              </div>
+            </Link>
           ))}
         </div>
       </section>
 
       {/* More Articles Section */}
       <section className="px-4 py-8 md:py-10 md:px-16">
-        <h2 className="text-4xl font-bold mb-6 font-['Roboto',Helvetica]">More Articles</h2>
+        <h2 className="text-4xl font-bold mb-6 font-['Playfair',Helvetica]">More Articles</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10">
           {displayedMoreArticles.map((post) => (
-            <div key={post.id} className="flex md:flex-row flex-col items-start gap-4">
+            <Link key={post.id} to={`/blog/${post.slug}`} className="flex md:flex-row flex-col items-start gap-4 group">
               <div className="md:w-1/3 w-full aspect-[4/3] overflow-hidden">
                 <img 
                   src={post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "/mask-group.png"} 
                   alt={post.title.rendered}
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg transition-transform group-hover:scale-105"
                 />
               </div>
-              <div className="md:w-2/3  flex flex-col justify-between md:h-full ">
-                <h3 className="font-bold text-2xl mb-2">
+              <div className="md:w-2/3 flex flex-col justify-between md:h-full ">
+                <h3 className="font-bold text-2xl mb-2 group-hover:text-[#be4948] transition-colors">
                   {post.title.rendered}
                 </h3>
                 <div className="text-gray-600 text-xs ">
@@ -243,27 +259,27 @@ useEffect(() => {
                   <span className="block">Author: {post._embedded?.author?.[0]?.name || "Unknown"}</span>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
 
       {/* Recent Articles Section */}
       <section className="px-4 py-8 md:py-10 md:px-16 bg-[#F1D1D1]">
-        <h2 className="text-4xl font-bold mb-6 font-['Roboto',Helvetica]">Recent Articles</h2>
+        <h2 className="text-4xl font-bold mb-6 font-['Playfair',Helvetica]">Recent Articles</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* First recent article (larger) */}
           {displayedRecentArticles.length > 0 && (
-            <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6 overflow-hidden">
-              <div className="w-full h-72">
+            <Link to={`/blog/${displayedRecentArticles[0].slug}`} className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6 overflow-hidden group">
+              <div className="w-full h-72 overflow-hidden">
                 <img 
                   src={displayedRecentArticles[0]._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "/mask-group.png"} 
                   alt={displayedRecentArticles[0].title.rendered}
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-cover rounded-lg transition-transform group-hover:scale-105"
                 />
               </div>
               <div className="Md:p-6 py-3">
-                <h3 className="font-bold text-lg mb-4">
+                <h3 className="font-bold text-lg mb-4 group-hover:text-[#be4948] transition-colors">
                   {displayedRecentArticles[0].title.rendered}
                 </h3>
                 <div className="text-gray-600 text-sm mb-4">
@@ -271,21 +287,21 @@ useEffect(() => {
                   <span className="block">Author: {displayedRecentArticles[0]._embedded?.author?.[0]?.name || "Unknown"}</span>
                 </div>
               </div>
-            </div>
+            </Link>
           )}
 
           {/* Other recent articles */}
          
             {displayedRecentArticles.slice(1).map((post) => (
-              <div key={post.id} className="bg-white p-4 rounded-lg">
-                <h3 className="font-bold mb-2">
+              <Link key={post.id} to={`/blog/${post.slug}`} className="bg-white p-4 rounded-lg group hover:shadow-md transition-shadow">
+                <h3 className="font-bold mb-2 group-hover:text-[#be4948] transition-colors">
                   {post.title.rendered}
                 </h3>
                 <div className="text-gray-600 text-sm">
                   <span>{formatWordPressDate(post.date)}</span>
                   <span className="block">Author: {post._embedded?.author?.[0]?.name || "Unknown"}</span>
                 </div>
-              </div>
+              </Link>
             ))}
           
         </div>
@@ -293,7 +309,7 @@ useEffect(() => {
 
       {/* Authors Section */}
       <section className="px-4 py-8 md:py-10 md:px-16">
-        <h2 className="text-4xl font-bold mb-6 font-['Roboto',Helvetica]">Authors</h2>
+        <h2 className="text-4xl font-bold mb-6 font-['Playfair',Helvetica]">Authors</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {displayedAuthors.map((author) => (
             <div key={author.id} className="bg-[#be4948] text-white overflow-hidden rounded-lg">
@@ -315,7 +331,7 @@ useEffect(() => {
       <section className="px-4 py-8 md:py-10 md:px-16 ">
         <div className="[background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)] md:p-10 p-4 rounded-lg">
         <div className="max-w-3xl ">
-          <h2 className="text-4xl font-bold mb-2 font-['Roboto',Helvetica]">Subscribe to our Newsletter</h2>
+          <h2 className="text-4xl font-bold mb-2 font-['Playfair',Helvetica]">Subscribe to our Newsletter</h2>
           <p className="text-gray-600 mb-6">Receive organized health and wellness information delivered to your inbox.</p>
           
           <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-4">
