@@ -24,6 +24,7 @@
   --foundationblackblack-3: rgba(245, 245, 245, 1);
   --foundationredred-13: rgba(197, 70, 72, 1);
   --foundationredred-8: rgba(217, 135, 136, 1);
+  --foundationredred-11: #CC5C5E;
 }
 
 @tailwind base;

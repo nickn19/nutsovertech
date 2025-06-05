@@ -10,30 +10,30 @@ const Footer = (): JSX.Element => {
     {
       title: "Our Story",
       links: [
-        { name: "About Us", path: "/about" },
-        { name: "Partners", path: "/partners" },
-        { name: "Careers", path: "/careers" }
+        { name: "About Us", path: "" },
+        { name: "Partners", path: "" },
+        { name: "Careers", path: "" }
       ]
     },
     {
       title: "Ecosystem",
       links: [
-        { name: "Our Services", path: "/services" },
-        { name: "IP Assets", path: "/ip-assets" },
-        { name: "Sales Engine", path: "/sales-engine" }
+        { name: "Our Services", path: "" },
+        { name: "IP Assets", path: "" },
+        { name: "Sales Engine", path: "" }
       ]
     },
     {
       title: "Insights",
       links: [
-        { name: "Trending Insights", path: "/insights" },
-        { name: "Case Studies", path: "/case-studies" }
+        { name: "Trending Insights", path: "" },
+        { name: "Case Studies", path: "" }
       ]
     },
     {
       title: "Contact Us",
       links: [
-        { name: "Contact Us", path: "/contact" }
+        { name: "Contact Us", path: "" }
       ]
     },
   ];

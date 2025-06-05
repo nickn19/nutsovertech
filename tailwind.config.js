@@ -19,6 +19,7 @@ module.exports = {
         "foundation-redred-3": "var(--foundation-redred-3)",
         "foundation-redred-4": "var(--foundation-redred-4)",
         "foundation-redred-6": "var(--foundation-redred-6)",
+        "foundation-redred-11": "var(--foundation-redred-11)",
         "foundationblackblack-11": "var(--foundationblackblack-11)",
         "foundationblackblack-3": "var(--foundationblackblack-3)",
         "foundationredred-13": "var(--foundationredred-13)",
@@ -72,6 +73,7 @@ module.exports = {
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
         ],
+        quicksand: ["Quicksand", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {

@@ -210,8 +210,87 @@ useEffect(() => {
     setEmail("");
   };
 
+  // Shimmer Loading UI Components
+  const FeaturedArticlesShimmer = () => (
+    <section className="px-4 py-8 md:py-10 md:px-16">
+      <div className="w-48 h-10 bg-gray-200 animate-pulse rounded mb-6"></div>
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        {[1, 2, 3, 4].map((index) => (
+          <div key={index} className="bg-gray-200 animate-pulse aspect-square rounded-lg"></div>
+        ))}
+      </div>
+    </section>
+  );
+
+  const MoreArticlesShimmer = () => (
+    <section className="px-4 py-8 md:py-10 md:px-16">
+      <div className="w-48 h-10 bg-gray-200 animate-pulse rounded mb-6"></div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-10">
+        {[1, 2, 3, 4, 5, 6].map((index) => (
+          <div key={index} className="flex md:flex-row flex-col items-start gap-4">
+            <div className="md:w-1/3 w-full aspect-[4/3] bg-gray-200 animate-pulse rounded-lg"></div>
+            <div className="md:w-2/3 space-y-2">
+              <div className="w-full h-8 bg-gray-200 animate-pulse rounded"></div>
+              <div className="w-32 h-4 bg-gray-200 animate-pulse rounded"></div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+
+  const RecentArticlesShimmer = () => (
+    <section className="px-4 py-8 md:py-10 md:px-16 bg-[#F1D1D1]">
+      <div className="w-48 h-10 bg-gray-200 animate-pulse rounded mb-6"></div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* First large article shimmer */}
+        <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="w-full h-72 bg-gray-200 animate-pulse rounded-lg"></div>
+          <div className="md:p-6 py-3 space-y-4">
+            <div className="w-full h-8 bg-gray-200 animate-pulse rounded"></div>
+            <div className="w-32 h-4 bg-gray-200 animate-pulse rounded"></div>
+          </div>
+        </div>
+        
+        {/* Other articles shimmer */}
+        {[1, 2].map((index) => (
+          <div key={index} className="bg-white p-4 rounded-lg space-y-2">
+            <div className="w-full h-6 bg-gray-200 animate-pulse rounded"></div>
+            <div className="w-32 h-4 bg-gray-200 animate-pulse rounded"></div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+
+  const AuthorsShimmer = () => (
+    <section className="px-4 py-8 md:py-10 md:px-16">
+      <div className="w-48 h-10 bg-gray-200 animate-pulse rounded mb-6"></div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {[1, 2, 3, 4].map((index) => (
+          <div key={index} className="overflow-hidden rounded-lg">
+            <div className="w-full aspect-square bg-gray-200 animate-pulse"></div>
+            <div className="p-4 bg-gray-100">
+              <div className="w-full h-5 bg-gray-200 animate-pulse rounded mb-2"></div>
+              <div className="w-2/3 h-4 bg-gray-200 animate-pulse rounded"></div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+
   return (
-    <div className="w-full font-['Roboto',Helvetica] pt-24">
+    <div className="w-full font-['Roboto',Helvetica] pt-32">
+      {loading ? (
+        <>
+          <FeaturedArticlesShimmer />
+          <MoreArticlesShimmer />
+          <RecentArticlesShimmer />
+          <AuthorsShimmer />
+        </>
+      ) : (
+        <>
       {/* Featured Articles Section */}
       <section className="px-4 py-8 md:py-10 md:px-16">
         <h2 className="text-4xl font-bold mb-6 font-['Playfair',Helvetica]">Featured</h2>
@@ -291,7 +370,6 @@ useEffect(() => {
           )}
 
           {/* Other recent articles */}
-         
             {displayedRecentArticles.slice(1).map((post) => (
               <Link key={post.id} to={`/blog/${post.slug}`} className="bg-white p-4 rounded-lg group hover:shadow-md transition-shadow">
                 <h3 className="font-bold mb-2 group-hover:text-[#be4948] transition-colors">
@@ -303,7 +381,6 @@ useEffect(() => {
                 </div>
               </Link>
             ))}
-          
         </div>
       </section>
 
@@ -362,7 +439,8 @@ useEffect(() => {
 
       {/* AI in Action Section */}
       <VideoCarousel />
-     
+        </>
+      )}
     </div>
   );
 };

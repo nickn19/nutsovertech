@@ -192,7 +192,87 @@ const BlogDetails = (): JSX.Element => {
   const tags = ["Product Management", "Career", "Team & Culture"];
 
   if (loading) {
-    return <div className="w-full pt-24 flex justify-center items-center min-h-[60vh]">Loading...</div>;
+    return (
+      <div className="w-full pt-32">
+        {/* Shimmer effect for blog details */}
+        <div className="max-w-4xl mx-auto px-4">
+          {/* Category badge shimmer */}
+          <div className="w-32 h-6 rounded-full bg-gray-200 animate-pulse mb-4"></div>
+          
+          {/* Title shimmer */}
+          <div className="w-full h-12 bg-gray-200 animate-pulse mb-4 rounded"></div>
+          
+          {/* Author info shimmer */}
+          <div className="flex items-center pb-6">
+            <div className="w-12 h-12 rounded-full bg-gray-200 animate-pulse mr-4"></div>
+            <div className="flex flex-col gap-2">
+              <div className="w-48 h-5 bg-gray-200 animate-pulse rounded"></div>
+              <div className="w-32 h-4 bg-gray-200 animate-pulse rounded"></div>
+            </div>
+          </div>
+          
+          {/* Social icons shimmer */}
+          <div className="py-4 flex items-center gap-3 border-t border-b border-gray-200">
+            <div className="w-8 h-8 rounded-full bg-gray-200 animate-pulse"></div>
+            <div className="w-8 h-8 rounded-full bg-gray-200 animate-pulse"></div>
+            <div className="ml-auto flex gap-3">
+              <div className="w-8 h-8 rounded-full bg-gray-200 animate-pulse"></div>
+              <div className="w-8 h-8 rounded-full bg-gray-200 animate-pulse"></div>
+            </div>
+          </div>
+          
+          {/* Tags shimmer */}
+          <div className="py-4 flex flex-wrap gap-2">
+            <div className="w-24 h-6 rounded-full bg-gray-200 animate-pulse"></div>
+            <div className="w-24 h-6 rounded-full bg-gray-200 animate-pulse"></div>
+            <div className="w-24 h-6 rounded-full bg-gray-200 animate-pulse"></div>
+          </div>
+          
+          {/* Key takeaways shimmer */}
+          <div className="my-8">
+            <div className="bg-gray-100 p-6 md:p-8 rounded-lg">
+              <div className="w-48 h-8 bg-gray-200 animate-pulse mb-4 rounded"></div>
+              <div className="w-full h-5 bg-gray-200 animate-pulse mb-3 rounded"></div>
+              <div className="w-full h-5 bg-gray-200 animate-pulse mb-3 rounded"></div>
+              <div className="w-full h-5 bg-gray-200 animate-pulse rounded"></div>
+            </div>
+          </div>
+          
+          {/* Content shimmer */}
+          <div className="py-8">
+            <div className="space-y-4">
+              <div className="w-full h-6 bg-gray-200 animate-pulse rounded"></div>
+              <div className="w-full h-6 bg-gray-200 animate-pulse rounded"></div>
+              <div className="w-full h-6 bg-gray-200 animate-pulse rounded"></div>
+              <div className="w-full h-6 bg-gray-200 animate-pulse rounded"></div>
+              <div className="w-full h-6 bg-gray-200 animate-pulse rounded"></div>
+              <div className="w-full h-6 bg-gray-200 animate-pulse rounded"></div>
+            </div>
+          </div>
+          
+          {/* Related posts shimmer */}
+          <div className="py-8">
+            <div className="w-48 h-10 bg-gray-200 animate-pulse mb-6 rounded"></div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="flex md:flex-row flex-col gap-4">
+                <div className="md:w-1/3 w-full aspect-[4/3] bg-gray-200 animate-pulse rounded-lg"></div>
+                <div className="md:w-2/3 space-y-2">
+                  <div className="w-full h-8 bg-gray-200 animate-pulse rounded"></div>
+                  <div className="w-32 h-4 bg-gray-200 animate-pulse rounded"></div>
+                </div>
+              </div>
+              <div className="flex md:flex-row flex-col gap-4">
+                <div className="md:w-1/3 w-full aspect-[4/3] bg-gray-200 animate-pulse rounded-lg"></div>
+                <div className="md:w-2/3 space-y-2">
+                  <div className="w-full h-8 bg-gray-200 animate-pulse rounded"></div>
+                  <div className="w-32 h-4 bg-gray-200 animate-pulse rounded"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   if (error) {
@@ -207,7 +287,7 @@ const BlogDetails = (): JSX.Element => {
   }
 
   return (
-    <div className="w-full font-['Roboto',Helvetica] pt-24">
+    <div className="w-full font-['Roboto',Helvetica] pt-32">
       {/* Product Management Badge */}
       <div className="max-w-4xl mx-auto px-4 pt-4">
         <div className="inline-block px-4 py-1 rounded-full bg-gray-100 text-gray-600 text-xs font-medium">

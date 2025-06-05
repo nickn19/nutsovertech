@@ -125,8 +125,40 @@ export const BlogSection = (): JSX.Element => {
       </div>
 
       {loading ? (
-        <div className="flex justify-center items-center min-h-[400px] w-full">
-          <p className="text-lg">Loading insights...</p>
+        <div className="flex justify-center items-center gap-[30px] md:flex-row flex-col w-full">
+          {/* Shimmer placeholders for blog cards */}
+          {[1, 2, 3].map((index) => (
+            <Card
+              key={index}
+              className="w-full h-[510px] rounded-[16px] overflow-hidden shadow-none border-none"
+            >
+              {/* Image shimmer */}
+              <div className="relative h-[302px] overflow-hidden bg-gray-200 animate-pulse">
+              </div>
+
+              {/* Content shimmer */}
+              <div className="bg-gray-100 rounded-b-[16px] p-[21px]">
+                <CardContent className="p-0">
+                  <div className="flex flex-col gap-[9px]">
+                    <div className="flex items-center justify-between w-full">
+                      {/* Title shimmer */}
+                      <div className="h-7 bg-gray-200 animate-pulse rounded w-4/5"></div>
+
+                      {/* Arrow button shimmer */}
+                      <div className="w-10 h-10 bg-gray-200 animate-pulse rounded-[20px]"></div>
+                    </div>
+
+                    {/* Description shimmer lines */}
+                    <div className="space-y-2 mt-2">
+                      <div className="h-5 bg-gray-200 animate-pulse rounded w-full"></div>
+                      <div className="h-5 bg-gray-200 animate-pulse rounded w-full"></div>
+                      <div className="h-5 bg-gray-200 animate-pulse rounded w-4/5"></div>
+                    </div>
+                  </div>
+                </CardContent>
+              </div>
+            </Card>
+          ))}
         </div>
       ) : error ? (
         <div className="flex justify-center items-center min-h-[400px] w-full">

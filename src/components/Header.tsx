@@ -5,12 +5,12 @@ import { Menu, X } from "lucide-react";
 
 // Navigation menu items with their routes
 const navItems = [
-  { name: "Our Services", path: "/services" },
-  { name: "IP Assets", path: "/ip-assets" },
-  { name: "Sales Engine", path: "/sales-engine" },
-  { name: "Insights", path: "/insights" },
-  { name: "About us", path: "/about" },
-  { name: "Contact Us", path: "/contact" },
+  { name: "Our Services", path: "" },
+  { name: "IP Assets", path: "" },
+  { name: "Sales Engine", path: "" },
+  { name: "Insights", path: "" },
+  { name: "About us", path: "" },
+  { name: "Contact Us", path: "" },
 ];
 
 const Header = (): JSX.Element => {
