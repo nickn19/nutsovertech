@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 
 // Navigation menu items with their routes
 const navItems = [
-  { name: "Our Services", path: "" },
+  { name: "Our Services", path: "/services" },
   { name: "IP Assets", path: "" },
   { name: "Sales Engine", path: "" },
   { name: "Insights", path: "" },
