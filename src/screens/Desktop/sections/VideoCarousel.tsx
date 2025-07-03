@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useState, useEffect } from "react"
+import React, { useRef, useState, useEffect } from "react"
 import { PlayCircleIcon, ArrowLeftCircle, ArrowRightCircle, PauseCircle } from "lucide-react"
 // @ts-ignore
 import Slider from "react-slick"
@@ -8,133 +8,182 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 // @ts-ignore
 import "slick-carousel/slick/slick-theme.css"
+// @ts-ignore
+import videojs from "video.js"
+import 'video.js/dist/video-js.css'
 
-declare global {
-  interface Window {
-    YT: any
-    onYouTubeIframeAPIReady: () => void
-  }
+// Simplified VideoJS Component
+const VideoJS: React.FC<{
+  options: any
+  onReady?: (player: any) => void
+  onEnded?: () => void
+}> = ({ options, onReady, onEnded }) => {
+  const containerRef = useRef<HTMLDivElement>(null)
+  const playerRef = useRef<any>(null)
+  const [playerCreated, setPlayerCreated] = useState(false)
+
+  // Create player on mount
+  useEffect(() => {
+    // Only create the player once the container is in the DOM
+    if (!containerRef.current || playerCreated) return
+    
+    // Create a unique ID for this player instance
+    const playerId = `video-js-${Math.random().toString(36).substr(2, 9)}`
+    
+    // Create the video element
+    const videoEl = document.createElement('video')
+    videoEl.className = 'video-js vjs-big-play-centered vjs-default-skin'
+    videoEl.id = playerId
+    
+    // Add it to the container
+    containerRef.current.appendChild(videoEl)
+    
+    // Initialize videojs with a slight delay to ensure DOM is ready
+    setTimeout(() => {
+      if (videoEl) {
+        try {
+          const player = videojs(playerId, {
+            ...options,
+            loop: false
+          })
+          
+          playerRef.current = player
+          setPlayerCreated(true)
+          
+          if (onReady) {
+            onReady(player)
+          }
+          
+          if (onEnded) {
+            player.on('ended', onEnded)
+          }
+        } catch (e) {
+          console.error("Error initializing video.js:", e)
+        }
+      }
+    }, 100)
+    
+    // Cleanup function
+    return () => {
+      if (playerRef.current) {
+        try {
+          playerRef.current.dispose()
+        } catch (e) {
+          console.error("Error disposing player:", e)
+        }
+        playerRef.current = null
+      }
+    }
+  }, [])
+
+  return (
+    <div 
+      ref={containerRef} 
+      className="h-full w-full"
+      style={{ borderRadius: '12px', overflow: 'hidden' }}
+    />
+  )
 }
 
 export const VideoCarousel = (): JSX.Element => {
   const sliderRef = useRef<Slider | null>(null)
   const [playingIndex, setPlayingIndex] = useState<number | null>(null)
-  const [players, setPlayers] = useState<{ [key: number]: any }>({})
-  const [isYTReady, setIsYTReady] = useState(false)
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const playersRef = useRef<{ [key: number]: any }>({})
 
-  const videoItems = [
-    
-    {
-      id: 1,
-      backgroundImage: "/mask-group-11.png",
-      title: "Businesses are scaling fast with",
-      highlight: "T-Shape Growth",
-    },
-    {
-      id: 2,
-      backgroundImage: "/mask-group-12.png",
-      title: "WANT QUICK SEO WINS",
-      caption: "SWIPE TO KNOW HOW",
-    },
-    {
-      id: 3,
-      backgroundImage: "/mask-group-11.png",
-      title: "Businesses are scaling fast with",
-      highlight: "T-Shape Growth",
-    },
-    {
-      id: 4,
-      backgroundImage: "/mask-group-12.png",
-      title: "WANT QUICK SEO WINS",
-      caption: "SWIPE TO KNOW HOW",
-    },
-    {
-      id: 5,
-      type: "youtube",
-      youtubeId: "_kqQDCxRCzM",
-      title: "YouTube Shorts: T-Shape Growth",
-      thumbnail: "https://img.youtube.com/vi/_kqQDCxRCzM/hqdefault.jpg",
-      highlight: "T-Shape Growth",
-    },
-    {
-      id: 6,
-      type: "youtube",
-      youtubeId: "nqye02H_H6I",
-      title: "YouTube Shorts: SEO Wins",
-      thumbnail: "https://img.youtube.com/vi/nqye02H_H6I/hqdefault.jpg",
-      caption: "SWIPE TO KNOW HOW",
-    },
-  ]
-
-  // Load YouTube API
+  // Clean up all players when component unmounts
   useEffect(() => {
-    if (!window.YT) {
-      const tag = document.createElement("script")
-      tag.src = "https://www.youtube.com/iframe_api"
-      const firstScriptTag = document.getElementsByTagName("script")[0]
-      firstScriptTag.parentNode?.insertBefore(tag, firstScriptTag)
-
-      window.onYouTubeIframeAPIReady = () => {
-        setIsYTReady(true)
-      }
-    } else {
-      setIsYTReady(true)
+    return () => {
+      Object.values(playersRef.current).forEach((player) => {
+        if (player && typeof player.dispose === 'function') {
+          try {
+            player.dispose()
+          } catch (e) {
+            console.error("Error disposing player:", e)
+          }
+        }
+      })
     }
   }, [])
 
-  const createPlayer = (index: number, videoId: string) => {
-    if (!isYTReady || players[index]) return
+  const videoItems = [
+    {
+      id: 1,
+      type: "video",
+      sources: [
+        {
+          src: "/videos/profit-increase-stratergy.mp4",
+          type: "video/mp4"
+        }
+      ],
+      title: "Profit Increase Strategy",
+      thumbnail: "/mask-group-14.png",
+    },
+    {
+      id: 2,
+      type: "video",
+      sources: [
+        {
+          src: "/videos/triad-growth-strategy.mp4",
+          type: "video/mp4"
+        }
+      ],
+      title: "Triad Growth Strategy",
+      thumbnail: "/mask-group-13.png",
+    },
+    {
+      id: 3,
+      type: "video",
+      sources: [
+        {
+          src: "/videos/funnel-stratergy.mp4",
+          type: "video/mp4"
+        }
+      ],
+      title: "Funnel Strategy",
+      thumbnail: "/mask-group-14.png",
+    },
+    {
+      id: 4,
+      type: "video",
+      sources: [
+        {
+          src: "/videos/Slide 18.mp4",
+          type: "video/mp4"
+        }
+      ],
+      title: "T Shape Marketing",
+      thumbnail: "/mask-group-13.png",
+    },
+    {
+      id: 5,
+      type: "video",
+      sources: [
+        {
+          src: "/videos/t-shape-marketting.mp4",
+          type: "video/mp4"
+        }
+      ],
+      title: "T Shape Marketing",
+      thumbnail: "/mask-group-14.png",
+    },
+  ]
 
-    const player = new window.YT.Player(`youtube-player-${index}`, {
-      height: "100%",
-      width: "100%",
-      videoId: videoId,
-      playerVars: {
-        autoplay: 1,
-        loop: 1,
-        playlist: videoId,
-        controls: 1,
-        modestbranding: 1,
-        showinfo: 0,
-        rel: 0,
-      },
-      events: {
-        onReady: (event: any) => {
-          event.target.playVideo()
-        },
-      },
-    })
-
-    setPlayers((prev) => ({
-      ...prev,
-      [index]: player,
-    }))
-  }
-
-  const handlePlay = (index: number, videoId: string) => {
+  const handlePlayerReady = (player: any, index: number) => {
+    // Store player reference
+    playersRef.current[index] = player
+    
     // Pause all other players
-    Object.keys(players).forEach((key) => {
+    Object.keys(playersRef.current).forEach(key => {
       const playerIndex = Number.parseInt(key)
-      if (playerIndex !== index && players[playerIndex]) {
-        players[playerIndex].pauseVideo()
+      if (playerIndex !== index && playersRef.current[playerIndex]) {
+        try {
+          playersRef.current[playerIndex].pause()
+        } catch (e) {
+          console.error("Error pausing player:", e)
+        }
       }
     })
-
-    setPlayingIndex(index)
-
-    // Create player if it doesn't exist
-    if (!players[index] && isYTReady) {
-      setTimeout(() => createPlayer(index, videoId), 100)
-    } else if (players[index]) {
-      players[index].playVideo()
-    }
-  }
-
-  const handlePause = (index: number) => {
-    if (players[index]) {
-      players[index].pauseVideo()
-    }
-    setPlayingIndex(null)
   }
 
   const handlePrev = () => {
@@ -157,6 +206,9 @@ export const VideoCarousel = (): JSX.Element => {
     slidesToScroll: 1,
     arrows: false,
     className: "video-carousel",
+    afterChange: (current: number) => {
+      setCurrentSlide(current)
+    },
     responsive: [
       {
         breakpoint: 1200,
@@ -213,96 +265,94 @@ export const VideoCarousel = (): JSX.Element => {
         <Slider ref={sliderRef} {...settings}>
           {videoItems.map((item, idx) => (
             <div key={item.id} className="p-3">
-              <div className="video-card relative h-[529px] rounded-lg overflow-hidden">
-                {item.type === "youtube" ? (
-                  <>
-                    {playingIndex !== idx && (
-                      <div
-                        className="w-full h-full bg-black cursor-pointer group relative"
-                        onClick={() => handlePlay(idx, item.youtubeId!)}
-                        style={{
-                          backgroundImage: `url(${item.thumbnail})`,
-                          backgroundSize: "cover",
-                          backgroundPosition: "center",
-                        }}
-                      >
-                        <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/60 transition">
-                          <svg width="64" height="64" viewBox="0 0 64 64" fill="white">
-                            <circle cx="32" cy="32" r="32" fill="rgba(0,0,0,0.5)" />
-                            <polygon points="26,20 50,32 26,44" fill="white" />
-                          </svg>
-                        </div>
-                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                          {item.highlight ? (
-                            <h3 className="text-white text-sm font-bold">
-                              {item.title}
-                              <br />
-                              <span className="text-red-500 text-base">{item.highlight}</span>
-                            </h3>
-                          ) : (
-                            <div>
-                              <h3 className="text-white text-base font-bold">{item.title}</h3>
-                              {item.caption && (
-                                <div className="bg-black/80 text-white text-xs font-medium px-2 py-1 rounded inline-block mt-1">
-                                  {item.caption}
-                                </div>
-                              )}
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    )}
-                    {playingIndex === idx && (
-                      <div className="relative w-full h-full">
-                        <div
-                          id={`youtube-player-${idx}`}
-                          style={{
-                            aspectRatio: "9/16",
-                            width: "100%",
-                            height: "100%",
-                            borderRadius: "12px",
-                            background: "black",
-                          }}
-                        />
-                        <button
-                          onClick={() => handlePause(idx)}
-                          className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 rounded-full p-2 transition-colors"
-                          aria-label="Pause video"
-                        >
-                          <PauseCircle className="w-6 h-6 text-white" />
-                        </button>
-                      </div>
-                    )}
-                  </>
-                ) : (
+              <div className="video-card relative h-[480px] rounded-lg overflow-hidden">
+                {playingIndex !== idx ? (
                   <div
-                    className="w-full h-full bg-cover bg-center relative"
-                    style={{ backgroundImage: `url(${item.backgroundImage})` }}
+                    className="w-full h-full bg-black cursor-pointer group relative"
+                    onClick={() => {
+                      // Pause any currently playing video
+                      if (playingIndex !== null && playersRef.current[playingIndex]) {
+                        try {
+                          playersRef.current[playingIndex].pause()
+                        } catch (e) {
+                          console.error("Error pausing player:", e)
+                        }
+                      }
+                      
+                      setPlayingIndex(idx)
+                      if (sliderRef.current && currentSlide !== idx) {
+                        sliderRef.current.slickGoTo(idx)
+                      }
+                    }}
+                    style={{
+                      backgroundImage: `url(${item.thumbnail})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                    }}
                   >
-                    <button
-                      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                      aria-label="Play video"
-                    >
-                      <PlayCircleIcon className="w-[60px] h-[60px] text-white play-icon" />
-                    </button>
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-                      {item.highlight ? (
-                        <h3 className="text-white text-sm font-bold">
-                          {item.title}
-                          <br />
-                          <span className="text-red-500 text-base">{item.highlight}</span>
-                        </h3>
-                      ) : (
-                        <div>
-                          <h3 className="text-white text-base font-bold">{item.title}</h3>
-                          {item.caption && (
-                            <div className="bg-black/80 text-white text-xs font-medium px-2 py-1 rounded inline-block mt-1">
-                              {item.caption}
-                            </div>
-                          )}
-                        </div>
-                      )}
+                    <div className="absolute inset-0 flex items-center justify-center  group-hover:bg-black/60 transition">
+                      <svg width="64" height="64" viewBox="0 0 64 64" fill="white">
+                        <circle cx="32" cy="32" r="32" fill="rgba(0,0,0,0.5)" />
+                        <polygon points="26,20 50,32 26,44" fill="white" />
+                      </svg>
                     </div>
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                      {/* <h3 className="text-white text-base font-bold">{item.title}</h3> */}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="relative w-full h-full">
+                    <VideoJS
+                      key={`video-${idx}`}
+                      options={{
+                        sources: item.sources,
+                        autoplay: true,
+                        controls: true,
+                        responsive: true,
+                        fluid: true,
+                        aspectRatio: "9:16",
+                        playbackRates: [0.5, 1, 1.5, 2],
+                        poster: item.thumbnail,
+                        muted: false,
+                        preload: "auto",
+                      }}
+                      onReady={(player) => handlePlayerReady(player, idx)}
+                      onEnded={() => {
+                        const nextIndex = (idx + 1) % videoItems.length
+                        
+                        // Clean up current player
+                        if (playersRef.current[idx]) {
+                          try {
+                            playersRef.current[idx].pause()
+                          } catch (e) {
+                            console.error("Error pausing player:", e)
+                          }
+                        }
+                        
+                        if (sliderRef.current) {
+                          sliderRef.current.slickGoTo(nextIndex)
+                        }
+                        
+                        // Short delay before playing next
+                        setTimeout(() => setPlayingIndex(nextIndex), 300)
+                      }}
+                    />
+                    <button
+                      onClick={() => {
+                        if (playersRef.current[idx]) {
+                          try {
+                            playersRef.current[idx].pause()
+                          } catch (e) {
+                            console.error("Error pausing player:", e)
+                          }
+                        }
+                        setPlayingIndex(null)
+                      }}
+                      className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 rounded-full p-2 transition-colors z-10"
+                      aria-label="Close video"
+                    >
+                      <PauseCircle className="w-6 h-6 text-white" />
+                    </button>
                   </div>
                 )}
               </div>
