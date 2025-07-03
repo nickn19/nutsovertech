@@ -8,7 +8,7 @@ export const GrowthStageSlider = (): JSX.Element => {
       id: 1,
       title: "Startups",
       description:
-        "Innovative solutions transforming industries and solving real-world challenges efficiently.",
+        "Launch with structured chaos.We help founders go 0→1 by deploying AI-led GTM, automated funnels, and playbooks that scale without burn.",
       imageSrc: "/mask-group-4.png",
       class: "moon",
     },
@@ -16,7 +16,7 @@ export const GrowthStageSlider = (): JSX.Element => {
       id: 2,
       title: "Growth Stage",
       description:
-        "Innovative solutions transforming industries and solving real-world challenges efficiently.",
+        "You’ve found product-market fit — now double efficiency.Our T-Shaped Growth system layers AI across sales, retention, and ops to 2X outcomes with the same inputs",
       imageSrc: "/mask-group-5.png",
       class: "mars",
     },
@@ -24,7 +24,7 @@ export const GrowthStageSlider = (): JSX.Element => {
       id: 3,
       title: "Enterprises",
       description:
-        "Innovative solutions transforming industries and solving real-world challenges efficiently.",
+        "We transform complexity into scalable systems.AI workforces + full-funnel visibility = operational speed, cross-team clarity, and measurable GTM lift.",
       imageSrc: "/mask-group-6.png",
       class: "titan",
     },

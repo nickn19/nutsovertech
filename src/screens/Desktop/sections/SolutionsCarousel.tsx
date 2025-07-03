@@ -47,6 +47,18 @@ export const SolutionsCarousel = (): JSX.Element => {
       description:
         "Expert guidance on implementing AI strategies that align with your business goals and drive meaningful transformation.",
     },
+    {
+      id:5,
+      title: "T-Shaped Growth Playbook Deployment",
+      description:
+      "Deploy structured, full-funnel growth systems across acquisition, retention, and automation — customized to your team’s stage and stack."
+    },
+    {
+      id:6,
+      title: "D2C Growth Strategy (Var80)",
+      description:
+      "Pre-built growth engine for D2C brands with plug-and-play automations, conversion assets, and analytics — built from real campaigns and scaled playbooks."
+    }
   ];
 
   // Settings for slick carousel
@@ -145,7 +157,7 @@ export const SolutionsCarousel = (): JSX.Element => {
 
       <Button className="bg-foundationblackblack-11 text-foundation-blackblack-1 rounded-[70px] px-4 py-3">
         <span className="font-['Lato',Helvetica] font-medium text-base whitespace-nowrap">
-          Explore Our IP Assets
+          Talk to US
         </span>
       </Button>
     </section>
