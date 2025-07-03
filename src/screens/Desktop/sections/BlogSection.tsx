@@ -185,9 +185,13 @@ export const BlogSection = (): JSX.Element => {
                 <CardContent className="p-0">
                   <div className="flex flex-col gap-[9px]">
                     <div className="flex items-center justify-between w-full">
-                      <h3 className="[font-family:'Lato',Helvetica] font-bold text-foundationredred-13 text-2xl flex-1 line-clamp-2">
+                      <Link
+                        to={`/blog/${card.slug}`}
+                        className="[font-family:'Lato',Helvetica] font-bold text-foundationredred-13 text-2xl flex-1 line-clamp-2 hover:underline focus:underline"
+                        tabIndex={0}
+                      >
                         {card.title}
-                      </h3>
+                      </Link>
 
                       <Link
                         to={`/blog/${card.slug}`}

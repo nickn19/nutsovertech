@@ -38,16 +38,16 @@ export const HeroSection = (): JSX.Element => {
           </div>
 
           <div className="flex flex-col md:flex-row items-center gap-[30px] relative">
-            <Button className="px-4 py-3 bg-foundationredred-13 rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto">
+            <a href="/services" tabIndex={-1} className="px-4 py-3 bg-foundationredred-13 rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto flex items-center justify-center">
               Explore Our Expertise
-            </Button>
+            </a>
 
-            <Button
-              variant="outline"
-              className="px-4 py-3 rounded-[70px] border border-solid border-[#c54648] [font-family:'Lato',Helvetica] font-medium text-foundationredred-13 text-base w-full md:w-auto"
+            <a
+              href="#portfolio-title"
+              className="px-4 py-3 rounded-[70px] border border-solid border-[#c54648] [font-family:'Lato',Helvetica] font-medium text-foundationredred-13 text-base w-full md:w-auto flex items-center justify-center"
             >
               Meet Our Portfolio
-            </Button>
+            </a>
           </div>
         </div>
       </div>

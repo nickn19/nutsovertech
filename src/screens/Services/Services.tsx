@@ -119,8 +119,11 @@ const Services = (): JSX.Element => {
             </h1>
 
             <p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-lg md:text-[21px] text-center tracking-[0] leading-normal px-4">
-              Unlock efficiency, scalability, and rapid ROI—without custom development or experimentation.
+              Deep, vertical expertise powered by a wide, horizontal ecosystem of capabilities.
             </p>
+          <p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-sm md:text-base text-center tracking-[0] leading-normal px-4">
+              We take a PE-like operating partner approach to your business—intervening where it matters most, aligning incentives, and deploying AI workforces to scale operations without bloating teams.
+            </p>  
           </div>
 
           <div className="flex flex-col md:flex-row items-center gap-[30px] relative">
@@ -162,7 +165,20 @@ const Services = (): JSX.Element => {
                   <p>Looking for seamless AI integration without complex setups?</p>
                 </div>
               </div>
-              <h3 className="w-full md:w-3/5 text-center text-white font-['Lato',Helvetica] font-light text-2xl md:text-5xl">4AY PaaS automates, optimises, and scales—so you can focus on growth.</h3>
+              <div className="flex flex-col items-center justify-center md:w-3/5 w-full text-center">
+                <h3 className="text-white font-['Lato',Helvetica] font-light text-2xl md:text-5xl mb-4">
+                  Our AI Workforces eliminate repetitive workflows, unify decision-making across functions, and free up your team for high-leverage work.
+                </h3>
+                <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
+                  🔺 Reduce your CAQ, scale MoFU, and improve LTV
+                </p>
+                <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
+                  🔺 Orchestrate marketing, ops, finance, and sales under one growth lens
+                </p>
+                <p className="text-white font-['Lato',Helvetica] text-base md:text-lg">
+                  🔺 Go beyond automation—deploy intelligence
+                </p>
+              </div>
               </div>
               
         </div>
@@ -667,4 +683,4 @@ const Services = (): JSX.Element => {
   );
 };
 
-export default Services; 
+export default Services;

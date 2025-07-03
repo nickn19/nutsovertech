@@ -38,15 +38,15 @@ export const PortfolioSection = (): JSX.Element => {
     },
     {
       id: 4,
-      image: "/mask-group-3.png",
+      image: "/public/D8acx.png",
       alt: "Mask group",
-      description: "AI-Led Ecommerce Automation\nCompany. In stealth mode.",
+      description: "Empower Your Business with AI-Powered Marketing Automation",
     },
     {
       id: 5,
-      image: "/mask-group.png",
+      image: "/public/varseno.jpg",
       alt: "Mask group",
-      description: "AI-Led Digital transformation company",
+      description: "Custom AI Workforce And Software Development Company",
     },
   ];
 
@@ -98,7 +98,7 @@ export const PortfolioSection = (): JSX.Element => {
   }, []);
 
   return (
-    <section className="flex flex-col items-start justify-center gap-8 md:py-[60px] py-8 md:px-20 px-4 relative  [background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)]">
+    <section id="portfolio" className="flex flex-col items-start justify-center gap-8 md:py-[60px] py-8 md:px-20 px-4 relative  [background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)]">
       <div className="flex flex-col items-center justify-center gap-[21px] relative self-stretch w-full">
         <h2 className="relative w-fit mt-[-1.00px] [font-family:'Playfair',Helvetica] font-bold text-foundationblackblack-11 text-4xl tracking-[0] leading-[normal] whitespace-nowrap">
           Who we are
@@ -139,8 +139,7 @@ export const PortfolioSection = (): JSX.Element => {
         </div>
 
         <p className="relative max-w-[892px] w-full [font-family:'Lato',Helvetica] font-light text-foundationblackblack-11 text-4xl text-center tracking-[0] leading-[normal]">
-          Empowering Startups, Growth Companies, and Enterprises with Proven AI
-          Solutions.
+          Purpose-Built AI Workforces for Ambitious Companies — Whether You’re Starting Up or Scaling Up.
         </p>
 
         <Button className="inline-flex items-center justify-center gap-2.5 px-4 py-3 bg-foundationredred-13 rounded-[70px] hover:bg-foundationredred-13/90">

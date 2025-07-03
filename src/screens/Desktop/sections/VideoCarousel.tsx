@@ -27,26 +27,18 @@ export const VideoCarousel = (): JSX.Element => {
     {
       id: 1,
       backgroundImage: "/mask-group-11.png",
-      title: "Businesses are scaling fast with",
-      highlight: "T-Shape Growth",
     },
     {
       id: 2,
       backgroundImage: "/mask-group-12.png",
-      title: "WANT QUICK SEO WINS",
-      caption: "SWIPE TO KNOW HOW",
     },
     {
       id: 3,
       backgroundImage: "/mask-group-11.png",
-      title: "Businesses are scaling fast with",
-      highlight: "T-Shape Growth",
     },
     {
       id: 4,
       backgroundImage: "/mask-group-12.png",
-      title: "WANT QUICK SEO WINS",
-      caption: "SWIPE TO KNOW HOW",
     },
     {
       id: 5,
@@ -54,7 +46,6 @@ export const VideoCarousel = (): JSX.Element => {
       youtubeId: "_kqQDCxRCzM",
       title: "YouTube Shorts: T-Shape Growth",
       thumbnail: "https://img.youtube.com/vi/_kqQDCxRCzM/hqdefault.jpg",
-      highlight: "T-Shape Growth",
     },
     {
       id: 6,
@@ -62,7 +53,6 @@ export const VideoCarousel = (): JSX.Element => {
       youtubeId: "nqye02H_H6I",
       title: "YouTube Shorts: SEO Wins",
       thumbnail: "https://img.youtube.com/vi/nqye02H_H6I/hqdefault.jpg",
-      caption: "SWIPE TO KNOW HOW",
     },
   ]
 

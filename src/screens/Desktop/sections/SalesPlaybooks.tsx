@@ -6,22 +6,22 @@ export const SalesPlaybooks = (): JSX.Element => {
   // Data for funnel cards
   const funnelStages = [
     {
-      id: "tofu",
-      title: "Top-of-Funnel (ToFu)",
+      id: "Depth",
+      title: "Depth",
       description:
-        "AI-driven digital marketing, PR, and partnerships to maximize brand visibility and lead generation.",
+        "Proven execution in core growth levers like Paid Media, PR, SEO, and Influencer Marketing — driving sharp outcomes through vertical specialization.",
     },
     {
-      id: "mofu",
-      title: "Middle-of-Funnel (MoFu)",
+      id: "Breadth",
+      title: "Breadth",
       description:
-        "High-value free content, data-driven insights, and expert consulting to build trust and engagement.",
+        "Cross-functional alignment across HR, Ops, IP, Sales, Legal — enabling scalable, repeatable growth beyond just acquisition.",
     },
     {
-      id: "bofu",
-      title: "Bottom-of-Funnel (BoFu)",
+      id: "AI Workforce",
+      title: "AI Workforce",
       description:
-        "Proven sales assets, case studies, and strategic follow-ups to drive conversions and customer retention.",
+        "Playbook-driven AI agents that automate execution, decision-making, and reporting — reducing dependency on headcount while increasing speed and consistency.",
     },
   ];
 
@@ -39,7 +39,7 @@ export const SalesPlaybooks = (): JSX.Element => {
             <img
               className="size-full"
               alt="Vector"
-              src="/tofu-mofu.png"
+              src="/public/T.png"
             />
             
             
@@ -66,7 +66,7 @@ export const SalesPlaybooks = (): JSX.Element => {
         </div>
 
         <Button className="bg-foundationredred-13 text-foundation-blackblack-1 rounded-[70px] px-4 py-3 font-['Lato',Helvetica] font-medium text-base">
-          Learn About Our Sales Playbooks
+           Dive deep on why it matters!
         </Button>
       </div>
     </section>
