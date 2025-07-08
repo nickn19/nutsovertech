@@ -39,10 +39,8 @@ export const SalesPlaybooks = (): JSX.Element => {
             <img
               className="size-full"
               alt="Vector"
-              src="/public/T.png"
+              src="/T.png"
             />
-            
-            
           </div>
 
           {/* Funnel Cards */}

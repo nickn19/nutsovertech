@@ -38,13 +38,13 @@ export const PortfolioSection = (): JSX.Element => {
     },
     {
       id: 4,
-      image: "/public/D8acx.png",
+      image: "/D8acx.png",
       alt: "Mask group",
       description: "Empower Your Business with AI-Powered Marketing Automation",
     },
     {
       id: 5,
-      image: "/public/varseno.jpg",
+      image: "/varseno.jpg",
       alt: "Mask group",
       description: "Custom AI Workforce And Software Development Company",
     },
