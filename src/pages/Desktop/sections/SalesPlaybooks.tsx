@@ -41,8 +41,6 @@ export const SalesPlaybooks = (): JSX.Element => {
               alt="Vector"
               src="/T.png"
             />
-            
-            
           </div>
 
           {/* Funnel Cards */}

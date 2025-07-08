@@ -1,18 +1,20 @@
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
+import { ContactUs } from "../Desktop/sections/ContactUs";
 
 const Contact = (): JSX.Element => {
   return (
     <>
+   
       <section className="relative w-full flex flex-col items-start min-h-screen">
-  {/* Background image */}
+  
   <div className="absolute inset-0 bg-[url(/frame-2147224339.png)] bg-cover bg-center" />
   
-  {/* Overlay */}
+
   <div className="absolute inset-0 bg-[#f5f5f587]" />
 
-  {/* Hero content */}
+  
   <div className="relative flex flex-col w-full items-center justify-center min-h-screen px-4">
     <div className="flex flex-col max-w-[757px] items-center gap-10 mt-20">
           <div className="flex flex-col items-center justify-center gap-[30px] w-full">
@@ -41,11 +43,11 @@ const Contact = (): JSX.Element => {
       </div>
     </section>
    
-
-      {/* Contact content */}
-      <section className="py-16 px-4 md:px-20">
+    <ContactUs />
+     
+      {/* <section className="py-16 px-4 md:px-20">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Contact form */}
+         
           <div className="bg-white p-8 rounded-lg shadow-xl">
             <h2 className="font-['Playfair',Helvetica] font-bold text-foundationblackblack-11 text-2xl md:text-3xl mb-6">
               Send us a Message
@@ -102,7 +104,7 @@ const Contact = (): JSX.Element => {
             </form>
           </div>
           
-          {/* Contact information */}
+         
           <div className="flex flex-col justify-center">
             <h2 className="font-['Playfair',Helvetica] font-bold text-foundationblackblack-11 text-2xl md:text-3xl mb-8">
               Get in Touch
@@ -162,7 +164,7 @@ const Contact = (): JSX.Element => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
