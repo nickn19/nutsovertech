@@ -19,11 +19,11 @@ const Layout = (): JSX.Element => {
 
   return (
     <div className="flex flex-col min-h-screen relative">
-      {!siteLoaded && (
+      {/* {!siteLoaded && (
         <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-white/90">
           <Loader3D />
         </div>
-      )}
+      )} */}
     <Header />
     <main className="flex-grow bg-foundation-redred-2 overflow-hidden ">
       <Outlet />

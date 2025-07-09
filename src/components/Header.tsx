@@ -18,7 +18,7 @@ const navItems = [
   { name: "IP Assets", path: "" },
   { name: "Sales Engine", path: "" },
   { name: "Insights", path: "blog" },
-  { name: "About us", path: "" },
+  { name: "About us", path: "about" },
   { name: "Contact Us", path: "contact" },
 ];
 
@@ -113,7 +113,7 @@ const Header = (): JSX.Element => {
           </nav>
 
           <Button
-            className="hidden md:block px-4 py-3 bg-foundation-blackblack-10 rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-white text-base"
+            className=" hidden md:block px-4 py-3 bg-foundation-blackblack-10 rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-white text-base"
             asChild
           >
             <Link to="/contact">Get Started</Link>
@@ -167,11 +167,11 @@ const Header = (): JSX.Element => {
               )
             )}
             <Button
-              className="w-full h-auto px-4 py-3 bg-foundation-blackblack-10 rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundationblackblack-1 text-base"
+              className="text-white w-full h-auto px-4 py-3 bg-foundation-blackblack-10 rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundationblackblack-1 text-base"
               asChild
               onClick={() => setIsMenuOpen(false)}
             >
-              <Link to="/get-started">Get Started</Link>
+              <Link to="/contact">Get Started</Link>
             </Button>
           </nav>
         )}
