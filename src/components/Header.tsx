@@ -21,7 +21,7 @@ const navItems = [
     children: [
       { name: "4AY", path: "/ip-assets/fouray" },
       { name: "Var80", path: "https://var80.com", external: true },
-      { name: "Omnicapture", path: "https://omnicapture.com", external: true },
+      { name: "Omnicapture", path: "https://omnicapture.us/", external: true },
     ],
   },
   { name: "Sales Engine", path: "" },
