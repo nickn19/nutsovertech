@@ -1,14 +1,14 @@
 import React from "react";
-import { SolutionsCarousel } from "../Desktop/sections/SolutionsCarousel";
 import { Button } from "../../components/ui/button";
 import { Play, ArrowLeft, ArrowRight } from "lucide-react";
 import UseCaseCarousel from "../../components/ui/UsecaseCarausel";
 import { CaseStudies } from "../Desktop/sections/CaseStudies";
-import Insights from "../Insights";
 import { BlogSection } from "../Desktop/sections/BlogSection";
 import Slider from "react-slick";
 import { MediaCarousel } from "../Desktop/sections/MediaCarousel";
 import { ContactUs } from "../Desktop/sections/ContactUs";
+import { Image } from "lucide-react";
+import { FaqAccordion } from "../../components/ui/FaqAccordion";
 // Service data for the grid
 const services = [
   {
@@ -85,7 +85,7 @@ const testimonials = [
   }
 ];
 
-const SaasSolution = (): JSX.Element => {
+const Fouray = (): JSX.Element => {
   const testimonialSliderRef = React.useRef<Slider | null>(null);
   const testimonialSettings = {
     dots: false,
@@ -115,15 +115,12 @@ const SaasSolution = (): JSX.Element => {
           <div className="flex flex-col max-w-[757px] items-center gap-10 mt-40">
           <div className="flex flex-col items-center justify-center gap-[30px] w-full">
               <h1 className="relative w-full  [font-family:'Playfair',Helvetica] font-bold text-foundationblackblack-13 text-3xl md:text-[42px] text-center line-height-[1.2] leading-normal">
-              We embed ourselves in your business to orchestrate T-Shaped Growth:
+              Recruit Your AI-Workforce for Workflow Automation with <span className="text-foundationredred-13">4AY PaaS</span>
             </h1>
 
             <p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-lg md:text-[21px] text-center tracking-[0] leading-normal px-4">
-              Deep, vertical expertise powered by a wide, horizontal ecosystem of capabilities.
+              Unlock efficiency, scalability, and rapid ROI—without custom development or experimentation.
             </p>
-          <p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-sm md:text-base text-center tracking-[0] leading-normal px-4">
-              We take a PE-like operating partner approach to your business—intervening where it matters most, aligning incentives, and deploying AI workforces to scale operations without bloating teams.
-            </p>  
           </div>
 
           <div className="flex flex-col md:flex-row items-center gap-[30px] relative">
@@ -152,7 +149,7 @@ const SaasSolution = (): JSX.Element => {
       <section className="md:py-20 py-8 px-4 md:px-20 ">
           <div className="container mx-auto px-0">
             <div className="bg-[#D57879] rounded-lg p-6 md:p-8 ">
-              <h2 className="text-3xl md:text-4xl text-center font-bold mb-6 text-foundationblackblack-13 font-['Playfair',Helvetica]">Solve Challenges. Unlock Scale.</h2>
+              <h2 className="text-3xl md:text-4xl text-center font-bold mb-6 text-foundationblackblack-13 font-['Playfair',Helvetica]">Your Challenges, Solved with AI</h2>
               <div className="flex gap-6 md:flex-row flex-col items-center justify-between">
               <div className="grid md:grid-cols-1 gap-4 md:w-2/5">
                 <div className="bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold ">
@@ -165,20 +162,7 @@ const SaasSolution = (): JSX.Element => {
                   <p>Looking for seamless AI integration without complex setups?</p>
                 </div>
               </div>
-              <div className="flex flex-col items-center justify-center md:w-3/5 w-full text-center">
-                <h3 className="text-white font-['Lato',Helvetica] font-light text-2xl md:text-5xl mb-4">
-                  Our AI Workforces eliminate repetitive workflows, unify decision-making across functions, and free up your team for high-leverage work.
-                </h3>
-                <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
-                  🔺 Reduce your CAQ, scale MoFU, and improve LTV
-                </p>
-                <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
-                  🔺 Orchestrate marketing, ops, finance, and sales under one growth lens
-                </p>
-                <p className="text-white font-['Lato',Helvetica] text-base md:text-lg">
-                  🔺 Go beyond automation—deploy intelligence
-                </p>
-              </div>
+              <h3 className="w-full md:w-3/5 text-center text-white font-['Lato',Helvetica] font-light text-2xl md:text-5xl">4AY PaaS automates, optimises, and scales—so you can focus on growth.</h3>
               </div>
               
         </div>
@@ -190,7 +174,7 @@ const SaasSolution = (): JSX.Element => {
     <section className="md:py-20 py-8 px-4 md:px-20">
       <div className="container mx-auto px-0">
         <h2 className="md:text-4xl text-3xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-12">
-          Where We Intervene
+        How it Works
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -249,8 +233,7 @@ const SaasSolution = (): JSX.Element => {
           {/* Left Column - Heading and Description */}
           <div className="space-y-6 md:max-w-96 max-w-full md:block flex flex-col items-center justify-center ">
             <h2 className="text-3xl md:text-4xl md:text-left text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13">
-              Purpose-Built Tech,<br />
-              Tailored to Your Stack
+            Powerful Features, Maximum Impact
             </h2>
             <p className="text-2xl md:text-left text-center font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-xl">
               Unleash powerful AI insights with seamless data integration and retrieval
@@ -331,10 +314,15 @@ const SaasSolution = (): JSX.Element => {
       <div className="container mx-auto px-0">
         <div className="text-center md:mb-16 mb-8">
           <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationredred-13 mb-4">
-            Industry Verticals We Power
+          Seamless Integration with Your Existing Tools
           </h2>
-          <p className="text-2xl font-light text-foundation-blackblack-10 font-['Lato',Helvetica]">
-            Dummy
+          <p className="text-2xl font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-5xl mx-auto">
+          The 4AY PaaS platform is built around a flexible and scalable architecture that supports both enterprise-level and micro SaaS implementations. Central to its power are three core dimensions: SOPs, Integrations, and Customer-Specific Data. These dimensions are designed to adapt to different business contexts, streamline workflows, and deliver AI-powered automation. 
+         
+          </p>
+          <p className="mt-4 text-2xl font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-5xl mx-auto">
+          
+          Below are the key integration and compatibility highlights:
           </p>
         </div>
           
@@ -416,7 +404,141 @@ const SaasSolution = (): JSX.Element => {
         </div>
       </div>
     </section>
-
+ {/* Industry Verticals Section */}
+ <section className="md:py-20 py-8 px-4 md:px-20 bg-foundation-blackblack-4">
+      <div className="container mx-auto px-0">
+        <div className="text-center md:mb-16 mb-8">
+          <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationredred-13 mb-4">
+          Seamless Integration with Your Existing Tools
+          </h2>
+          <p className="text-2xl font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-5xl mx-auto">
+          The 4AY PaaS platform is built around a flexible and scalable architecture that supports both enterprise-level and micro SaaS implementations. Central to its power are three core dimensions: SOPs, Integrations, and Customer-Specific Data. These dimensions are designed to adapt to different business contexts, streamline workflows, and deliver AI-powered automation. 
+         
+          </p>
+          <p className="mt-4 text-2xl font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-5xl mx-auto">
+          
+          Below are the key integration and compatibility highlights:
+          </p>
+        </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-14 gap-8 max-w-5xl mx-auto md:mb-10 mb-4">
+            <div className= "flex justify-center h-96 w-full items-center bg-[#FCF4F4] px-5 py-8 rounded  hover:shadow-lg transition-all duration-300">
+              <Image className="w-6 h-6" />
+            </div>
+            <div className="flex flex-col items-center justify-center">
+            <div className=" "> 
+            <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
+              Dual Deployment Models
+            </h3>
+            <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
+              The platform supports two setup configurations:
+            </p>
+            <ul className="space-y-4">
+              <li className="text-lg font-light text-foundation-blackblack-10">
+                • Organisational-Level Setup for full-scale, cross-departmental enterprise deployments.
+              </li>
+              <li className="text-lg font-light text-foundation-blackblack-10">
+                • Micro SaaS Setup for lightweight, niche applications with pre-built templates and prompts.
+              </li>
+            </ul>
+          </div>
+            </div>
+          
+          </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-14 gap-8 max-w-5xl mx-auto md:mb-10 mb-4">
+          
+            <div className="flex flex-col items-center justify-center">
+            <div className=" "> 
+            <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
+              Three Core Dimensions
+            </h3>
+            <ul className="space-y-6">
+              <li className="text-lg font-light text-foundation-blackblack-10">
+                • Dimension 1 (SOP): Captures workflows, best practices, and decision-making logic to train AI agents.
+              </li>
+              <li className="text-lg font-light text-foundation-blackblack-10">
+                • Dimension 2 (Integration): Connects with third-party tools, APIs, and data sources for real-time data flow and task execution.
+              </li>
+              <li className="text-lg font-light text-foundation-blackblack-10">
+                • Dimension 3 (Customer Data): Manages user-specific data to generate tailored, AI-powered workflows.
+              </li>
+            </ul>
+          </div>
+            </div>
+            <div className= "flex justify-center h-96 w-full items-center bg-[#FCF4F4] px-5 py-8 rounded  hover:shadow-lg transition-all duration-300">
+              <Image className="w-6 h-6" />
+            </div>
+          </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-14 gap-8 max-w-5xl mx-auto md:mb-10 mb-4">
+            <div className= "flex justify-center h-96 w-full items-center bg-[#FCF4F4] px-5 py-8 rounded  hover:shadow-lg transition-all duration-300">
+              <Image className="w-6 h-6" />
+            </div>
+            <div className="flex flex-col items-center justify-center">
+            <div className=" "> 
+            <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
+              Integration Dimension
+            </h3>
+            <ul className="space-y-6">
+              <li className="text-lg font-light text-foundation-blackblack-10">
+                • Enriching Integrations: Fetch real-time data from tools like Bloomberg, SEMrush, Google Trends, and CRMs to enhance insights.
+              </li>
+              <li className="text-lg font-light text-foundation-blackblack-10">
+                • Performing Actions: Enables AI agents to act within tools like Slack, Jira, Salesforce, Trello, and Mailchimp—automating tasks like posting messages, updating leads, or scheduling posts.
+              </li>
+            </ul>
+          </div>
+            </div>
+          
+          </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-14 gap-8 max-w-5xl mx-auto md:mb-10 mb-4">
+          
+          <div className="flex flex-col items-center justify-center">
+          <div className=" "> 
+          <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
+            Rich API & Data Connector Support
+            </h3>
+            <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
+            Offers dynamic API interfaces for Slack, Teams, social media, Google Sheets, CRMs, ERPs, and more, supporting both structured and unstructured data sources—including scraping capabilities.
+            </p>
+        </div>
+          </div>
+          <div className= "flex justify-center h-96 w-full items-center bg-[#FCF4F4] px-5 py-8 rounded  hover:shadow-lg transition-all duration-300">
+            <Image className="w-6 h-6" />
+          </div>
+        </div>
+        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-14 gap-8 max-w-5xl mx-auto md:mb-10 mb-4">
+        <div className= "flex justify-center h-96 w-full items-center bg-[#FCF4F4] px-5 py-8 rounded  hover:shadow-lg transition-all duration-300">
+              <Image className="w-6 h-6" />
+            </div>
+            <div className="flex flex-col items-center justify-center">
+            <div className=" "> 
+            <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
+            Tagging & Content Structuring System
+            </h3>
+            <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
+            Every input is tagged (e.g., SOP, BP, Training, TP) to ensure accurate data parsing, vectorisation (when needed), and LLM interpretation. The DNS tag (Do Not Summarise) is used to govern sensitive or structured information.
+            </p>
+          </div>
+            </div>
+           
+          </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-14 gap-8 max-w-5xl mx-auto md:mb-10 mb-4">
+          
+          <div className="flex flex-col items-center justify-center">
+          <div className=" "> 
+          <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
+            Continuous Learning & Updates
+            </h3>
+            <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
+            All dimensions are designed to be iteratively refined with feedback, performance data, and updated SOPs to ensure relevance and alignment with evolving organisational needs.
+            </p>
+        </div>
+          </div>
+          <div className= "flex justify-center h-96 w-full items-center bg-[#FCF4F4] px-5 py-8 rounded  hover:shadow-lg transition-all duration-300">
+            <Image className="w-6 h-6" />
+          </div>
+        </div>
+      </div>
+    </section>
     {/* Real Businesses, Real Results Section */}
     <section className="md:py-20 py-8 px-4 md:px-20">
       <div className="container mx-auto px-0">
@@ -545,7 +667,7 @@ const SaasSolution = (): JSX.Element => {
       <div className="container mx-auto px-0">
       <div className=" md:px-48 md:py-10 py-8 px-4 bg-[#F1D1D1]">
         <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-8 md:mb-12">
-          Hands-On Consultation &amp; Setup
+        We're With You at Every Step
         </h2>
 
         <div className="space-y-6">
@@ -605,9 +727,45 @@ const SaasSolution = (): JSX.Element => {
       </div>
       </div>
     </section>
-
+    <section className="md:py-20 py-8 px-4 md:px-20 bg-foundation-blackblack-4">
+      <div className="container mx-auto px-0">
+        <div className="text-center md:mb-16 mb-8">
+          <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-4">
+          Built to Scale with Your Business
+          </h2>
+        </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-14 gap-8 max-w-5xl mx-auto md:mb-10 mb-4">
+            <div className= "flex justify-center h-full w-full items-center bg-[#FCF4F4] px-5 py-8 rounded  hover:shadow-lg transition-all duration-300">
+              <Image className="w-6 h-6" />
+            </div>
+            <div className="flex flex-col items-center justify-center">
+            <div className=" "> 
+            <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
+            Built to flex with you—our platform molds to your workflows, data, and tools so you get exactly what fits your business.
+            </p>
+            <ul className="space-y-4">
+              <li className="text-lg font-light text-foundation-blackblack-10">
+                • <b>Tailored AI for Your Needs:</b> Easily train models on your proprietary data—SOPs, chats, emails, and internal tools—for hyper-personalised outputs.
+              </li>
+                <li className="text-lg font-light text-foundation-blackblack-10">
+                  • <b>Context-Aware Automation:</b> Leverage flexible RAG pipelines and vector-based tagging to adapt the platform across teams, tools, and business use cases.
+                </li>
+                <li className="text-lg font-light text-foundation-blackblack-10">
+                  • <b>Modular & Scalable:</b> Customise UI, workflows, and integrations—whether you're using Google Sheets or enterprise CRMs.
+                </li>
+                <li className="text-lg font-light text-foundation-blackblack-10">
+                  • <b>Future-Ready Stack:</b> Built for growth with fine-tuning-ready LLMs, real-time data sync, and multi-modality support on demand
+                </li>
+            </ul>
+          </div>
+            </div>
+          
+          </div>
+         
+      </div>
+    </section>
     {/* Custom Growth Report Section */}
-    <section className="md:pb-20 pb-8 px-4 md:px-32">
+    <section className="md:py-20 pb-8 px-4 md:px-32">
       <div className="container mx-auto px-0">
         <div className="[background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)] rounded-3xl md:px-8 px-4 md:py-16 py-8 text-center">
           <div className="md:max-w-3xl max-w-full mx-auto space-y-6">
@@ -676,6 +834,47 @@ const SaasSolution = (): JSX.Element => {
         </div>
       </section>
 
+    {/* FAQ Section */}
+    <section className="md:py-20 py-8 px-4 md:px-32 bg-[#F0F0F0]">
+      <div className="container mx-auto px-0">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
+          <div className="md:w-1/3 w-full flex flex-col md:items-start items-center justify-center">
+            <h2 className="text-3xl md:text-4xl font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-6 md:text-left text-center">
+              Frequently Asked Questions
+            </h2>
+            <button className="px-8 py-3 bg-foundationblackblack-11 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">Read all FAQs</button>
+          </div>
+          
+          <div className="md:w-2/3 w-full space-y-4">
+            <FaqAccordion 
+              questions={[
+                {
+                  question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                  answer: "Our platform is designed for businesses of all sizes. Whether you're a small startup or a large enterprise, our scalable solutions can be tailored to meet your specific needs and growth trajectory."
+                },
+                {
+                  question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                  answer: "Implementation typically takes 2-4 weeks, depending on the complexity of your requirements and existing systems. Our team works closely with you to ensure a smooth onboarding process and minimal disruption to your operations."
+                },
+                {
+                  question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                  answer: "Yes, our platform is designed to integrate seamlessly with most popular business tools and software. We support integrations with CRMs, ERPs, marketing automation platforms, and many other systems through our robust API framework."
+                },
+                {
+                  question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                  answer: "We offer comprehensive support packages, including 24/7 technical assistance, regular maintenance updates, and dedicated account management. Our team is always available to help you maximize the value of our platform."
+                },
+                {
+                  question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                  answer: "Security is our top priority. We employ industry-leading encryption, regular security audits, and strict data access controls. Our platform is compliant with major regulations including GDPR, HIPAA, and SOC 2."
+                }
+              ]}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
 <MediaCarousel/>
 <ContactUs/>
    
@@ -683,4 +882,4 @@ const SaasSolution = (): JSX.Element => {
   );
 };
 
-export default SaasSolution;
+export default Fouray; 
