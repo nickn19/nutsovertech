@@ -4,9 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import { Home } from "./pages/Desktop/Home";
 import Services from "./pages/Services/Index";
-import IPAssets from "./pages/IPAssets/IPAssets";
+import IPAssets from "./pages/IPAssets";
 import SalesEngine from "./pages/SalesEngine/SalesEngine";
-import Insights from "./pages/Insights/Insights";
+import Insights from "./pages/Insights";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import NotFound from "./pages/NotFound/NotFound";
@@ -16,7 +16,7 @@ import MicroSaas from "./pages/Services/MicroSaas";
 import AIConsulting from "./pages/Services/AIConsulting";
 import SaasSolution from "./pages/Services/SaasSolution";
 import TShapeGrowth from "./pages/Services/TShapeGrowth";
-
+import Fouray from "./pages/IPAssets/Fouray";
 createRoot(document.getElementById("app") as HTMLElement).render(
   <StrictMode>
     <BrowserRouter>
@@ -29,6 +29,7 @@ createRoot(document.getElementById("app") as HTMLElement).render(
           <Route path="services/saas-solution" element={<SaasSolution />} />
           <Route path="services/t-shape-growth" element={<TShapeGrowth />} />
           <Route path="ip-assets" element={<IPAssets />} />
+          <Route path="ip-assets/fouray" element={<Fouray />} />
           <Route path="sales-engine" element={<SalesEngine />} />
           <Route path="insights" element={<Insights />} />
           <Route path="blog" element={<BlogListing />} />

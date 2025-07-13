@@ -1,14 +1,14 @@
 import React from "react";
-import { SolutionsCarousel } from "../Desktop/sections/SolutionsCarousel";
 import { Button } from "../../components/ui/button";
 import { Play, ArrowLeft, ArrowRight } from "lucide-react";
 import UseCaseCarousel from "../../components/ui/UsecaseCarausel";
 import { CaseStudies } from "../Desktop/sections/CaseStudies";
-import Insights from "../Insights";
 import { BlogSection } from "../Desktop/sections/BlogSection";
 import Slider from "react-slick";
 import { MediaCarousel } from "../Desktop/sections/MediaCarousel";
 import { ContactUs } from "../Desktop/sections/ContactUs";
+import { Image } from "lucide-react";
+import { FaqAccordion } from "../../components/ui/FaqAccordion";
 // Service data for the grid
 const services = [
   {
@@ -85,7 +85,7 @@ const testimonials = [
   }
 ];
 
-const MicroSaas = (): JSX.Element => {
+const Fouray = (): JSX.Element => {
   const testimonialSliderRef = React.useRef<Slider | null>(null);
   const testimonialSettings = {
     dots: false,
@@ -115,16 +115,14 @@ const MicroSaas = (): JSX.Element => {
           <div className="flex flex-col max-w-[757px] items-center gap-10 mt-40">
           <div className="flex flex-col items-center justify-center gap-[30px] w-full">
               <h1 className="relative w-full  [font-family:'Playfair',Helvetica] font-bold text-foundationblackblack-13 text-3xl md:text-[42px] text-center line-height-[1.2] leading-normal">
-              Build or Buy a MicroSaaS—We’ve Already Done Both
+              Recruit Your AI-Workforce for Workflow Automation with <span className="text-foundationredred-13">4AY PaaS</span>
             </h1>
 
             <p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-lg md:text-[21px] text-center tracking-[0] leading-normal px-4">
-             Own niche tools that solve sharp problems, generate passive revenue, and scale quietly.
+              Unlock efficiency, scalability, and rapid ROI—without custom development or experimentation.
             </p>
-          {/* <p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-sm md:text-base text-center tracking-[0] leading-normal px-4">
-              We take a PE-like operating partner approach to your business—intervening where it matters most, aligning incentives, and deploying AI workforces to scale operations without bloating teams.
-            </p>   */}
           </div>
+
           <div className="flex flex-col md:flex-row items-center gap-[30px] relative">
               <Button className="px-6 py-4 bg-foundationredred-13 hover:bg-foundationredred-8 transition-colors rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto">
               Explore Our Expertise
@@ -151,127 +149,70 @@ const MicroSaas = (): JSX.Element => {
       <section className="md:py-20 py-8 px-4 md:px-20 ">
           <div className="container mx-auto px-0">
             <div className="bg-[#D57879] rounded-lg p-6 md:p-8 ">
-              <h2 className="text-3xl md:text-4xl text-center font-bold mb-6 text-foundationblackblack-13 font-['Playfair',Helvetica]">Why MicroSaaS Works</h2>
-             {/* <p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-lg md:text-[21px] text-center tracking-[0] leading-normal px-4">
-             MicroSaaS is the anti-startup:
-            </p> */}
-             <h3 className="text-white font-['Lato',Helvetica] font-light text-2xl md:text-5xl mb-4">
-                 MicroSaaS is the anti-startup:
-                </h3>
+              <h2 className="text-3xl md:text-4xl text-center font-bold mb-6 text-foundationblackblack-13 font-['Playfair',Helvetica]">Your Challenges, Solved with AI</h2>
               <div className="flex gap-6 md:flex-row flex-col items-center justify-between">
               <div className="grid md:grid-cols-1 gap-4 md:w-2/5">
                 <div className="bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold ">
-                  <p> Built fast</p>
-                </div>
-                <div className="bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold ">
-                  <p>Solves one real, nagging problem</p>
+                  <p>Struggling with inefficiencies, scalability, or data silos?</p>
                 </div>
                 <div className=" bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold">
-                  <p>No team needed </p>
+                  <p>Need faster ROI without long development cycles? </p>
                 </div>
                 <div className="bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold">
-                  <p>Makes money while you sleep</p>
+                  <p>Looking for seamless AI integration without complex setups?</p>
                 </div>
               </div>
-              <div className="flex flex-col items-center justify-center md:w-3/5 w-full text-center">
-                <h3 className="text-white font-['Lato',Helvetica] font-light text-2xl md:text-5xl mb-4">
-                 We help you build your own or license ours. Either way—you get a lean, high-ROI tool that works 24/7 without a bloated dev team.
-                </h3>
-                {/* <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
-                  🔺 Reduce your CAQ, scale MoFU, and improve LTV
-                </p>
-                <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
-                  🔺 Orchestrate marketing, ops, finance, and sales under one growth lens
-                </p>
-                <p className="text-white font-['Lato',Helvetica] text-base md:text-lg">
-                  🔺 Go beyond automation—deploy intelligence
-                </p> */}
-              </div>
+              <h3 className="w-full md:w-3/5 text-center text-white font-['Lato',Helvetica] font-light text-2xl md:text-5xl">4AY PaaS automates, optimises, and scales—so you can focus on growth.</h3>
               </div>
               
         </div>
       </div>
     </section>
     <UseCaseCarousel />
-    {/* What Makes MicroSaaS Special */}
+      
+    {/* Where We Intervene Section */}
     <section className="md:py-20 py-8 px-4 md:px-20">
       <div className="container mx-auto px-0">
         <h2 className="md:text-4xl text-3xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-12">
-          What Makes MicroSaaS Special
+        How it Works
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Laser-focused: */}
+          {/* AI-Led Strategy Card */}
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
                 <img src="/analysis.png" alt="AI Strategy" className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold text-foundationblackblack-13">Laser-focused</h3>
+              <h3 className="text-xl font-bold text-foundationblackblack-13">AI-Led Strategy</h3>
               <p className="text-foundation-blackblack-10 text-base">
-                Built for edge cases that big SaaS platforms ignore.
+                Proven playbooks tailored for rapid results.
               </p>
             </div>
           </div>
 
-          {/* Low cost, high automation */}
+          {/* No-Code Implementation Card */}
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
                 <img src="/no-code.png" alt="No Code" className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold text-foundationblackblack-13">Low cost, high automation</h3>
+              <h3 className="text-xl font-bold text-foundationblackblack-13">No-Code Implementation</h3>
               <p className="text-foundation-blackblack-10 text-base">
-                No need for big infra—most are near-passive once live.
+                Get started instantly—no heavy development required.
               </p>
             </div>
           </div>
 
-          {/* AI-native */}
+          {/* Data-Driven Execution Card */}
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
                 <img src="/execution.png" alt="Data Driven" className="w-8 h-8" />
               </div>
-              <h3 className="text-xl font-bold text-foundationblackblack-13">AI-native</h3>
+              <h3 className="text-xl font-bold text-foundationblackblack-13">Data-Driven Execution</h3>
               <p className="text-foundation-blackblack-10 text-base">
-                 Leverage 4ay, workflow automation, and no-code tools.
-              </p>
-            </div>
-          </div>
-          {/* Highly profitable */}
-          <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
-            <div className="flex flex-col items-center text-center gap-6">
-              <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/execution.png" alt="Data Driven" className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold text-foundationblackblack-13">Highly profitable</h3>
-              <p className="text-foundation-blackblack-10 text-base">
-                  Most of our apps hit breakeven in weeks, not years.
-              </p>
-            </div>
-          </div>
-          {/*Truly yours */}
-          <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
-            <div className="flex flex-col items-center text-center gap-6">
-              <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/execution.png" alt="Data Driven" className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold text-foundationblackblack-13">Truly yours</h3>
-              <p className="text-foundation-blackblack-10 text-base">
-                 Host it, sell it, use it—your IP, your cash flow.
-              </p>
-            </div>
-          </div>
-          {/*Acquisition engine */}
-          <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
-            <div className="flex flex-col items-center text-center gap-6">
-              <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/execution.png" alt="Data Driven" className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold text-foundationblackblack-13">Acquisition engine</h3>
-              <p className="text-foundation-blackblack-10 text-base">
-                 Acquisition engine on top of which you can create SaaS apps.
+                AI insights power real-time decision-making.
               </p>
             </div>
           </div>
@@ -285,85 +226,71 @@ const MicroSaas = (): JSX.Element => {
       </div>
     </section>
      
-    {/* Want to Build Your Own MicroSaaS? */}
+    {/* Purpose-Built Tech Section */}
     <section className="md:py-20 py-8 px-4 md:px-32 [background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)]">
       <div className="container mx-auto px-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Column - Heading and Description */}
           <div className="space-y-6 md:max-w-96 max-w-full md:block flex flex-col items-center justify-center ">
             <h2 className="text-3xl md:text-4xl md:text-left text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13">
-             Want to Build Your Own MicroSaaS?
+            Powerful Features, Maximum Impact
             </h2>
             <p className="text-2xl md:text-left text-center font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-xl">
-             We’ll help you spin up a custom app in days, not months.
+              Unleash powerful AI insights with seamless data integration and retrieval
             </p>
             <button className="px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
-             Book a Build Sprint
+              View Full Feature List
             </button>
           </div>
 
           {/* Right Column - Feature List */}
           <div className="space-y-8">
-            {/* Use our React Boilerplate */}
+            {/* Data Indexing & Integration */}
             <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
                 <img src="/data-index.png" alt="Data Indexing" className="w-12 h-12" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-                 Use our React Boilerplate
+                  Data Indexing & Integration
                 </h3>
-                {/* <p className="text-foundation-blackblack-10">
+                <p className="text-foundation-blackblack-10">
                   Index data in any format or language for seamless retrieval and interoperability.
-                </p> */}
+                </p>
               </div>
             </div>
 
-            {/* Add your logic via 4AY PaaS agents */}
+            {/* LLM-Powered Insights */}
             <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
                 <img src="/llm.png" alt="LLM Insights" className="w-12 h-12" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-                 Add your logic via 4AY PaaS agents
+                  LLM-Powered Insights
                 </h3>
-                {/* <p className="text-foundation-blackblack-10 text-lg font-light">
+                <p className="text-foundation-blackblack-10 text-lg font-light">
                   High-value free content, data-driven insights, and expert consulting to build trust and engagement.
-                </p> */}
-              </div>
-            </div>
-             {/* Automate tasks with N8n */}
-            <div className="flex gap-6 items-start">
-              <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/llm.png" alt="LLM Insights" className="w-12 h-12" />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-                Automate tasks with N8n
-                </h3>
-                {/* <p className="text-foundation-blackblack-10 text-lg font-light">
-                  High-value free content, data-driven insights, and expert consulting to build trust and engagement.
-                </p> */}
+                </p>
               </div>
             </div>
 
-            {/*  Host with our infra or your own */}
+            {/* Custom Retrieval Strategies */}
             <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
                 <img src="/custom-retrieval.png" alt="Custom Retrieval" className="w-12 h-12" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-                  Host with our infra or your own
+                  Custom Retrieval Strategies
                 </h3>
-                {/* <p className="text-foundation-blackblack-10 text-lg font-light">
+                <p className="text-foundation-blackblack-10 text-lg font-light">
                   Define tailored chunking and retrieval strategies for optimized data access.
-                </p> */}
+                </p>
               </div>
             </div>
 
-            {/* Own 100% of the IP */}
+            {/* Optimised Embedding Models */}
             <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
                 <img src="/optimised-embedding.png" alt="Embedding Models" className="w-12 h-12" />
@@ -372,9 +299,9 @@ const MicroSaas = (): JSX.Element => {
                 <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
                   Optimised Embedding Models
                 </h3>
-                {/* <p className="text-foundation-blackblack-10 text-lg font-light">
+                <p className="text-foundation-blackblack-10 text-lg font-light">
                   Select and implement the best embedding models to maximize search accuracy and performance.
-                </p> */}
+                </p>
               </div>
             </div>
           </div>
@@ -387,10 +314,15 @@ const MicroSaas = (): JSX.Element => {
       <div className="container mx-auto px-0">
         <div className="text-center md:mb-16 mb-8">
           <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationredred-13 mb-4">
-            Industry Verticals We Power
+          Seamless Integration with Your Existing Tools
           </h2>
-          <p className="text-2xl font-light text-foundation-blackblack-10 font-['Lato',Helvetica]">
-            Dummy
+          <p className="text-2xl font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-5xl mx-auto">
+          The 4AY PaaS platform is built around a flexible and scalable architecture that supports both enterprise-level and micro SaaS implementations. Central to its power are three core dimensions: SOPs, Integrations, and Customer-Specific Data. These dimensions are designed to adapt to different business contexts, streamline workflows, and deliver AI-powered automation. 
+         
+          </p>
+          <p className="mt-4 text-2xl font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-5xl mx-auto">
+          
+          Below are the key integration and compatibility highlights:
           </p>
         </div>
           
@@ -472,217 +404,368 @@ const MicroSaas = (): JSX.Element => {
         </div>
       </div>
     </section>
-
-    {/* MicroSaaS Products You Can Start Using Today */}
+ {/* Industry Verticals Section */}
+ <section className="md:py-20 py-8 px-4 md:px-20 bg-foundation-blackblack-4">
+      <div className="container mx-auto px-0">
+        <div className="text-center md:mb-16 mb-8">
+          <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationredred-13 mb-4">
+          Seamless Integration with Your Existing Tools
+          </h2>
+          <p className="text-2xl font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-5xl mx-auto">
+          The 4AY PaaS platform is built around a flexible and scalable architecture that supports both enterprise-level and micro SaaS implementations. Central to its power are three core dimensions: SOPs, Integrations, and Customer-Specific Data. These dimensions are designed to adapt to different business contexts, streamline workflows, and deliver AI-powered automation. 
+         
+          </p>
+          <p className="mt-4 text-2xl font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-5xl mx-auto">
+          
+          Below are the key integration and compatibility highlights:
+          </p>
+        </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-14 gap-8 max-w-5xl mx-auto md:mb-10 mb-4">
+            <div className= "flex justify-center h-96 w-full items-center bg-[#FCF4F4] px-5 py-8 rounded  hover:shadow-lg transition-all duration-300">
+              <Image className="w-6 h-6" />
+            </div>
+            <div className="flex flex-col items-center justify-center">
+            <div className=" "> 
+            <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
+              Dual Deployment Models
+            </h3>
+            <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
+              The platform supports two setup configurations:
+            </p>
+            <ul className="space-y-4">
+              <li className="text-lg font-light text-foundation-blackblack-10">
+                • Organisational-Level Setup for full-scale, cross-departmental enterprise deployments.
+              </li>
+              <li className="text-lg font-light text-foundation-blackblack-10">
+                • Micro SaaS Setup for lightweight, niche applications with pre-built templates and prompts.
+              </li>
+            </ul>
+          </div>
+            </div>
+          
+          </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-14 gap-8 max-w-5xl mx-auto md:mb-10 mb-4">
+          
+            <div className="flex flex-col items-center justify-center">
+            <div className=" "> 
+            <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
+              Three Core Dimensions
+            </h3>
+            <ul className="space-y-6">
+              <li className="text-lg font-light text-foundation-blackblack-10">
+                • Dimension 1 (SOP): Captures workflows, best practices, and decision-making logic to train AI agents.
+              </li>
+              <li className="text-lg font-light text-foundation-blackblack-10">
+                • Dimension 2 (Integration): Connects with third-party tools, APIs, and data sources for real-time data flow and task execution.
+              </li>
+              <li className="text-lg font-light text-foundation-blackblack-10">
+                • Dimension 3 (Customer Data): Manages user-specific data to generate tailored, AI-powered workflows.
+              </li>
+            </ul>
+          </div>
+            </div>
+            <div className= "flex justify-center h-96 w-full items-center bg-[#FCF4F4] px-5 py-8 rounded  hover:shadow-lg transition-all duration-300">
+              <Image className="w-6 h-6" />
+            </div>
+          </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-14 gap-8 max-w-5xl mx-auto md:mb-10 mb-4">
+            <div className= "flex justify-center h-96 w-full items-center bg-[#FCF4F4] px-5 py-8 rounded  hover:shadow-lg transition-all duration-300">
+              <Image className="w-6 h-6" />
+            </div>
+            <div className="flex flex-col items-center justify-center">
+            <div className=" "> 
+            <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
+              Integration Dimension
+            </h3>
+            <ul className="space-y-6">
+              <li className="text-lg font-light text-foundation-blackblack-10">
+                • Enriching Integrations: Fetch real-time data from tools like Bloomberg, SEMrush, Google Trends, and CRMs to enhance insights.
+              </li>
+              <li className="text-lg font-light text-foundation-blackblack-10">
+                • Performing Actions: Enables AI agents to act within tools like Slack, Jira, Salesforce, Trello, and Mailchimp—automating tasks like posting messages, updating leads, or scheduling posts.
+              </li>
+            </ul>
+          </div>
+            </div>
+          
+          </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-14 gap-8 max-w-5xl mx-auto md:mb-10 mb-4">
+          
+          <div className="flex flex-col items-center justify-center">
+          <div className=" "> 
+          <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
+            Rich API & Data Connector Support
+            </h3>
+            <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
+            Offers dynamic API interfaces for Slack, Teams, social media, Google Sheets, CRMs, ERPs, and more, supporting both structured and unstructured data sources—including scraping capabilities.
+            </p>
+        </div>
+          </div>
+          <div className= "flex justify-center h-96 w-full items-center bg-[#FCF4F4] px-5 py-8 rounded  hover:shadow-lg transition-all duration-300">
+            <Image className="w-6 h-6" />
+          </div>
+        </div>
+        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-14 gap-8 max-w-5xl mx-auto md:mb-10 mb-4">
+        <div className= "flex justify-center h-96 w-full items-center bg-[#FCF4F4] px-5 py-8 rounded  hover:shadow-lg transition-all duration-300">
+              <Image className="w-6 h-6" />
+            </div>
+            <div className="flex flex-col items-center justify-center">
+            <div className=" "> 
+            <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
+            Tagging & Content Structuring System
+            </h3>
+            <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
+            Every input is tagged (e.g., SOP, BP, Training, TP) to ensure accurate data parsing, vectorisation (when needed), and LLM interpretation. The DNS tag (Do Not Summarise) is used to govern sensitive or structured information.
+            </p>
+          </div>
+            </div>
+           
+          </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-14 gap-8 max-w-5xl mx-auto md:mb-10 mb-4">
+          
+          <div className="flex flex-col items-center justify-center">
+          <div className=" "> 
+          <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
+            Continuous Learning & Updates
+            </h3>
+            <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
+            All dimensions are designed to be iteratively refined with feedback, performance data, and updated SOPs to ensure relevance and alignment with evolving organisational needs.
+            </p>
+        </div>
+          </div>
+          <div className= "flex justify-center h-96 w-full items-center bg-[#FCF4F4] px-5 py-8 rounded  hover:shadow-lg transition-all duration-300">
+            <Image className="w-6 h-6" />
+          </div>
+        </div>
+      </div>
+    </section>
+    {/* Real Businesses, Real Results Section */}
     <section className="md:py-20 py-8 px-4 md:px-20">
       <div className="container mx-auto px-0">
         <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-8 md:mb-16">
-          MicroSaaS Products You Can Start Using Today
+          Real Businesses, Real Results
         </h2>
 
-        <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* OmniCapture */}
-            <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-between h-full">
-              <div className="flex flex-col items-center text-center space-y-4 flex-1">
-                <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-                  OmniCapture
-                </h3>
-                <p className="text-foundation-blackblack-10 text-xl font-light mb-2">
-                  AI content digitization app — extracts, reformats, and distributes content across channels. Ideal for marketers and agencies
-                </p>
-                <p className="text-xl font-normal text-foundationblackblack-13 mb-1">Status:</p>
-                <p className="text-foundation-blackblack-10 text-xl font-light mb-4">Live & Licensed</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Success Story Card 1 */}
+          <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+            <div className="flex flex-col items-center text-center space-y-6">
+              <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
+                <span className="text-foundation-blackblack-10">Logo here</span>
               </div>
-              <div className="w-full flex justify-center mt-4">
-                <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
-                  Get Access
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
+              
+              <h3 className="text-2xl font-bold text-foundationblackblack-13">
+                Company name
+              </h3>
 
-            {/* Custom SEO, Email and CRO SOPs */}
-            <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-between h-full">
-              <div className="flex flex-col items-center text-center space-y-4 flex-1">
-                <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-                  Custom SEO, Email and CRO SOPs
-                </h3>
-                <p className="text-foundation-blackblack-10 text-xl font-light mb-2">
-                  AI-powered SOP MicroSaaS that tailors email marketing, SEO and CRO tasks to your business—daily prompts, checklists, and agent execution.
-                </p>
-                <p className="text-xl font-normal text-foundationblackblack-13 mb-1">Use Case:</p>
-                <p className="text-foundation-blackblack-10 text-xl font-light mb-4">Marketing Teams, Freelancers</p>
+              <div className="space-y-2">
+                <p className="text-foundation-blackblack-10 text-xl font-light ">Increased ARR by</p>
+                <p className="text-5xl font-normal text-foundationblackblack-13">xx%</p>
+                <p className="text-foundation-blackblack-10 text-xl font-light">in Y months</p>
               </div>
-              <div className="w-full flex justify-center mt-4">
-                <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
-                  Try Demo
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
 
-            {/* D2C Partner Portal */}
-            <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-between h-full">
-              <div className="flex flex-col items-center text-center space-y-4 flex-1">
-                <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-                  D2C Partner Portal
-                </h3>
-                <p className="text-foundation-blackblack-10 text-xl font-light mb-2">
-                  A plug-and-play MicroSaaS to manage referrals, commissions, and partner engagement for D2C brands.
-                </p>
-                <p className="text-xl font-normal text-foundationblackblack-13 mb-1">Use Case:</p>
-                <p className="text-foundation-blackblack-10 text-xl font-light mb-4">Shopify, WooCommerce, Custom</p>
+              <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+                Read more
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          {/* Success Story Card 2 */}
+          <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+            <div className="flex flex-col items-center text-center space-y-6">
+              <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
+                <span className="text-foundation-blackblack-10">Logo here</span>
               </div>
-              <div className="w-full flex justify-center mt-4">
-                <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
-                  Install Now
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </button>
+              
+              <h3 className="text-2xl font-bold text-foundationblackblack-13">
+                Company name
+              </h3>
+
+              <div className="space-y-2">
+                <p className="text-foundation-blackblack-10 text-xl font-light">Reduced costs by</p>
+                <p className="text-5xl font-normal text-foundationblackblack-13">xx%</p>
+                <p className="text-foundation-blackblack-10 text-xl font-light">with AI-driven automation</p>
               </div>
+
+              <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+                Read more
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          {/* Success Story Card 3 */}
+          <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+            <div className="flex flex-col items-center text-center space-y-6">
+              <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
+                <span className="text-foundation-blackblack-10">Logo here</span>
+              </div>
+              
+              <h3 className="text-2xl font-bold text-foundationblackblack-13">
+                Company name
+              </h3>
+
+              <div className="space-y-2">
+                <p className="text-foundation-blackblack-10 text-xl font-light">Scaled from</p>
+                <p className="text-5xl font-normal text-foundationblackblack-13">$xM <span className="text-foundation-blackblack-10">to</span> $yM</p>
+                <p className="text-foundation-blackblack-10 text-xl font-light">ARR using 4AY</p>
+              </div>
+
+              <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+                Read more
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          {/* Success Story Card 4 */}
+          <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+            <div className="flex flex-col items-center text-center space-y-6">
+              <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
+                <span className="text-foundation-blackblack-10">Logo here</span>
+              </div>
+              
+              <h3 className="text-2xl font-bold text-foundationblackblack-13">
+                Company name
+              </h3>
+
+              <div className="space-y-2">
+                <p className="text-foundation-blackblack-10 text-xl font-light">Increased ARR by</p>
+                <p className="text-5xl font-normal text-foundationblackblack-13">xx%</p>
+                <p className="text-foundation-blackblack-10 text-xl font-light">in Y months</p>
+              </div>
+
+              <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+                Read more
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
 
-        {/* <div className="mt-12 text-center">
+        <div className="mt-12 text-center">
           <button className="px-6 py-3 bg-foundation-blackblack-10 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">
             See More Success Stories
           </button>
-        </div> */}
+        </div>
       </div>
     </section>
    <CaseStudies />
    <BlogSection/>
 
-    {/* Our MicroSaaS Stack */}
+    {/* Hands-On Consultation Section */}
     <section className="md:py-20 py-8 px-0 md:px-32 ">
       <div className="container mx-auto px-0">
       <div className=" md:px-48 md:py-10 py-8 px-4 bg-[#F1D1D1]">
         <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-8 md:mb-12">
-          Our MicroSaaS Stack 
+        We're With You at Every Step
         </h2>
- <p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-sm md:text-base text-center tracking-[0] leading-normal px-4 mb-8">
-              We’ve built a complete system to go from pain-point to product in days:
-            </p>  
-        <div className="overflow-x-auto flex justify-center mb-10">
-<table className="min-w-[350px] text-left border-collapse">
-    <thead>
-      <tr>
-        <th className="px-4 py-2 font-bold border-b border-gray-300">Layer</th>
-        <th className="px-4 py-2 font-bold border-b border-gray-300">Tools We Use</th>
-      </tr>
-    </thead>
-    </table>
-</div>
-         <div className="space-y-6">
-          {/* Frontend */}
+
+        <div className="space-y-6">
+          {/* Guided Onboarding Card */}
           <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
             <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
               <img src="/Guided-Onboarding.png" alt="Guided Onboarding" className="w-8 h-8" />
             </div>
             <div>
               <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
-                Frontend:
+                Guided Onboarding:
                 <span className="ml-1 font-light ">
-                React Boilerplates (with 1000+ integrations)
+                Personalised setup for seamless adoption.
               </span>
               </h3>
              
             </div>
             </div>
             
-          {/* Automation */}
+          {/* 24/7 Support Card */}
           <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
             <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
               <img src="/24-7-Support.png" alt="24/7 Support" className="w-8 h-8" />
             </div>
             <div >
               <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
-                Automation:
+                24/7 Support:
                 <span className="ml-1 font-light ">
-                N8n.io
-              </span>
-              </h3>
-            </div>
-            </div>
-            {/* Data Pipelines */}
-          <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
-            <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/24-7-Support.png" alt="24/7 Support" className="w-8 h-8" />
-            </div>
-            <div >
-              <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
-                Data Pipelines:
-                <span className="ml-1 font-light ">
-               Airbyte, PostHog, Supabase
-              </span>
-              </h3>
-            </div>
-            </div>
-            {/* AI Workforce Layer */}
-          <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
-            <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/24-7-Support.png" alt="24/7 Support" className="w-8 h-8" />
-            </div>
-            <div >
-              <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
-                AI Workforce Layer:
-                <span className="ml-1 font-light ">
-               4AY PaaS (SOP → AI Agents → Outcome)
+                Dedicated team for troubleshooting & strategy.
               </span>
               </h3>
             </div>
             </div>
             
-          {/* Deployment */}
+          {/* Knowledge Hub Card */}
           <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
             <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
               <img src="/Knowledge-Hub.png" alt="Knowledge Hub" className="w-8 h-8" />
             </div>
             <div>
               <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
-                Deployment:
+                Knowledge Hub:
                 <span className="ml-1 font-light ">
-                Vercel, Netlify, Firebase
+                Tutorials, webinars, and best practices.
               </span>
               </h3>
              
             </div>
           </div>
-           {/* Mobile App */}
-          <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
-            <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/Knowledge-Hub.png" alt="Knowledge Hub" className="w-8 h-8" />
-            </div>
-            <div>
-              <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
-                Mobile App:
-                <span className="ml-1 font-light ">
-                ReactNative, BuildShip
-              </span>
-              </h3>
-             
-            </div>
-          </div> 
         </div>
 
         <div className="mt-12 text-center">
           <button className="px-8 py-3 bg-foundationblackblack-11 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">
-            See it in action (contact form)
+            Contact us
           </button>
         </div>
       </div>
       </div>
     </section>
-
+    <section className="md:py-20 py-8 px-4 md:px-20 bg-foundation-blackblack-4">
+      <div className="container mx-auto px-0">
+        <div className="text-center md:mb-16 mb-8">
+          <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-4">
+          Built to Scale with Your Business
+          </h2>
+        </div>
+          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-14 gap-8 max-w-5xl mx-auto md:mb-10 mb-4">
+            <div className= "flex justify-center h-full w-full items-center bg-[#FCF4F4] px-5 py-8 rounded  hover:shadow-lg transition-all duration-300">
+              <Image className="w-6 h-6" />
+            </div>
+            <div className="flex flex-col items-center justify-center">
+            <div className=" "> 
+            <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
+            Built to flex with you—our platform molds to your workflows, data, and tools so you get exactly what fits your business.
+            </p>
+            <ul className="space-y-4">
+              <li className="text-lg font-light text-foundation-blackblack-10">
+                • <b>Tailored AI for Your Needs:</b> Easily train models on your proprietary data—SOPs, chats, emails, and internal tools—for hyper-personalised outputs.
+              </li>
+                <li className="text-lg font-light text-foundation-blackblack-10">
+                  • <b>Context-Aware Automation:</b> Leverage flexible RAG pipelines and vector-based tagging to adapt the platform across teams, tools, and business use cases.
+                </li>
+                <li className="text-lg font-light text-foundation-blackblack-10">
+                  • <b>Modular & Scalable:</b> Customise UI, workflows, and integrations—whether you're using Google Sheets or enterprise CRMs.
+                </li>
+                <li className="text-lg font-light text-foundation-blackblack-10">
+                  • <b>Future-Ready Stack:</b> Built for growth with fine-tuning-ready LLMs, real-time data sync, and multi-modality support on demand
+                </li>
+            </ul>
+          </div>
+            </div>
+          
+          </div>
+         
+      </div>
+    </section>
     {/* Custom Growth Report Section */}
-    <section className="md:pb-20 pb-8 px-4 md:px-32">
+    <section className="md:py-20 pb-8 px-4 md:px-32">
       <div className="container mx-auto px-0">
         <div className="[background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)] rounded-3xl md:px-8 px-4 md:py-16 py-8 text-center">
           <div className="md:max-w-3xl max-w-full mx-auto space-y-6">
@@ -705,7 +788,7 @@ const MicroSaas = (): JSX.Element => {
     </section>
 
     {/* Client Testimonials Carousel */}
-    {/* <section className="md:py-20 py-8 px-4 md:px-32 bg-[#F8EFEF]">
+    <section className="md:py-20 py-8 px-4 md:px-32 bg-[#F8EFEF]">
       <div className="container mx-auto px-0">
         <div className="flex justify-between items-center mb-16">
           <h2 className="md:text-4xl text-3xl font-bold font-['Playfair',Helvetica] text-foundationblackblack-13">
@@ -749,13 +832,54 @@ const MicroSaas = (): JSX.Element => {
           ))}
         </Slider>
         </div>
-      </section> */}
+      </section>
 
-{/* <MediaCarousel/> */}
+    {/* FAQ Section */}
+    <section className="md:py-20 py-8 px-4 md:px-32 bg-[#F0F0F0]">
+      <div className="container mx-auto px-0">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
+          <div className="md:w-1/3 w-full flex flex-col md:items-start items-center justify-center">
+            <h2 className="text-3xl md:text-4xl font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-6 md:text-left text-center">
+              Frequently Asked Questions
+            </h2>
+            <button className="px-8 py-3 bg-foundationblackblack-11 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">Read all FAQs</button>
+          </div>
+          
+          <div className="md:w-2/3 w-full space-y-4">
+            <FaqAccordion 
+              questions={[
+                {
+                  question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                  answer: "Our platform is designed for businesses of all sizes. Whether you're a small startup or a large enterprise, our scalable solutions can be tailored to meet your specific needs and growth trajectory."
+                },
+                {
+                  question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                  answer: "Implementation typically takes 2-4 weeks, depending on the complexity of your requirements and existing systems. Our team works closely with you to ensure a smooth onboarding process and minimal disruption to your operations."
+                },
+                {
+                  question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                  answer: "Yes, our platform is designed to integrate seamlessly with most popular business tools and software. We support integrations with CRMs, ERPs, marketing automation platforms, and many other systems through our robust API framework."
+                },
+                {
+                  question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                  answer: "We offer comprehensive support packages, including 24/7 technical assistance, regular maintenance updates, and dedicated account management. Our team is always available to help you maximize the value of our platform."
+                },
+                {
+                  question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                  answer: "Security is our top priority. We employ industry-leading encryption, regular security audits, and strict data access controls. Our platform is compliant with major regulations including GDPR, HIPAA, and SOC 2."
+                }
+              ]}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+<MediaCarousel/>
 <ContactUs/>
    
     </>
   );
 };
 
-export default MicroSaas;
+export default Fouray; 

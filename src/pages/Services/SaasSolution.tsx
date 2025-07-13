@@ -4,7 +4,7 @@ import { Button } from "../../components/ui/button";
 import { Play, ArrowLeft, ArrowRight } from "lucide-react";
 import UseCaseCarousel from "../../components/ui/UsecaseCarausel";
 import { CaseStudies } from "../Desktop/sections/CaseStudies";
-import Insights from "../Insights/Insights";
+import Insights from "../Insights";
 import { BlogSection } from "../Desktop/sections/BlogSection";
 import Slider from "react-slick";
 import { MediaCarousel } from "../Desktop/sections/MediaCarousel";
