@@ -4,25 +4,25 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const useCases = [
     {
-        title: "Startups & Scale-Ups:",
-        description: "AI-powered GTM & growth acceleration",
+        title: "Agency Owners:",
+        description: "Productize your internal workflows",
     },
     {
-        title: "Enterprises",
-        description: "Efficiency & automation for business operations",
+        title: "D2C Brands:",
+        description: "Spin up niche tools for community & conversion",
     },
     {
-        title: "Finance & E-commerce",
-        description: "Data-driven insights & revenue optimisation",
+        title: "Consultants & Creator",
+        description: "Sell tools alongside services",
     },
     {
-        title: "Technology & SaaS",
-        description: "Faster AI adoption, innovation & market expansion",
+        title: "Operators",
+        description: "Solve for that one annoying problem (and monetize it)",
     },
-    {
-        title: "Technology & SaaS",
-        description: "Faster AI adoption, innovation & market expansion",
-    },
+    // {
+    //     title: "Technology & SaaS",
+    //     description: "Faster AI adoption, innovation & market expansion",
+    // },
     // Add more items if needed
 ];
 
@@ -72,7 +72,7 @@ const UseCaseCarousel = () => {
 
     return (
         <div className="bg-gray-100 text-center md:py-20 py-8 px-4 md:px-20">
-            <h2 className="md:text-[42px] text-3xl text-center font-bold font-['Playfair',Helvetica] text-foundationredred-13 mb-6">Most Common Use Cases</h2>
+            <h2 className="md:text-[42px] text-3xl text-center font-bold font-['Playfair',Helvetica] text-foundationredred-13 mb-6">Ideal for</h2>
 
             <div className="md:px-6 md:py-12 px-0 py-6">
                 <Slider ref={sliderRef} {...settings}>

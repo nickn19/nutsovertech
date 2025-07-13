@@ -331,28 +331,27 @@ const Services = (): JSX.Element => {
 				</div>
 			</section>
 
-			{/* Purpose-Built Tech Section */}
+			{/* Purpose-Built IPs, Ready to Accelerate Your Custom Build */}
 			<section className="md:py-20 py-8 px-4 md:px-32 [background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)]">
 				<div className="container mx-auto px-0">
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 						{/* Left Column - Heading and Description */}
 						<div className="space-y-6 md:max-w-96 max-w-full md:block flex flex-col items-center justify-center ">
 							<h2 className="text-3xl md:text-4xl md:text-left text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13">
-								Purpose-Built Tech,<br />
+								Purpose-Built IPs, Ready to Accelerate Your Custom Build<br />
 								Tailored to Your Stack
 							</h2>
 							<p className="text-2xl md:text-left text-center font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-xl">
-								Unleash powerful AI insights with seamless data integration
-								and retrieval
+								Leverage our pre-built infrastructure, templates, and micro tools to cut down dev time and ship faster without compromising flexibility.
 							</p>
 							<button className="px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
-								View Full Feature List
+								See our IP Assets
 							</button>
 						</div>
 
 						{/* Right Column - Feature List */}
 						<div className="space-y-8">
-							{/* Data Indexing & Integration */}
+							{/* 4AY PaaS */}
 							<div className="flex gap-6 items-start">
 								<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
 									<img
@@ -363,16 +362,15 @@ const Services = (): JSX.Element => {
 								</div>
 								<div>
 									<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-										Data Indexing & Integration
+										4AY PaaS
 									</h3>
 									<p className="text-foundation-blackblack-10">
-										Index data in any format or language for seamless
-										retrieval and interoperability.
+										A robust AI workflow development platform for rapidly building and deploying LLM-powered business tools with integrated automations.
 									</p>
 								</div>
 							</div>
 
-							{/* LLM-Powered Insights */}
+							{/* SaaS Boilerplates */}
 							<div className="flex gap-6 items-start">
 								<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
 									<img
@@ -383,16 +381,15 @@ const Services = (): JSX.Element => {
 								</div>
 								<div>
 									<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-										LLM-Powered Insights
+										SaaS Boilerplates
 									</h3>
 									<p className="text-foundation-blackblack-10 text-lg font-light">
-										High-value free content, data-driven insights, and expert
-										consulting to build trust and engagement.
+										Production-ready React templates like Var80 (built for D2C growth), bundled with 1000+ native integration presets across CRM, email, analytics, and more.
 									</p>
 								</div>
 							</div>
 
-							{/* Custom Retrieval Strategies */}
+							{/*MicroSaaS Tools */}
 							<div className="flex gap-6 items-start">
 								<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
 									<img
@@ -403,16 +400,15 @@ const Services = (): JSX.Element => {
 								</div>
 								<div>
 									<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-										Custom Retrieval Strategies
+										MicroSaaS Tools
 									</h3>
 									<p className="text-foundation-blackblack-10 text-lg font-light">
-										Define tailored chunking and retrieval strategies for
-										optimized data access.
+										From Omnicapture (automated content digitization) to single-purpose AI workforces — instantly deployable micro tools with embedded logic and automation flows.
 									</p>
 								</div>
 							</div>
 
-							{/* Optimised Embedding Models */}
+							{/* Digital Growth Assets */}
 							<div className="flex gap-6 items-start">
 								<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
 									<img
@@ -423,11 +419,10 @@ const Services = (): JSX.Element => {
 								</div>
 								<div>
 									<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-										Optimised Embedding Models
+										Digital Growth Assets
 									</h3>
 									<p className="text-foundation-blackblack-10 text-lg font-light">
-										Select and implement the best embedding models to maximize
-										search accuracy and performance.
+										Access a library of proven SOPs, playbooks, growth checklists, and prebuilt landing/email templates — designed for instant implementation.
 									</p>
 								</div>
 							</div>
@@ -443,9 +438,9 @@ const Services = (): JSX.Element => {
 						<h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationredred-13 mb-4">
 							Industry Verticals We Power
 						</h2>
-						<p className="text-2xl font-light text-foundation-blackblack-10 font-['Lato',Helvetica]">
+						{/* <p className="text-2xl font-light text-foundation-blackblack-10 font-['Lato',Helvetica]">
 							Dummy
-						</p>
+						</p> */}
 					</div>
 
 					<div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -724,12 +719,14 @@ const Services = (): JSX.Element => {
 			{/* Hands-On Consultation Section */}
 			<section className="md:py-20 py-8 px-0 md:px-32 ">
 				<div className="container mx-auto px-0">
-					<div className=" md:px-48 md:py-10 py-8 px-4 bg-[#F1D1D1]">
+					<div className="md:px-48 md:py-10 py-8 px-4 bg-[#F1D1D1]">
 						<h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-8 md:mb-12">
 							Hands-On Consultation &amp; Setup
 						</h2>
-               <p>We’re not just tech vendors. We operate like embedded partners—fixing real growth bottlenecks and deploying solutions that match your current maturity stage</p>
-						<div className="space-y-6">
+						<p className="text-base md:text-lg text-center font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-2xl mx-auto mb-8 md:mb-12">
+        We’re not just tech vendors. We operate like embedded partners—fixing real growth bottlenecks and deploying solutions that match your current maturity stage.
+      </p>
+						<div className="space-y-8">
 							{/* Application & Tech Architecture Audit: */}
 							<div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
 								<div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
@@ -825,17 +822,17 @@ const Services = (): JSX.Element => {
 					<div className="[background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)] rounded-3xl md:px-8 px-4 md:py-16 py-8 text-center">
 						<div className="md:max-w-3xl max-w-full mx-auto space-y-6">
 							<h2 className="md:text-5xl text-3xl font-normal font-['Lato',Helvetica] text-foundationblackblack-13">
-								Get Your Custom Growth Report
+								Want to Know What Will Move the Needle for You?
 							</h2>
 
-							<p className="text-2xl font-normal text-foundation-blackblack-10">
+							{/* <p className="text-2xl font-normal text-foundation-blackblack-10">
 								Discover tailored use cases and revenue potential for your
 								business with our AI-powered insights.
-							</p>
+							</p> */}
 
 							<div className="mt-8">
 								<button className="px-8 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
-									Get My Custom Report
+									 Get Your Custom Growth Report 
 								</button>
 							</div>
 						</div>
@@ -844,56 +841,57 @@ const Services = (): JSX.Element => {
 			</section>
 
 			{/* Client Testimonials Carousel */}
-			<section className="md:py-20 py-8 px-4 md:px-32 bg-[#F8EFEF]">
-				<div className="container mx-auto px-0">
-					<div className="flex justify-between items-center mb-16">
-						<h2 className="md:text-4xl text-3xl font-bold font-['Playfair',Helvetica] text-foundationblackblack-13">
-							What Our Clients Say
-						</h2>
-						<div className="flex gap-4">
-							<button
-								onClick={() => testimonialSliderRef.current?.slickPrev()}
-								className="w-12 h-12 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center group border border-gray-200"
-								aria-label="Previous testimonial"
-							>
-								<ArrowLeft className="w-6 h-6 text-foundationredred-13 group-hover:text-foundationredred-11 transition-colors" />
-							</button>
-							<button
-								onClick={() => testimonialSliderRef.current?.slickNext()}
-								className="w-12 h-12 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center group border border-gray-200"
-								aria-label="Next testimonial"
-							>
-								<ArrowRight className="w-6 h-6 text-foundationredred-13 group-hover:text-foundationredred-11 transition-colors" />
-							</button>
-						</div>
-					</div>
+{/*
+<section className="md:py-20 py-8 px-4 md:px-32 bg-[#F8EFEF]">
+    <div className="container mx-auto px-0">
+        <div className="flex justify-between items-center mb-16">
+            <h2 className="md:text-4xl text-3xl font-bold font-['Playfair',Helvetica] text-foundationblackblack-13">
+                What Our Clients Say
+            </h2>
+            <div className="flex gap-4">
+                <button
+                    onClick={() => testimonialSliderRef.current?.slickPrev()}
+                    className="w-12 h-12 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center group border border-gray-200"
+                    aria-label="Previous testimonial"
+                >
+                    <ArrowLeft className="w-6 h-6 text-foundationredred-13 group-hover:text-foundationredred-11 transition-colors" />
+                </button>
+                <button
+                    onClick={() => testimonialSliderRef.current?.slickNext()}
+                    className="w-12 h-12 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center group border border-gray-200"
+                    aria-label="Next testimonial"
+                >
+                    <ArrowRight className="w-6 h-6 text-foundationredred-13 group-hover:text-foundationredred-11 transition-colors" />
+                </button>
+            </div>
+        </div>
 
-					<Slider ref={testimonialSliderRef} {...testimonialSettings}>
-						{testimonials.map((testimonial, index) => (
-							<div key={index} className="md:px-4 px-0">
-								<div className="bg-white rounded-3xl md:p-12 p-4 py-8 shadow-md">
-									<div className="flex flex-col items-center text-center relative">
-										<div className="md:text-[120px] text-[80px] font-quicksand absolute md:-top-6 -top-4 md:left-4 left-0 leading-none text-foundationredred-13 opacity-20  mb-6">
-											❝
-										</div>
-										<p className="md:text-2xl text-xl font-light text-foundation-blackblack-10 mb-8 max-w-3xl">
-											{testimonial.content}
-										</p>
-										<div className="md:text-xl text-lg text-foundationredred-13">
-											- {testimonial.name},{" "}
-											<span className="text-foundation-blackblack-10">
-												{testimonial.company}
-											</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						))}
-					</Slider>
-				</div>
-			</section>
-
-			<MediaCarousel />
+        <Slider ref={testimonialSliderRef} {...testimonialSettings}>
+            {testimonials.map((testimonial, index) => (
+                <div key={index} className="md:px-4 px-0">
+                    <div className="bg-white rounded-3xl md:p-12 p-4 py-8 shadow-md">
+                        <div className="flex flex-col items-center text-center relative">
+                            <div className="md:text-[120px] text-[80px] font-quicksand absolute md:-top-6 -top-4 md:left-4 left-0 leading-none text-foundationredred-13 opacity-20  mb-6">
+                                ❝
+                            </div>
+                            <p className="md:text-2xl text-xl font-light text-foundation-blackblack-10 mb-8 max-w-3xl">
+                                {testimonial.content}
+                            </p>
+                            <div className="md:text-xl text-lg text-foundationredred-13">
+                                - {testimonial.name},{" "}
+                                <span className="text-foundation-blackblack-10">
+                                    {testimonial.company}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </Slider>
+    </div>
+</section>
+*/}
+			{/* <MediaCarousel /> */}
 			<ContactUs />
 		</>
 	);
