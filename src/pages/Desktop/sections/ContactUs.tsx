@@ -1,5 +1,10 @@
-import { ChevronDownIcon, MapPinIcon } from "lucide-react";
-import React from "react";
+// components/ContactUs.tsx
+
+import { useState } from "react";
+import {
+  ChevronDownIcon,
+  MapPinIcon
+} from "lucide-react";
 import { Button } from "../../../components/ui/button";
 import { Card, CardContent } from "../../../components/ui/card";
 import { Input } from "../../../components/ui/input";
@@ -8,20 +13,55 @@ import {
   SelectContent,
   SelectItem,
   SelectTrigger,
+  SelectValue,
 } from "../../../components/ui/select";
 
 export const ContactUs = (): JSX.Element => {
-  // Form fields data
-  const formFields = [
-    { id: "name", label: "Name", type: "full-width" },
-    { id: "email", label: "Email", type: "half-width" },
-    { id: "phone", label: "Phone number", type: "half-width" },
-    { id: "company", label: "Company name", type: "half-width" },
-    { id: "stage", label: "Business Stage", type: "dropdown", half: true },
-    { id: "inquiry", label: "Inquiry Type", type: "dropdown", full: true },
-  ];
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    stage: "",
+    inquiry: "",
+  });
 
-  // Office locations data
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleChange = (key: string, value: string) => {
+    setForm((prev) => ({ ...prev, [key]: value }));
+  };
+
+  const handleSubmit = async () => {
+    setSubmitting(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      if (res.ok) {
+        alert("Form submitted successfully!");
+        setForm({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          stage: "",
+          inquiry: "",
+        });
+      } else {
+        const err = await res.json();
+        alert("Error: " + err.error);
+      }
+    } catch (e) {
+      alert("Unexpected error!");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   const officeLocations = [
     {
       country: "INDIA",
@@ -37,145 +77,127 @@ export const ContactUs = (): JSX.Element => {
   return (
     <section className="flex items-center justify-center gap-2.5 pt-10 md:pb-[60px] pb-8 px-4 md:px-[190px] bg-foundation-redred-3">
       <div className="flex flex-col md:flex-row items-center justify-center md:gap-[60px] gap-8 w-full max-w-[1200px]">
-        {/* Get in Touch Section */}
         <div className="flex flex-col items-center justify-center gap-10 w-full md:w-auto">
-          <div className="flex flex-col items-start gap-1 w-full">
-            <div className="flex flex-col items-center gap-3 w-full">
-              <h2 className="[font-family:'Playfair',Helvetica] font-bold text-foundationblackblack-11 text-4xl text-center">
-                Get in Touch
-              </h2>
-            </div>
+          <h2 className="font-bold text-4xl text-center text-foundationblackblack-11">
+            Get in Touch
+          </h2>
+          <p className="text-xl text-center text-foundationblackblack-11">
+            Let&apos;s connect and explore how AI can drive your growth—reach
+            out to us today!
+          </p>
 
-            <p className="w-full md:w-[520px] [font-family:'Inter',Helvetica] font-normal text-foundationblackblack-11 text-xl text-center">
-              Let&apos;s connect and explore how AI can drive your growth—reach
-              out to us today!&#34;
-            </p>
-          </div>
+          <Card className="w-full md:w-[612px] bg-foundation-redred-6 rounded-2xl border-none">
+            <CardContent className="flex flex-col gap-6 p-5">
+              <div className="flex flex-col gap-2 w-full">
+                <label>Name</label>
+                <Input
+                  value={form.name}
+                  onChange={(e) => handleChange("name", e.target.value)}
+                  className="h-12 bg-white rounded-[10px]"
+                />
+              </div>
 
-          <div className="flex items-center justify-center w-full">
-            <Card className="w-full md:w-[612px] bg-foundation-redred-6 rounded-2xl border-none">
-              <CardContent className="flex flex-col items-center justify-center gap-6 p-5">
-                {/* Name field - full width */}
-                <div className="flex items-start gap-[30px] w-full">
-                  <div className="flex flex-col items-start justify-center gap-2 w-full">
-                    <label className="[font-family:'Lato',Helvetica] font-normal text-foundation-blackblack-10 text-[15px]">
-                      Name
-                    </label>
-                    <Input className="h-12 bg-white rounded-[10px]" />
-                  </div>
+              <div className="flex flex-col md:flex-row gap-[30px] w-full">
+                <div className="flex flex-col gap-2 w-full md:w-1/2">
+                  <label>Email</label>
+                  <Input
+                    value={form.email}
+                    onChange={(e) => handleChange("email", e.target.value)}
+                    className="h-12 bg-white rounded-[10px]"
+                  />
                 </div>
 
-                {/* Email and Phone fields - half width each */}
-                <div className="flex flex-col md:flex-row items-start gap-[30px] w-full">
-                  <div className="flex flex-col items-start justify-center gap-2 w-full md:w-1/2">
-                    <label className="[font-family:'Lato',Helvetica] font-normal text-foundation-blackblack-10 text-[15px]">
-                      Email
-                    </label>
-                    <Input className="h-12 bg-white rounded-[10px]" />
-                  </div>
+                <div className="flex flex-col gap-2 w-full md:w-1/2">
+                  <label>Phone number</label>
+                  <Input
+                    value={form.phone}
+                    onChange={(e) => handleChange("phone", e.target.value)}
+                    className="h-12 bg-white rounded-[10px]"
+                  />
+                </div>
+              </div>
 
-                  <div className="flex flex-col items-start justify-center gap-2 w-full md:w-1/2">
-                    <label className="[font-family:'Lato',Helvetica] font-normal text-foundation-blackblack-10 text-[15px]">
-                      Phone number
-                    </label>
-                    <Input className="h-12 bg-white rounded-[10px]" />
-                  </div>
+              <div className="flex flex-col md:flex-row gap-[30px] w-full">
+                <div className="flex flex-col gap-2 w-full md:w-1/2">
+                  <label>Company name</label>
+                  <Input
+                    value={form.company}
+                    onChange={(e) => handleChange("company", e.target.value)}
+                    className="h-12 bg-white rounded-[10px]"
+                  />
                 </div>
 
-                {/* Company and Business Stage fields - half width each */}
-                <div className="flex flex-col md:flex-row items-start gap-[30px] w-full">
-                  <div className="flex flex-col items-start justify-center gap-2 w-full md:w-1/2">
-                    <label className="[font-family:'Lato',Helvetica] font-normal text-foundation-blackblack-10 text-[15px]">
-                      Company name
-                    </label>
-                    <Input className="h-12 bg-white rounded-[10px]" />
-                  </div>
-
-                  <div className="flex flex-col items-start justify-center gap-2 w-full md:w-1/2">
-                    <label className="[font-family:'Lato',Helvetica] font-normal text-foundation-blackblack-10 text-[15px]">
-                      Business Stage
-                    </label>
-                    <Select>
-                      <SelectTrigger className="h-12 bg-white rounded-[10px]">
-                        <span></span>
-                        <ChevronDownIcon className="w-[29px] h-[29px]" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="startup">Startup</SelectItem>
-                        <SelectItem value="growth">Growth</SelectItem>
-                        <SelectItem value="enterprise">Enterprise</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
+                <div className="flex flex-col gap-2 w-full md:w-1/2">
+                  <label>Business Stage</label>
+                  <Select
+                    onValueChange={(val) => handleChange("stage", val)}
+                    value={form.stage}
+                  >
+                    <SelectTrigger className="h-12 bg-white rounded-[10px]">
+                      <SelectValue placeholder="Select stage" />
+                      <ChevronDownIcon className="w-[24px] h-[24px]" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="startup">Startup</SelectItem>
+                      <SelectItem value="growth">Growth</SelectItem>
+                      <SelectItem value="enterprise">Enterprise</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </div>
+              </div>
 
-                {/* Inquiry Type field - full width */}
-                <div className="flex items-center gap-3 w-full">
-                  <div className="flex flex-col items-start justify-center gap-2 w-full">
-                    <label className="[font-family:'Lato',Helvetica] font-normal text-foundation-blackblack-10 text-[15px]">
-                      Inquiry Type
-                    </label>
-                    <Select>
-                      <SelectTrigger className="h-12 bg-white rounded-[10px]">
-                        <span></span>
-                        <ChevronDownIcon className="w-[29px] h-[29px]" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="general">General Inquiry</SelectItem>
-                        <SelectItem value="sales">Sales</SelectItem>
-                        <SelectItem value="support">Support</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                </div>
+              <div className="flex flex-col gap-2 w-full">
+                <label>Inquiry Type</label>
+                <Select
+                  onValueChange={(val) => handleChange("inquiry", val)}
+                  value={form.inquiry}
+                >
+                  <SelectTrigger className="h-12 bg-white rounded-[10px]">
+                    <SelectValue placeholder="Select inquiry" />
+                    <ChevronDownIcon className="w-[24px] h-[24px]" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="general">General Inquiry</SelectItem>
+                    <SelectItem value="sales">Sales</SelectItem>
+                    <SelectItem value="support">Support</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
 
-                {/* Submit button */}
-                <Button className="px-4 py-3 bg-foundation-blackblack-10 rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base">
-                  Submit
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
+              <Button
+                disabled={submitting}
+                onClick={handleSubmit}
+                className="px-4 py-3 bg-foundation-blackblack-10 rounded-[70px]"
+              >
+                {submitting ? "Submitting..." : "Submit"}
+              </Button>
+            </CardContent>
+          </Card>
         </div>
 
-        {/* Divider */}
-        <div className="hidden md:block w-px h-[429px] bg-gray-300">
-          <img
-            className="w-full h-full object-cover"
-            alt="Line"
-            src="/line-200.svg"
-          />
-        </div>
+        <div className="hidden md:block w-px h-[429px] bg-gray-300" />
 
-        {/* Our Offices Section */}
         <div className="flex flex-col items-center md:gap-10 gap-8">
-          <div className="flex flex-col items-center gap-3 w-full">
-            <h2 className="[font-family:'Playfair',Helvetica] font-bold text-foundationblackblack-11 text-4xl text-center">
-              Our Offices
-            </h2>
-          </div>
+          <h2 className="font-bold text-4xl text-center text-foundationblackblack-11">
+            Our Offices
+          </h2>
 
-          <div className="flex flex-col items-start gap-10">
+          <div className="flex flex-col gap-10">
             {officeLocations.map((office, index) => (
               <Card
                 key={index}
                 className="p-[30px] bg-[#f0f0f0cc] rounded-[20px] border-none"
               >
                 <CardContent className="flex flex-col items-center gap-6 p-0">
-                  <h3 className="[font-family:'Lato',Helvetica] font-bold text-foundation-redred-10 text-2xl text-center">
+                  <h3 className="font-bold text-2xl text-foundation-redred-10 text-center">
                     {office.country}
                   </h3>
-
-                  <p className="w-[268px] [font-family:'Inter',Helvetica] font-normal text-foundationblackblack-11 text-xl text-center">
+                  <p className="text-xl text-center text-foundationblackblack-11 w-[268px]">
                     {office.address}
                   </p>
-
-                  <div className="flex items-start justify-center gap-2.5 w-full">
+                  <div className="flex items-center justify-center gap-2.5">
                     <MapPinIcon className="w-[19px] h-[19px]" />
-                    <a
-                      href="#"
-                      className="[font-family:'Lato',Helvetica] font-normal text-foundation-blackblack-9 text-base text-center underline"
-                    >
+                    <a className="text-base underline" href="#">
                       View on map
                     </a>
                   </div>
