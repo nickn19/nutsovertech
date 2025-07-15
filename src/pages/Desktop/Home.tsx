@@ -22,7 +22,7 @@ export const Home = (): JSX.Element => {
       <CaseStudies />
       <VideoCarousel />
       <MediaCarousel />
-      <ContactUs />
+      {/* <ContactUs /> */}
      
     </>
   );
