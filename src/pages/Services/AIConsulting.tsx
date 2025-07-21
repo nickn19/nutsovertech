@@ -180,11 +180,11 @@ const AIConsulting = (): JSX.Element => {
     </section>
      
     {/* Purpose-Built Tech Section */}
-    <section className="md:py-20 py-8 px-4 md:px-32" style={{background: "linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)"}}>
+    {/* <section className="md:py-20 py-8 px-4 md:px-32" style={{background: "linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)"}}>
       <div className="w-full max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Column - Heading and Description */}
-          <div className="space-y-6 md:max-w-md w-full flex flex-col items-center md:items-start justify-center">
+          {/* <div className="space-y-6 md:max-w-md w-full flex flex-col items-center md:items-start justify-center">
             <h2 className="text-3xl md:text-4xl md:text-left text-center font-bold font-playfair text-foundationblackblack-13">
               Purpose-Built Tech,<br />
               Tailored to Your Stack
@@ -195,12 +195,12 @@ const AIConsulting = (): JSX.Element => {
             <button className="px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-lato font-medium">
               View Full Feature List
             </button>
-          </div>
+          </div>  */}
 
           {/* Right Column - Feature List */}
-          <div className="space-y-8">
+          {/* <div className="space-y-8"> */}
             {/* Data Indexing & Integration */}
-            <div className="flex gap-6 items-start">
+            {/* <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
                 <img src="/data-index.png" alt="Data Indexing" className="w-12 h-12" />
               </div>
@@ -212,10 +212,10 @@ const AIConsulting = (): JSX.Element => {
                   Index data in any format or language for seamless retrieval and interoperability.
                 </p>
               </div>
-            </div>
+            </div> */}
 
             {/* LLM-Powered Insights */}
-            <div className="flex gap-6 items-start">
+            {/* <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
                 <img src="/llm.png" alt="LLM Insights" className="w-12 h-12" />
               </div>
@@ -227,10 +227,10 @@ const AIConsulting = (): JSX.Element => {
                   High-value free content, data-driven insights, and expert consulting to build trust and engagement.
                 </p>
               </div>
-            </div>
+            </div> */}
 
             {/* Custom Retrieval Strategies */}
-            <div className="flex gap-6 items-start">
+            {/* <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
                 <img src="/custom-retrieval.png" alt="Custom Retrieval" className="w-12 h-12" />
               </div>
@@ -242,10 +242,10 @@ const AIConsulting = (): JSX.Element => {
                   Define tailored chunking and retrieval strategies for optimized data access.
                 </p>
               </div>
-            </div>
+            </div> */}
 
             {/* Optimised Embedding Models */}
-            <div className="flex gap-6 items-start">
+            {/* <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
                 <img src="/optimised-embedding.png" alt="Embedding Models" className="w-12 h-12" />
               </div>
@@ -261,10 +261,10 @@ const AIConsulting = (): JSX.Element => {
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
 
     {/* Building an AI-Powered SaaS App? */}
-    <section className="md:py-20 py-10 px-4 md:px-32 bg-foundation-blackblack-4">
+     <section className="md:py-20 py-10 px-4 md:px-32 bg-foundation-blackblack-4">
       <div className="w-full max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl text-center font-bold font-playfair text-foundationblackblack-13 mb-8">
           Building an AI-Powered SaaS App?
@@ -282,15 +282,15 @@ const AIConsulting = (): JSX.Element => {
     </section>
 
     {/* Real Businesses, Real Results Section */}
-    <section className="md:py-20 py-8 px-4 md:px-20">
+    {/* <section className="md:py-20 py-8 px-4 md:px-20">
       <div className="container mx-auto px-0">
         <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-8 md:mb-16">
           Real Businesses, Real Results
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"> */}
           {/* Success Story Card 1 */}
-          <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+          {/* <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
             <div className="flex flex-col items-center text-center space-y-6">
               <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
                 <span className="text-foundation-blackblack-10">Logo here</span>
@@ -313,10 +313,10 @@ const AIConsulting = (): JSX.Element => {
                 </svg>
               </button>
             </div>
-          </div>
+          </div> */}
 
           {/* Success Story Card 2 */}
-          <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+          {/* <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
             <div className="flex flex-col items-center text-center space-y-6">
               <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
                 <span className="text-foundation-blackblack-10">Logo here</span>
@@ -339,10 +339,10 @@ const AIConsulting = (): JSX.Element => {
                 </svg>
               </button>
             </div>
-          </div>
+          </div> */}
 
           {/* Success Story Card 3 */}
-          <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+          {/* <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
             <div className="flex flex-col items-center text-center space-y-6">
               <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
                 <span className="text-foundation-blackblack-10">Logo here</span>
@@ -365,10 +365,10 @@ const AIConsulting = (): JSX.Element => {
                 </svg>
               </button>
             </div>
-          </div>
+          </div> */}
 
           {/* Success Story Card 4 */}
-          <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+          {/* <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
             <div className="flex flex-col items-center text-center space-y-6">
               <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
                 <span className="text-foundation-blackblack-10">Logo here</span>
@@ -400,9 +400,9 @@ const AIConsulting = (): JSX.Element => {
           </button>
         </div>
       </div>
-    </section>
-   <CaseStudies />
-   <BlogSection/>
+    </section>  */}
+   {/* <CaseStudies /> */}
+   {/* <BlogSection/> */}
 
     {/* Why Choose Us? */}
     <section className="md:py-20 py-8 px-0 md:px-32 ">
@@ -426,7 +426,7 @@ const AIConsulting = (): JSX.Element => {
     </section>
 
     {/* Custom Growth Report Section */}
-    <section className="md:pb-20 pb-8 px-4 md:px-32">
+    {/* <section className="md:pb-20 pb-8 px-4 md:px-32">
       <div className="container mx-auto px-0">
         <div className="[background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)] rounded-3xl md:px-8 px-4 md:py-16 py-8 text-center">
           <div className="md:max-w-3xl max-w-full mx-auto space-y-6">
@@ -446,10 +446,10 @@ const AIConsulting = (): JSX.Element => {
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
 
     {/* Client Testimonials Carousel */}
-    <section className="md:py-20 py-8 px-4 md:px-32 bg-[#F8EFEF]">
+    {/* <section className="md:py-20 py-8 px-4 md:px-32 bg-[#F8EFEF]">
       <div className="container mx-auto px-0">
         <div className="flex justify-between items-center mb-16">
           <h2 className="md:text-4xl text-3xl font-bold font-['Playfair',Helvetica] text-foundationblackblack-13">
@@ -493,9 +493,9 @@ const AIConsulting = (): JSX.Element => {
           ))}
         </Slider>
         </div>
-      </section>
+      </section> */}
 
-<MediaCarousel/>
+{/* <MediaCarousel/> */}
 <ContactUs/>
    
     </>

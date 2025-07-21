@@ -564,12 +564,12 @@ const MicroSaas = (): JSX.Element => {
     <section className="md:py-20 py-8 px-0 md:px-32 ">
       <div className="container mx-auto px-0">
       <div className=" md:px-48 md:py-10 py-8 px-4 bg-[#F1D1D1]">
-        <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-8 md:mb-12">
+        <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-2 md:mb-4">
           Our MicroSaaS Stack 
         </h2>
- <p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-sm md:text-base text-center tracking-[0] leading-normal px-4 mb-8">
-              We’ve built a complete system to go from pain-point to product in days:
-            </p>  
+        <p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-lg md:text-2xl text-center tracking-[0] leading-normal px-4 mb-8">
+          We’ve built a complete system to go from pain-point to product in days:
+        </p>
         <div className="overflow-x-auto flex justify-center mb-10">
 <table className="min-w-[350px] text-left border-collapse">
     <thead>
