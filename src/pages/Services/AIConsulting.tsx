@@ -4,7 +4,7 @@ import { Button } from "../../components/ui/button";
 import { Play, ArrowLeft, ArrowRight } from "lucide-react";
 import UseCaseCarousel from "../../components/ui/UsecaseCarausel";
 import { CaseStudies } from "../Desktop/sections/CaseStudies";
-import Insights from "../Insights/Insights";
+import Insights from "../Insights";
 import { BlogSection } from "../Desktop/sections/BlogSection";
 import Slider from "react-slick";
 import { MediaCarousel } from "../Desktop/sections/MediaCarousel";
@@ -105,102 +105,165 @@ const AIConsulting = (): JSX.Element => {
   return (
     <>
       {/* Hero Section */}
-      {/* Hero Section */}
-      <section className="relative w-full flex flex-col items-center pt-36 md:pt-48 pb-20 px-4 md:px-32 bg-gradient-to-br from-[#F1D1D1] via-[#F8EFEF] to-white">
-        {/* pt-36/md:pt-48 ensures hero is pushed below nav, adjust as needed */}
-        <div className="w-full max-w-3xl mx-auto text-center">
-          <h1 className="text-3xl md:text-5xl font-bold font-playfair text-foundationblackblack-13 mb-6">
-            AI Consulting Services
-          </h1>
-          <p className="text-lg md:text-2xl font-light text-foundation-blackblack-10 mb-8">
-            Unlock the power of AI to optimize operations, automate workflows, and scale your business.
-          </p>
-          <a href="#consultation" className="inline-block px-8 py-4 bg-foundationredred-13 text-white rounded-full font-medium hover:bg-foundationredred-11 transition-colors">
-            Schedule a Free Consultation →
-          </a>
-        </div>
-      </section>
-      {/* Why AI Consulting? */}
-      <section className="md:py-20 py-10 px-4 md:px-32 bg-white">
-        <div className="w-full max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-playfair text-foundationredred-13 mb-12">
-            Why AI Consulting?
-          </h2>
-          <div className="text-lg md:text-xl text-foundation-blackblack-10 font-light mb-8">
-            AI is a game-changer, but effective integration requires expert strategy, training, and tools. Our AI consulting services provide end-to-end support—from 4AY platform deployment to AI tool integration and team training—helping you optimize business processes and unlock new growth potential.
+      <section className="relative w-full flex flex-col items-start ">
+  {/* Background image */}
+        <div className="absolute inset-0 [background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)] " />
+  
+
+  {/* Hero content */}
+        <div className="relative flex flex-col w-full items-center justify-center  px-4">
+          <div className="flex flex-col max-w-[757px] items-center gap-10 mt-40">
+          <div className="flex flex-col items-center justify-center gap-[30px] w-full">
+              <h1 className="relative w-full  [font-family:'Playfair',Helvetica] font-bold text-foundationblackblack-13 text-3xl md:text-[42px] text-center line-height-[1.2] leading-normal">
+              AI Consulting Services
+            </h1>
+
+            <p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-lg md:text-[21px] text-center tracking-[0] leading-normal px-4">
+             Unlock the power of AI to optimize operations, automate workflows, and scale your business.
+            </p>
+          {/* <p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-sm md:text-base text-center tracking-[0] leading-normal px-4">
+              We take a PE-like operating partner approach to your business—intervening where it matters most, aligning incentives, and deploying AI workforces to scale operations without bloating teams.
+            </p>   */}
           </div>
+
+         {/* <div className="flex flex-col md:flex-row items-center gap-[30px] relative">
+              <Button className="px-6 py-4 bg-foundationredred-13 hover:bg-foundationredred-8 transition-colors rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto">
+              Explore Our Expertise
+            </Button>
+
+            <Button
+              variant="outline"
+                className="px-6 py-4 rounded-[70px] border-2 border-solid border-foundationredred-13 hover:bg-foundationredred-13 hover:text-foundation-blackblack-1 transition-colors [font-family:'Lato',Helvetica] font-medium text-foundationredred-13 text-base w-full md:w-auto"
+            >
+               Free Trial
+            </Button>
+          </div>
+           */}
+          </div> 
+          <div className="md:h-[500px] h-[200px]  max-w-3xl mx-auto aspect-video bg-gray-100 rounded-lg border border-gray-200 flex items-center justify-center my-10">
+              <div className="  flex items-center justify-center">
+                <div className="rounded-full bg-white p-3 shadow-md">
+                  <Play className="h-6 w-6 text-red-500" />
+                </div>
+              </div>
+            </div>
         </div>
       </section>
-    {/* Our AI Consulting Services */}
-    <section className="md:py-20 py-10 px-4 md:px-32 bg-white">
-      <div className="w-full max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl text-center font-bold font-playfair text-foundationredred-13 mb-12">
-          Our AI Consulting Services
+      <section className="md:py-20 py-8 px-4 md:px-20 ">
+          <div className="container mx-auto px-0">
+            <div className="bg-[#D57879] rounded-lg p-6 md:p-8 ">
+              <h2 className="text-3xl md:text-4xl text-center font-bold mb-6 text-foundationblackblack-13 font-['Playfair',Helvetica]">Solve Challenges. Unlock Scale.</h2>
+              <div className="flex gap-6 md:flex-row flex-col items-center justify-between">
+              <div className="grid md:grid-cols-1 gap-4 md:w-2/5">
+                <div className="bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold ">
+                  <p>Struggling with inefficiencies, scalability, or data silos?</p>
+                </div>
+                <div className=" bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold">
+                  <p>Need faster ROI without long development cycles? </p>
+                </div>
+                <div className="bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold">
+                  <p>Looking for seamless AI integration without complex setups?</p>
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-center md:w-3/5 w-full text-center">
+                <h3 className="text-white font-['Lato',Helvetica] font-light text-2xl md:text-5xl mb-4">
+                  Our AI Workforces eliminate repetitive workflows, unify decision-making across functions, and free up your team for high-leverage work.
+                </h3>
+                <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
+                  🔺 Reduce your CAQ, scale MoFU, and improve LTV
+                </p>
+                <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
+                  🔺 Orchestrate marketing, ops, finance, and sales under one growth lens
+                </p>
+                <p className="text-white font-['Lato',Helvetica] text-base md:text-lg">
+                  🔺 Go beyond automation—deploy intelligence
+                </p>
+              </div>
+              </div>
+              
+        </div>
+      </div>
+    </section>
+    <UseCaseCarousel />
+      
+    {/* Where We Intervene Section */}
+    <section className="md:py-20 py-8 px-4 md:px-20">
+      <div className="container mx-auto px-0">
+        <h2 className="md:text-4xl text-3xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-12">
+          Where We Intervene
         </h2>
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* 4AY Platform Deployment */}
-          <div className="bg-foundation-redred-3 rounded-3xl p-8 shadow-md flex flex-col h-full">
-            <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-4">4AY Platform Deployment</h3>
-            <ul className="text-foundation-blackblack-10 text-base font-light space-y-3 mb-6">
-              <li>• Custom AI applications tailored to your needs</li>
-              <li>• Multi-agent orchestration for cross-functional workflows</li>
-              <li>• Seamless integration with existing systems</li>
-              <li>• Scalable for future growth and evolving business needs</li>
-            </ul>
-            <a href="#" className="mt-auto inline-block px-6 py-3 bg-foundationredred-13 text-white rounded-full font-medium hover:bg-foundationredred-11 transition-colors">
-              Deploy AI Now →
-            </a>
+          {/* AI-Led Strategy Card */}
+          <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
+            <div className="flex flex-col items-center text-center gap-6">
+              <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
+                <img src="/analysis.png" alt="AI Strategy" className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold text-foundationblackblack-13">AI-Led Strategy</h3>
+              <p className="text-foundation-blackblack-10 text-base">
+                Proven playbooks tailored for rapid results.
+              </p>
+            </div>
           </div>
-          {/* AI Training & Courses for Teams */}
-          <div className="bg-foundation-redred-3 rounded-3xl p-8 shadow-md flex flex-col h-full">
-            <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-4">AI Training & Courses for Teams</h3>
-            <ul className="text-foundation-blackblack-10 text-base font-light space-y-3 mb-6">
-              <li>• Tailored training for different business functions</li>
-              <li>• Introductory and advanced courses on AI tools and strategies</li>
-              <li>• Practical workshops focused on real-world applications of AI</li>
-            </ul>
-            <a href="#" className="mt-auto inline-block px-6 py-3 bg-foundationredred-13 text-white rounded-full font-medium hover:bg-foundationredred-11 transition-colors">
-              Book AI Training →
-            </a>
+
+          {/* No-Code Implementation Card */}
+          <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
+            <div className="flex flex-col items-center text-center gap-6">
+              <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
+                <img src="/no-code.png" alt="No Code" className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold text-foundationblackblack-13">No-Code Implementation</h3>
+              <p className="text-foundation-blackblack-10 text-base">
+                Get started instantly—no heavy development required.
+              </p>
+            </div>
           </div>
-          {/* Deployment of Third-Party AI Tools */}
-          <div className="bg-foundation-redred-3 rounded-3xl p-8 shadow-md flex flex-col h-full">
-            <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-4">Deployment of Third-Party AI Tools</h3>
-            <ul className="text-foundation-blackblack-10 text-base font-light space-y-3 mb-6">
-              <li>• Tool selection based on business needs</li>
-              <li>• Integration into your current workflows</li>
-              <li>• Optimization for high ROI and performance</li>
-            </ul>
-            <a href="#" className="mt-auto inline-block px-6 py-3 bg-foundationredred-13 text-white rounded-full font-medium hover:bg-foundationredred-11 transition-colors">
-              Explore AI Tools →
-            </a>
+
+          {/* Data-Driven Execution Card */}
+          <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
+            <div className="flex flex-col items-center text-center gap-6">
+              <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
+                <img src="/execution.png" alt="Data Driven" className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold text-foundationblackblack-13">Data-Driven Execution</h3>
+              <p className="text-foundation-blackblack-10 text-base">
+                AI insights power real-time decision-making.
+              </p>
+            </div>
           </div>
+        </div>
+
+        <div className="mt-12 text-center">
+          <button className="px-6 py-3 bg-foundation-blackblack-10 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">
+            Explore Our IP Assets
+          </button>
         </div>
       </div>
     </section>
      
     {/* Purpose-Built Tech Section */}
-    {/* <section className="md:py-20 py-8 px-4 md:px-32" style={{background: "linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)"}}>
-      <div className="w-full max-w-7xl mx-auto">
+    <section className="md:py-20 py-8 px-4 md:px-32 [background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)]">
+      <div className="container mx-auto px-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Column - Heading and Description */}
-          {/* <div className="space-y-6 md:max-w-md w-full flex flex-col items-center md:items-start justify-center">
-            <h2 className="text-3xl md:text-4xl md:text-left text-center font-bold font-playfair text-foundationblackblack-13">
+          <div className="space-y-6 md:max-w-96 max-w-full md:block flex flex-col items-center justify-center ">
+            <h2 className="text-3xl md:text-4xl md:text-left text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13">
               Purpose-Built Tech,<br />
               Tailored to Your Stack
             </h2>
-            <p className="text-2xl md:text-left text-center font-light text-foundation-blackblack-10 font-lato max-w-xl">
+            <p className="text-2xl md:text-left text-center font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-xl">
               Unleash powerful AI insights with seamless data integration and retrieval
             </p>
-            <button className="px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-lato font-medium">
+            <button className="px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
               View Full Feature List
             </button>
-          </div>  */}
+          </div>
 
           {/* Right Column - Feature List */}
-          {/* <div className="space-y-8"> */}
+          <div className="space-y-8">
             {/* Data Indexing & Integration */}
-            {/* <div className="flex gap-6 items-start">
+            <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
                 <img src="/data-index.png" alt="Data Indexing" className="w-12 h-12" />
               </div>
@@ -212,10 +275,10 @@ const AIConsulting = (): JSX.Element => {
                   Index data in any format or language for seamless retrieval and interoperability.
                 </p>
               </div>
-            </div> */}
+            </div>
 
             {/* LLM-Powered Insights */}
-            {/* <div className="flex gap-6 items-start">
+            <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
                 <img src="/llm.png" alt="LLM Insights" className="w-12 h-12" />
               </div>
@@ -227,10 +290,10 @@ const AIConsulting = (): JSX.Element => {
                   High-value free content, data-driven insights, and expert consulting to build trust and engagement.
                 </p>
               </div>
-            </div> */}
+            </div>
 
             {/* Custom Retrieval Strategies */}
-            {/* <div className="flex gap-6 items-start">
+            <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
                 <img src="/custom-retrieval.png" alt="Custom Retrieval" className="w-12 h-12" />
               </div>
@@ -242,10 +305,10 @@ const AIConsulting = (): JSX.Element => {
                   Define tailored chunking and retrieval strategies for optimized data access.
                 </p>
               </div>
-            </div> */}
+            </div>
 
             {/* Optimised Embedding Models */}
-            {/* <div className="flex gap-6 items-start">
+            <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
                 <img src="/optimised-embedding.png" alt="Embedding Models" className="w-12 h-12" />
               </div>
@@ -261,36 +324,96 @@ const AIConsulting = (): JSX.Element => {
           </div>
         </div>
       </div>
-    </section> */}
-
-    {/* Building an AI-Powered SaaS App? */}
-     <section className="md:py-20 py-10 px-4 md:px-32 bg-foundation-blackblack-4">
-      <div className="w-full max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-4xl text-center font-bold font-playfair text-foundationblackblack-13 mb-8">
-          Building an AI-Powered SaaS App?
-        </h2>
-        <ul className="text-foundation-blackblack-10 text-base font-light space-y-3 mb-8">
-          <li>• Platform integration: Leverage 4AY and third-party tools to power your app’s AI functionality</li>
-          <li>• Custom AI models: Build tailored machine learning models for your SaaS app</li>
-          <li>• Scalable architecture: Ensure your SaaS app can grow with your business</li>
-          <li>• End-to-end deployment: From MVP to full product launch, we assist in every phase of development</li>
-        </ul>
-        <a href="#" className="inline-block px-8 py-4 bg-foundationredred-13 text-white rounded-full font-medium hover:bg-foundationredred-11 transition-colors">
-          Build Your SaaS App →
-        </a>
+    </section>
+    {/* AI Consulting Services Section - Dynamic Cards */}
+    <section className="md:py-20 py-8 px-4 md:px-20 bg-foundation-blackblack-4">
+      <div className="container mx-auto px-0">
+        <div className="text-center md:mb-16 mb-8">
+          <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationredred-13 mb-4">
+            Our AI Consulting Services
+          </h2>
+          <p className="text-2xl font-light text-foundation-blackblack-10 font-['Lato',Helvetica]">
+            Unlock automation, intelligence, and growth for your business.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {[
+            {
+              title: "4AY Platform Deployment",
+              description: "Our 4AY platform enables you to build and deploy AI-driven workflows that automate tasks, streamline operations, and optimize business processes.",
+              features: [
+                "Custom AI applications tailored to your needs",
+                "Multi-agent orchestration for cross-functional workflows",
+                "Seamless integration with existing systems",
+                "Scalable for future growth and evolving business needs"
+              ],
+              button: { label: "Deploy AI Now →", link: "#" }
+            },
+            {
+              title: "AI Training & Courses for Teams",
+              description: "Our AI training programs help your team gain the skills needed to operate and optimize AI solutions effectively.",
+              features: [
+                "Tailored training for different business functions",
+                "Introductory and advanced courses on AI tools and strategies",
+                "Practical workshops focused on real-world applications of AI"
+              ],
+              button: { label: "Book AI Training →", link: "#" }
+            },
+            {
+              title: "Deployment of Third-Party AI Tools",
+              description: "Maximize your use of AI with the right tools. We help you select and deploy the best third-party AI platforms to enhance marketing, analytics, customer support, and more.",
+              features: [
+                "Tool selection based on business needs",
+                "Integration into your current workflows",
+                "Optimization for high ROI and performance"
+              ],
+              button: { label: "Explore AI Tools →", link: "#" }
+            },
+            {
+              title: "Building an AI-Powered SaaS App?",
+              description: "We help you design and deploy AI-powered SaaS applications that deliver intelligent features and automation.",
+              features: [
+                "Platform integration: Leverage 4AY and third-party tools to power your app’s AI functionality",
+                "Custom AI models: Build tailored machine learning models for your SaaS app",
+                "Scalable architecture: Ensure your SaaS app can grow with your business",
+                "End-to-end deployment: From MVP to full product launch, we assist in every phase of development"
+              ],
+              button: { label: "Build Your SaaS App →", link: "#" }
+            }
+          ].map((service, idx) => (
+            <div key={idx} className="bg-white px-5 py-8 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-4">{service.title}</h3>
+                <p className="text-lg font-light text-foundation-blackblack-10 mb-4 text-center">{service.description}</p>
+                <ul className="space-y-2 mb-6">
+                  {service.features.map((feature, fidx) => (
+                    <li key={fidx} className="text-base font-light text-foundation-blackblack-10 flex items-start gap-2">
+                      <span className="text-foundationredred-13">•</span> {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="text-center mt-auto">
+                <a href={service.button.link} className="inline-block px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+                  {service.button.label}
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
 
     {/* Real Businesses, Real Results Section */}
-    {/* <section className="md:py-20 py-8 px-4 md:px-20">
+    <section className="md:py-20 py-8 px-4 md:px-20">
       <div className="container mx-auto px-0">
         <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-8 md:mb-16">
           Real Businesses, Real Results
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Success Story Card 1 */}
-          {/* <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+          <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
             <div className="flex flex-col items-center text-center space-y-6">
               <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
                 <span className="text-foundation-blackblack-10">Logo here</span>
@@ -313,10 +436,10 @@ const AIConsulting = (): JSX.Element => {
                 </svg>
               </button>
             </div>
-          </div> */}
+          </div>
 
           {/* Success Story Card 2 */}
-          {/* <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+          <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
             <div className="flex flex-col items-center text-center space-y-6">
               <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
                 <span className="text-foundation-blackblack-10">Logo here</span>
@@ -339,10 +462,10 @@ const AIConsulting = (): JSX.Element => {
                 </svg>
               </button>
             </div>
-          </div> */}
+          </div>
 
           {/* Success Story Card 3 */}
-          {/* <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+          <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
             <div className="flex flex-col items-center text-center space-y-6">
               <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
                 <span className="text-foundation-blackblack-10">Logo here</span>
@@ -365,10 +488,10 @@ const AIConsulting = (): JSX.Element => {
                 </svg>
               </button>
             </div>
-          </div> */}
+          </div>
 
           {/* Success Story Card 4 */}
-          {/* <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+          <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
             <div className="flex flex-col items-center text-center space-y-6">
               <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
                 <span className="text-foundation-blackblack-10">Logo here</span>
@@ -400,33 +523,78 @@ const AIConsulting = (): JSX.Element => {
           </button>
         </div>
       </div>
-    </section>  */}
-   {/* <CaseStudies /> */}
-   {/* <BlogSection/> */}
+    </section>
+   <CaseStudies />
+   <BlogSection/>
 
-    {/* Why Choose Us? */}
+    {/* Hands-On Consultation Section */}
     <section className="md:py-20 py-8 px-0 md:px-32 ">
-      <div className="w-full max-w-4xl mx-auto">
-        <div className="md:px-48 md:py-10 py-8 px-4 bg-[#F1D1D1]">
-          <h2 className="text-3xl md:text-4xl text-center font-bold font-playfair text-foundationblackblack-13 mb-6 md:mb-8">
-            Why Choose Us?
-          </h2>
-          <ul className="max-w-2xl mx-auto text-foundation-blackblack-10 text-base font-light space-y-3 mb-8 text-center">
-            <li>• Expertise across industries, with deep experience in marketing, sales, HR, and operations</li>
-            <li>• End-to-end support from AI strategy to deployment and optimization</li>
-            <li>• Proven results: Faster implementation, higher ROI, and operational efficiency</li>
-          </ul>
-          <div className="text-center">
-            <a id="consultation" href="#" className="inline-block px-8 py-4 bg-foundationblackblack-11 text-white rounded-full font-medium hover:bg-foundationblackblack-10 transition-colors">
-              Schedule a Free Consultation →
-            </a>
+      <div className="container mx-auto px-0">
+      <div className=" md:px-48 md:py-10 py-8 px-4 bg-[#F1D1D1]">
+        <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-8 md:mb-12">
+          Hands-On Consultation &amp; Setup
+        </h2>
+
+        <div className="space-y-6">
+          {/* Guided Onboarding Card */}
+          <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
+            <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
+              <img src="/Guided-Onboarding.png" alt="Guided Onboarding" className="w-8 h-8" />
+            </div>
+            <div>
+              <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
+                Guided Onboarding:
+                <span className="ml-1 font-light ">
+                Personalised setup for seamless adoption.
+              </span>
+              </h3>
+             
+            </div>
+            </div>
+            
+          {/* 24/7 Support Card */}
+          <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
+            <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
+              <img src="/24-7-Support.png" alt="24/7 Support" className="w-8 h-8" />
+            </div>
+            <div >
+              <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
+                24/7 Support:
+                <span className="ml-1 font-light ">
+                Dedicated team for troubleshooting & strategy.
+              </span>
+              </h3>
+            </div>
+            </div>
+            
+          {/* Knowledge Hub Card */}
+          <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
+            <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
+              <img src="/Knowledge-Hub.png" alt="Knowledge Hub" className="w-8 h-8" />
+            </div>
+            <div>
+              <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
+                Knowledge Hub:
+                <span className="ml-1 font-light ">
+                Tutorials, webinars, and best practices.
+              </span>
+              </h3>
+             
+            </div>
           </div>
         </div>
+
+        <div className="mt-12 text-center">
+          <button className="px-8 py-3 bg-foundationblackblack-11 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">
+            Contact us
+          </button>
+        </div>
+      </div>
       </div>
     </section>
 
     {/* Custom Growth Report Section */}
-    {/* <section className="md:pb-20 pb-8 px-4 md:px-32">
+    <section className="md:pb-20 pb-8 px-4 md:px-32">
       <div className="container mx-auto px-0">
         <div className="[background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)] rounded-3xl md:px-8 px-4 md:py-16 py-8 text-center">
           <div className="md:max-w-3xl max-w-full mx-auto space-y-6">
@@ -446,10 +614,10 @@ const AIConsulting = (): JSX.Element => {
           </div>
         </div>
       </div>
-    </section> */}
+    </section>
 
     {/* Client Testimonials Carousel */}
-    {/* <section className="md:py-20 py-8 px-4 md:px-32 bg-[#F8EFEF]">
+    <section className="md:py-20 py-8 px-4 md:px-32 bg-[#F8EFEF]">
       <div className="container mx-auto px-0">
         <div className="flex justify-between items-center mb-16">
           <h2 className="md:text-4xl text-3xl font-bold font-['Playfair',Helvetica] text-foundationblackblack-13">
@@ -493,9 +661,9 @@ const AIConsulting = (): JSX.Element => {
           ))}
         </Slider>
         </div>
-      </section> */}
+      </section>
 
-{/* <MediaCarousel/> */}
+<MediaCarousel/>
 <ContactUs/>
    
     </>
