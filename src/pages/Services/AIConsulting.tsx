@@ -245,88 +245,11 @@ const AIConsulting = (): JSX.Element => {
     </section>
      
     {/* Purpose-Built Tech Section */}
+    {/*
     <section className="md:py-20 py-8 px-4 md:px-32 [background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)]">
-      <div className="container mx-auto px-0">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          {/* Left Column - Heading and Description */}
-          <div className="space-y-6 md:max-w-96 max-w-full md:block flex flex-col items-center justify-center ">
-            <h2 className="text-3xl md:text-4xl md:text-left text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13">
-              Purpose-Built Tech,<br />
-              Tailored to Your Stack
-            </h2>
-            <p className="text-2xl md:text-left text-center font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-xl">
-              Unleash powerful AI insights with seamless data integration and retrieval
-            </p>
-            <button className="px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
-              View Full Feature List
-            </button>
-          </div>
-
-          {/* Right Column - Feature List */}
-          <div className="space-y-8">
-            {/* Data Indexing & Integration */}
-            <div className="flex gap-6 items-start">
-              <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/data-index.png" alt="Data Indexing" className="w-12 h-12" />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-                  Data Indexing & Integration
-                </h3>
-                <p className="text-foundation-blackblack-10">
-                  Index data in any format or language for seamless retrieval and interoperability.
-                </p>
-              </div>
-            </div>
-
-            {/* LLM-Powered Insights */}
-            <div className="flex gap-6 items-start">
-              <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/llm.png" alt="LLM Insights" className="w-12 h-12" />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-                  LLM-Powered Insights
-                </h3>
-                <p className="text-foundation-blackblack-10 text-lg font-light">
-                  High-value free content, data-driven insights, and expert consulting to build trust and engagement.
-                </p>
-              </div>
-            </div>
-
-            {/* Custom Retrieval Strategies */}
-            <div className="flex gap-6 items-start">
-              <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/custom-retrieval.png" alt="Custom Retrieval" className="w-12 h-12" />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-                  Custom Retrieval Strategies
-                </h3>
-                <p className="text-foundation-blackblack-10 text-lg font-light">
-                  Define tailored chunking and retrieval strategies for optimized data access.
-                </p>
-              </div>
-            </div>
-
-            {/* Optimised Embedding Models */}
-            <div className="flex gap-6 items-start">
-              <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/optimised-embedding.png" alt="Embedding Models" className="w-12 h-12" />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-                  Optimised Embedding Models
-                </h3>
-                <p className="text-foundation-blackblack-10 text-lg font-light">
-                  Select and implement the best embedding models to maximize search accuracy and performance.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      ...hidden Purpose-Built Tech section...
     </section>
+    */}
     {/* AI Consulting Services Section - Dynamic Cards */}
     <section className="md:py-20 py-8 px-4 md:px-20 bg-foundation-blackblack-4">
       <div className="container mx-auto px-0">
@@ -574,6 +497,6 @@ const AIConsulting = (): JSX.Element => {
    
     </>
   );
-};
+}
 
 export default AIConsulting;
