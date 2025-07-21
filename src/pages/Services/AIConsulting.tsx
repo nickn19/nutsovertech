@@ -140,51 +140,53 @@ const AIConsulting = (): JSX.Element => {
           </div>
            */}
           </div> 
-          <div className="md:h-[500px] h-[200px]  max-w-3xl mx-auto aspect-video bg-gray-100 rounded-lg border border-gray-200 flex items-center justify-center my-10">
+          {/* <div className="md:h-[500px] h-[200px]  max-w-3xl mx-auto aspect-video bg-gray-100 rounded-lg border border-gray-200 flex items-center justify-center my-10">
               <div className="  flex items-center justify-center">
                 <div className="rounded-full bg-white p-3 shadow-md">
                   <Play className="h-6 w-6 text-red-500" />
                 </div>
               </div>
-            </div>
+            </div> */}
         </div>
       </section>
       <section className="md:py-20 py-8 px-4 md:px-20 ">
           <div className="container mx-auto px-0">
             <div className="bg-[#D57879] rounded-lg p-6 md:p-8 ">
-              <h2 className="text-3xl md:text-4xl text-center font-bold mb-6 text-foundationblackblack-13 font-['Playfair',Helvetica]">Solve Challenges. Unlock Scale.</h2>
-              <div className="flex gap-6 md:flex-row flex-col items-center justify-between">
+              <h2 className="text-3xl md:text-4xl text-center font-bold mb-6 text-foundationblackblack-13 font-['Playfair',Helvetica]">Why AI Consulting?</h2>
+<div className="hidden">
               <div className="grid md:grid-cols-1 gap-4 md:w-2/5">
-                <div className="bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold ">
+                {/* <div className="bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold ">
                   <p>Struggling with inefficiencies, scalability, or data silos?</p>
-                </div>
-                <div className=" bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold">
+                </div> */}
+                {/* <div className=" bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold">
                   <p>Need faster ROI without long development cycles? </p>
-                </div>
-                <div className="bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold">
+                </div> */}
+                {/* <div className="bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold">
                   <p>Looking for seamless AI integration without complex setups?</p>
-                </div>
+                </div> */}
               </div>
-              <div className="flex flex-col items-center justify-center md:w-3/5 w-full text-center">
-                <h3 className="text-white font-['Lato',Helvetica] font-light text-2xl md:text-5xl mb-4">
-                  Our AI Workforces eliminate repetitive workflows, unify decision-making across functions, and free up your team for high-leverage work.
-                </h3>
-                <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
+<div className="flex flex-col items-center justify-center w-full text-center">
+<p className="text-white font-['Lato',Helvetica] font-light text-2xl md:text-5xl mb-4 text-center">
+  AI is a game-changer, but effective integration requires expert strategy, training, and tools. Our AI consulting services provide end-to-end support—from 4AY platform deployment to AI tool integration and team training—helping you optimize business processes and unlock new growth potential.
+</p>
+                {/* <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
                   🔺 Reduce your CAQ, scale MoFU, and improve LTV
-                </p>
-                <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
+                </p> */}
+                {/* <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
                   🔺 Orchestrate marketing, ops, finance, and sales under one growth lens
-                </p>
-                <p className="text-white font-['Lato',Helvetica] text-base md:text-lg">
+                </p> */}
+                {/* <p className="text-white font-['Lato',Helvetica] text-base md:text-lg">
                   🔺 Go beyond automation—deploy intelligence
-                </p>
+                </p> */}
               </div>
               </div>
-              
+           <div className="bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold ">
+                  <p>AI is a game-changer, but effective integration requires expert strategy, training, and tools. Our AI consulting services provide end-to-end support—from 4AY platform deployment to AI tool integration and team training—helping you optimize business processes and unlock new growth potential.</p>
+                </div>    
         </div>
       </div>
     </section>
-    <UseCaseCarousel />
+    {/* <UseCaseCarousel /> */}
       
     {/* Where We Intervene Section */}
     <section className="md:py-20 py-8 px-4 md:px-20">
@@ -336,7 +338,7 @@ const AIConsulting = (): JSX.Element => {
             Unlock automation, intelligence, and growth for your business.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-stretch">
           {[
             {
               title: "4AY Platform Deployment",
@@ -369,17 +371,6 @@ const AIConsulting = (): JSX.Element => {
               ],
               button: { label: "Explore AI Tools →", link: "#" }
             },
-            {
-              title: "Building an AI-Powered SaaS App?",
-              description: "We help you design and deploy AI-powered SaaS applications that deliver intelligent features and automation.",
-              features: [
-                "Platform integration: Leverage 4AY and third-party tools to power your app’s AI functionality",
-                "Custom AI models: Build tailored machine learning models for your SaaS app",
-                "Scalable architecture: Ensure your SaaS app can grow with your business",
-                "End-to-end deployment: From MVP to full product launch, we assist in every phase of development"
-              ],
-              button: { label: "Build Your SaaS App →", link: "#" }
-            }
           ].map((service, idx) => (
             <div key={idx} className="bg-white px-5 py-8 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
               <div>
@@ -404,211 +395,126 @@ const AIConsulting = (): JSX.Element => {
       </div>
     </section>
 
-    {/* Real Businesses, Real Results Section */}
+    {/*Why Choose Us? Section */}
     <section className="md:py-20 py-8 px-4 md:px-20">
       <div className="container mx-auto px-0">
         <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-8 md:mb-16">
-          Real Businesses, Real Results
+          Why Choose Us?
         </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {/* Success Story Card 1 */}
-          <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
-            <div className="flex flex-col items-center text-center space-y-6">
-              <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
-                <span className="text-foundation-blackblack-10">Logo here</span>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-stretch">
+          {/* Expertise Card */}
+          <div className="bg-white px-5 py-8 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+            <div className="flex flex-col items-center text-center gap-4">
+              <div className="w-16 h-16 flex items-center justify-center bg-[#F1D1D1] rounded-full">
+                <img src="/ai_native.svg" alt="Expertise" className="w-8 h-8" />
               </div>
-              
-              <h3 className="text-2xl font-bold text-foundationblackblack-13">
-                Company name
-              </h3>
-
-              <div className="space-y-2">
-                <p className="text-foundation-blackblack-10 text-xl font-light ">Increased ARR by</p>
-                <p className="text-5xl font-normal text-foundationblackblack-13">xx%</p>
-                <p className="text-foundation-blackblack-10 text-xl font-light">in Y months</p>
-              </div>
-
-              <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
-                Read more
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-              </button>
+              <h3 className="text-xl font-bold text-foundationblackblack-13">Expertise Across Industries</h3>
+              <p className="text-foundation-blackblack-10 text-base">
+                Deep experience in marketing, sales, HR, and operations
+              </p>
             </div>
           </div>
-
-          {/* Success Story Card 2 */}
-          <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
-            <div className="flex flex-col items-center text-center space-y-6">
-              <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
-                <span className="text-foundation-blackblack-10">Logo here</span>
+          {/* End-to-End Support Card */}
+          <div className="bg-white px-5 py-8 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+            <div className="flex flex-col items-center text-center gap-4">
+              <div className="w-16 h-16 flex items-center justify-center bg-[#F1D1D1] rounded-full">
+                <img src="/done_for_you.svg" alt="End-to-End Support" className="w-8 h-8" />
               </div>
-              
-              <h3 className="text-2xl font-bold text-foundationblackblack-13">
-                Company name
-              </h3>
-
-              <div className="space-y-2">
-                <p className="text-foundation-blackblack-10 text-xl font-light">Reduced costs by</p>
-                <p className="text-5xl font-normal text-foundationblackblack-13">xx%</p>
-                <p className="text-foundation-blackblack-10 text-xl font-light">with AI-driven automation</p>
-              </div>
-
-              <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
-                Read more
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-              </button>
+              <h3 className="text-xl font-bold text-foundationblackblack-13">End-to-End Support</h3>
+              <p className="text-foundation-blackblack-10 text-base">
+                From AI strategy to deployment and optimization
+              </p>
             </div>
           </div>
-
-          {/* Success Story Card 3 */}
-          <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
-            <div className="flex flex-col items-center text-center space-y-6">
-              <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
-                <span className="text-foundation-blackblack-10">Logo here</span>
+          {/* Proven Results Card */}
+          <div className="bg-white px-5 py-8 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+            <div className="flex flex-col items-center text-center gap-4">
+              <div className="w-16 h-16 flex items-center justify-center bg-[#F1D1D1] rounded-full">
+                <img src="/analysis.png" alt="Proven Results" className="w-8 h-8" />
               </div>
-              
-              <h3 className="text-2xl font-bold text-foundationblackblack-13">
-                Company name
-              </h3>
-
-              <div className="space-y-2">
-                <p className="text-foundation-blackblack-10 text-xl font-light">Scaled from</p>
-                <p className="text-5xl font-normal text-foundationblackblack-13">$xM <span className="text-foundation-blackblack-10">to</span> $yM</p>
-                <p className="text-foundation-blackblack-10 text-xl font-light">ARR using 4AY</p>
-              </div>
-
-              <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
-                Read more
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-              </button>
+              <h3 className="text-xl font-bold text-foundationblackblack-13">Proven Results</h3>
+              <p className="text-foundation-blackblack-10 text-base">
+                Faster implementation, higher ROI, and operational efficiency
+              </p>
             </div>
           </div>
-
-          {/* Success Story Card 4 */}
-          <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
-            <div className="flex flex-col items-center text-center space-y-6">
-              <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
-                <span className="text-foundation-blackblack-10">Logo here</span>
-              </div>
-              
-              <h3 className="text-2xl font-bold text-foundationblackblack-13">
-                Company name
-              </h3>
-
-              <div className="space-y-2">
-                <p className="text-foundation-blackblack-10 text-xl font-light">Increased ARR by</p>
-                <p className="text-5xl font-normal text-foundationblackblack-13">xx%</p>
-                <p className="text-foundation-blackblack-10 text-xl font-light">in Y months</p>
-              </div>
-
-              <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
-                Read more
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-12 text-center">
-          <button className="px-6 py-3 bg-foundation-blackblack-10 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">
-            See More Success Stories
-          </button>
         </div>
       </div>
     </section>
-   <CaseStudies />
-   <BlogSection/>
+   {/* <CaseStudies />
+   <BlogSection/> */}
 
-    {/* Hands-On Consultation Section */}
+    {/* Building an AI-Powered SaaS App? Section */}
     <section className="md:py-20 py-8 px-0 md:px-32 ">
       <div className="container mx-auto px-0">
-      <div className=" md:px-48 md:py-10 py-8 px-4 bg-[#F1D1D1]">
-        <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-8 md:mb-12">
-          Hands-On Consultation &amp; Setup
-        </h2>
-
-        <div className="space-y-6">
-          {/* Guided Onboarding Card */}
-          <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
-            <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/Guided-Onboarding.png" alt="Guided Onboarding" className="w-8 h-8" />
+        <div className="md:px-48 md:py-10 py-8 px-4 bg-[#F1D1D1]">
+          <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-8 md:mb-12">
+            Building an AI-Powered SaaS App?
+          </h2>
+          <p className="text-2xl text-center font-light text-foundation-blackblack-10 mb-8">
+            We help you design and deploy AI-powered SaaS applications that deliver intelligent features and automation.
+          </p>
+          <div className="space-y-6 max-w-xl mx-auto">
+            <div className="bg-white rounded-2xl p-6 flex items-start gap-6 hover:shadow-lg transition-all duration-300">
+              <div className="w-12 h-12 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
+                <img src="/ai_native.svg" alt="Platform Integration" className="w-8 h-8" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-foundationblackblack-13 mb-2">Platform integration</h3>
+                <p className="font-light text-foundation-blackblack-10">Leverage 4AY and third-party tools to power your app’s AI functionality</p>
+              </div>
             </div>
-            <div>
-              <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
-                Guided Onboarding:
-                <span className="ml-1 font-light ">
-                Personalised setup for seamless adoption.
-              </span>
-              </h3>
-             
+            <div className="bg-white rounded-2xl p-6 flex items-start gap-6 hover:shadow-lg transition-all duration-300">
+              <div className="w-12 h-12 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
+                <img src="/llm.png" alt="Custom AI Models" className="w-8 h-8" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-foundationblackblack-13 mb-2">Custom AI models</h3>
+                <p className="font-light text-foundation-blackblack-10">Build tailored machine learning models for your SaaS app</p>
+              </div>
             </div>
+            <div className="bg-white rounded-2xl p-6 flex items-start gap-6 hover:shadow-lg transition-all duration-300">
+              <div className="w-12 h-12 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
+                <img src="/full_stack_thinking.svg" alt="Scalable Architecture" className="w-8 h-8" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-foundationblackblack-13 mb-2">Scalable architecture</h3>
+                <p className="font-light text-foundation-blackblack-10">Ensure your SaaS app can grow with your business</p>
+              </div>
             </div>
-            
-          {/* 24/7 Support Card */}
-          <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
-            <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/24-7-Support.png" alt="24/7 Support" className="w-8 h-8" />
-            </div>
-            <div >
-              <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
-                24/7 Support:
-                <span className="ml-1 font-light ">
-                Dedicated team for troubleshooting & strategy.
-              </span>
-              </h3>
-            </div>
-            </div>
-            
-          {/* Knowledge Hub Card */}
-          <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
-            <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/Knowledge-Hub.png" alt="Knowledge Hub" className="w-8 h-8" />
-            </div>
-            <div>
-              <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
-                Knowledge Hub:
-                <span className="ml-1 font-light ">
-                Tutorials, webinars, and best practices.
-              </span>
-              </h3>
-             
+            <div className="bg-white rounded-2xl p-6 flex items-start gap-6 hover:shadow-lg transition-all duration-300">
+              <div className="w-12 h-12 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
+                <img src="/done_for_you.svg" alt="End-to-end Deployment" className="w-8 h-8" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-foundationblackblack-13 mb-2">End-to-end deployment</h3>
+                <p className="font-light text-foundation-blackblack-10">From MVP to full product launch, we assist in every phase of development</p>
+              </div>
             </div>
           </div>
+          <div className="mt-12 text-center">
+            <button className="px-8 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+              Build Your SaaS App &rarr;
+            </button>
+          </div>
         </div>
-
-        <div className="mt-12 text-center">
-          <button className="px-8 py-3 bg-foundationblackblack-11 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">
-            Contact us
-          </button>
-        </div>
-      </div>
       </div>
     </section>
 
-    {/* Custom Growth Report Section */}
+    {/* Ready to Accelerate with AI? Section */}
     <section className="md:pb-20 pb-8 px-4 md:px-32">
       <div className="container mx-auto px-0">
         <div className="[background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)] rounded-3xl md:px-8 px-4 md:py-16 py-8 text-center">
           <div className="md:max-w-3xl max-w-full mx-auto space-y-6">
             <h2 className="md:text-5xl text-3xl font-normal font-['Lato',Helvetica] text-foundationblackblack-13">
-              Get Your Custom Growth Report
+              Ready to Accelerate with AI?
             </h2>
-            
             <p className="text-2xl font-normal text-foundation-blackblack-10">
-              Discover tailored use cases and revenue potential for your business with our AI-powered insights.
+              Let us help you harness the power of AI to automate, optimize, and scale your business.
             </p>
-
             <div className="mt-8">
               <button className="px-8 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
-                Get My Custom Report
+                Schedule a Free Consultation &rarr;
               </button>
             </div>
           </div>
@@ -617,7 +523,7 @@ const AIConsulting = (): JSX.Element => {
     </section>
 
     {/* Client Testimonials Carousel */}
-    <section className="md:py-20 py-8 px-4 md:px-32 bg-[#F8EFEF]">
+    {/* <section className="md:py-20 py-8 px-4 md:px-32 bg-[#F8EFEF]">
       <div className="container mx-auto px-0">
         <div className="flex justify-between items-center mb-16">
           <h2 className="md:text-4xl text-3xl font-bold font-['Playfair',Helvetica] text-foundationblackblack-13">
@@ -661,10 +567,10 @@ const AIConsulting = (): JSX.Element => {
           ))}
         </Slider>
         </div>
-      </section>
+      </section> */}
 
-<MediaCarousel/>
-<ContactUs/>
+{/* <MediaCarousel/>
+<ContactUs/> */}
    
     </>
   );
