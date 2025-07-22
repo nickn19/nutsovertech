@@ -149,20 +149,18 @@ const SaasSolution = (): JSX.Element => {
 					<div className="flex flex-col max-w-[757px] items-center gap-10 mt-40">
 						<div className="flex flex-col items-center justify-center gap-[30px] w-full">
 							<h1 className="relative w-full  [font-family:'Playfair',Helvetica] font-bold text-foundationblackblack-13 text-3xl md:text-[42px] text-center line-height-[1.2] leading-normal">
-								We embed ourselves in your business to orchestrate T-Shaped
-								Growth:
+								Custom SaaS Apps Development
 							</h1>
 
 							<p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-lg md:text-[21px] text-center tracking-[0] leading-normal px-4">
-								Deep, vertical expertise powered by a wide, horizontal
-								ecosystem of capabilities.
+								Transform your business with custom-built SaaS solutions tailored to your needs.
 							</p>
-							<p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-sm md:text-base text-center tracking-[0] leading-normal px-4">
+							{/* <p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-sm md:text-base text-center tracking-[0] leading-normal px-4">
 								We take a PE-like operating partner approach to your
 								business—intervening where it matters most, aligning
 								incentives, and deploying AI workforces to scale operations
 								without bloating teams.
-							</p>
+							</p> */}
 						</div>
 
 						<div className="flex flex-col md:flex-row items-center gap-[30px] relative">
@@ -213,7 +211,7 @@ const SaasSolution = (): JSX.Element => {
 								<h3 className="text-white font-['Lato',Helvetica] font-light text-2xl md:text-5xl mb-4">
 									Our Custom SaaS Development Services help you build products that grow, not just function.
 								</h3>
-                <h4 className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
+				<h4 className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
 									 We focus on value clarity, in-built virality, and shareable UX from day one—backed by a battle-tested build process and ready-to-use platforms.
 
 								</h4>
@@ -301,106 +299,90 @@ const SaasSolution = (): JSX.Element => {
 				</div>
 			</section>
 
-			{/* Purpose-Built Tech Section */}
-			<section className="md:py-20 py-8 px-4 md:px-32 [background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)]">
-				<div className="container mx-auto px-0">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-						{/* Left Column - Heading and Description */}
-						<div className="space-y-6 md:max-w-96 max-w-full md:block flex flex-col items-center justify-center ">
-							<h2 className="text-3xl md:text-4xl md:text-left text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13">
-								Purpose-Built Tech,<br />
-								Tailored to Your Stack
-							</h2>
-							<p className="text-2xl md:text-left text-center font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-xl">
-								Unleash powerful AI insights with seamless data integration and
-								retrieval
-							</p>
-							<button className="px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
-								View Full Feature List
-							</button>
-						</div>
+			{/* Our Process Outcome-Driven Delivery Process */}
+<section className="md:py-20 py-8 px-4 md:px-32 [background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)]">
+  <div className="container mx-auto px-0">
+	<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+	  {/* Left Column - Heading and Description */}
+	  <div className="space-y-6 md:max-w-96 max-w-full md:block flex flex-col items-center justify-center ">
+		<h2 className="text-3xl md:text-4xl md:text-left text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13">
+		  Our Process Outcome-Driven Delivery Process
+		</h2>
+		<p className="text-2xl md:text-left text-center font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-xl">
+		  We don’t just build software—we engineer outcomes. Our delivery model is designed to align tightly with your goals, ensuring every sprint pushes the product closer to adoption, efficiency, and scale.
+		</p>
+	  </div>
 
-						{/* Right Column - Feature List */}
-						<div className="space-y-8">
-							{/* Data Indexing & Integration */}
-							<div className="flex gap-6 items-start">
-								<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-									<img
-										src="/data-index.png"
-										alt="Data Indexing"
-										className="w-12 h-12"
-									/>
-								</div>
-								<div>
-									<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-										Data Indexing & Integration
-									</h3>
-									<p className="text-foundation-blackblack-10">
-										Index data in any format or language for seamless retrieval
-										and interoperability.
-									</p>
-								</div>
-							</div>
+	  {/* Right Column - Feature List */}
+	  <div className="space-y-8">
+		{/* Collaborative Pre-Phase */}
+		<div className="flex gap-6 items-start">
+		  <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+			<img src="/analysis.png" alt="Collaborative Pre-Phase" className="w-12 h-12" />
+		  </div>
+		  <div>
+			<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">Collaborative Pre-Phase</h3>
+			<p className="text-foundation-blackblack-10 text-lg font-light">
+			  Business stakeholders and product teams work together to align on goals, user needs, and technical feasibility before any code is written.
+			</p>
+		  </div>
+		</div>
 
-							{/* LLM-Powered Insights */}
-							<div className="flex gap-6 items-start">
-								<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-									<img src="/llm.png" alt="LLM Insights" className="w-12 h-12" />
-								</div>
-								<div>
-									<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-										LLM-Powered Insights
-									</h3>
-									<p className="text-foundation-blackblack-10 text-lg font-light">
-										High-value free content, data-driven insights, and expert
-										consulting to build trust and engagement.
-									</p>
-								</div>
-							</div>
+		{/* Design-Led Development */}
+		<div className="flex gap-6 items-start">
+		  <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+			<img src="/no-code.png" alt="Design-Led Development" className="w-12 h-12" />
+		  </div>
+		  <div>
+			<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">Design-Led Development</h3>
+			<p className="text-foundation-blackblack-10 text-lg font-light">
+			  Clear wireframes, flows, and modular UI blocks are built upfront to reduce ambiguity and accelerate build velocity.
+			</p>
+		  </div>
+		</div>
 
-							{/* Custom Retrieval Strategies */}
-							<div className="flex gap-6 items-start">
-								<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-									<img
-										src="/custom-retrieval.png"
-										alt="Custom Retrieval"
-										className="w-12 h-12"
-									/>
-								</div>
-								<div>
-									<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-										Custom Retrieval Strategies
-									</h3>
-									<p className="text-foundation-blackblack-10 text-lg font-light">
-										Define tailored chunking and retrieval strategies for
-										optimized data access.
-									</p>
-								</div>
-							</div>
+		{/* Agile Sprints */}
+		<div className="flex gap-6 items-start">
+		  <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+			<img src="/execution.png" alt="Agile Sprints" className="w-12 h-12" />
+		  </div>
+		  <div>
+			<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">Agile Sprints</h3>
+			<p className="text-foundation-blackblack-10 text-lg font-light">
+			  Rapid, incremental development cycles with biweekly reviews and working demos. You stay in the loop. Always.
+			</p>
+		  </div>
+		</div>
 
-							{/* Optimised Embedding Models */}
-							<div className="flex gap-6 items-start">
-								<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-									<img
-										src="/optimised-embedding.png"
-										alt="Embedding Models"
-										className="w-12 h-12"
-									/>
-								</div>
-								<div>
-									<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-										Optimised Embedding Models
-									</h3>
-									<p className="text-foundation-blackblack-10 text-lg font-light">
-										Select and implement the best embedding models to maximize
-										search accuracy and performance.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+		{/* QA & User Testing */}
+		<div className="flex gap-6 items-start">
+		  <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+			<img src="/Operational_Discipline.svg" alt="QA & User Testing" className="w-12 h-12" />
+		  </div>
+		  <div>
+			<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">QA & User Testing</h3>
+			<p className="text-foundation-blackblack-10 text-lg font-light">
+			  Each feature is tested across real use cases and devices. No surprises post-launch.
+			</p>
+		  </div>
+		</div>
+
+		{/* Go Live with Confidence */}
+		<div className="flex gap-6 items-start">
+		  <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+			<img src="/Strategic_Infrastructure.svg" alt="Go Live with Confidence" className="w-12 h-12" />
+		  </div>
+		  <div>
+			<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">Go Live with Confidence</h3>
+			<p className="text-foundation-blackblack-10 text-lg font-light">
+			  UAT, stakeholder sign-off, and a frictionless release process ensure launch day is a non-event.
+			</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+</section>
 
 			{/* Our Custom SaaS Development Services */}
 			<section className="md:py-20 py-8 px-4 md:px-20 bg-foundation-blackblack-4">
@@ -430,7 +412,7 @@ const SaasSolution = (): JSX.Element => {
 								<li className="text-lg font-light text-foundation-blackblack-10">
 									• Scalable, secure architecture.
 								</li>
-                <li className="text-lg font-light text-foundation-blackblack-10">
+				<li className="text-lg font-light text-foundation-blackblack-10">
 									• Tailored to your business requirements
 								</li>
 							</ul>
@@ -498,7 +480,7 @@ const SaasSolution = (): JSX.Element => {
 							<h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
 								UI/UX Design
 							</h3>
-              <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
+			  <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
 								We focus on user-centric design to create intuitive and engaging interfaces that enhance usability and drive adoption
 							</p>
 							<ul className="space-y-6">
@@ -563,38 +545,38 @@ const SaasSolution = (): JSX.Element => {
 				</div>
 			</section>
 
-			{/* Real Businesses, Real Results Section */}
+			{/*Why Choose Us? Section */}
 			<section className="md:py-20 py-8 px-4 md:px-20">
 				<div className="container mx-auto px-0">
 					<h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-8 md:mb-16">
-						Real Businesses, Real Results
+						Why Choose Us?
 					</h2>
 
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-						{/* Success Story Card 1 */}
+						{/* End-to-End Development: */}
 						<div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
 							<div className="flex flex-col items-center text-center space-y-6">
-								<div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
+								{/* <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
 									<span className="text-foundation-blackblack-10">Logo here</span>
-								</div>
+								</div> */}
 
 								<h3 className="text-2xl font-bold text-foundationblackblack-13">
-									Company name
+									End-to-End Development:
 								</h3>
 
 								<div className="space-y-2">
 									<p className="text-foundation-blackblack-10 text-xl font-light ">
-										Increased ARR by
+										From planning to deployment, we handle every stage of the development lifecycle.
 									</p>
-									<p className="text-5xl font-normal text-foundationblackblack-13">
+									{/* <p className="text-5xl font-normal text-foundationblackblack-13">
 										xx%
 									</p>
 									<p className="text-foundation-blackblack-10 text-xl font-light">
 										in Y months
-									</p>
+									</p> */}
 								</div>
 
-								<button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+								{/* <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
 									Read more
 									<svg
 										width="16"
@@ -608,34 +590,34 @@ const SaasSolution = (): JSX.Element => {
 									>
 										<path d="M5 12h14M12 5l7 7-7 7" />
 									</svg>
-								</button>
+								</button> */}
 							</div>
 						</div>
 
-						{/* Success Story Card 2 */}
+						{/* Scalable Solutions */}
 						<div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
 							<div className="flex flex-col items-center text-center space-y-6">
-								<div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
+								{/* <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
 									<span className="text-foundation-blackblack-10">Logo here</span>
-								</div>
+								</div> */}
 
 								<h3 className="text-2xl font-bold text-foundationblackblack-13">
-									Company name
+									Scalable Solutions
 								</h3>
 
 								<div className="space-y-2">
 									<p className="text-foundation-blackblack-10 text-xl font-light">
-										Reduced costs by
+										 Our solutions grow with your business, ensuring long-term success.
 									</p>
-									<p className="text-5xl font-normal text-foundationblackblack-13">
+									{/* <p className="text-5xl font-normal text-foundationblackblack-13">
 										xx%
 									</p>
 									<p className="text-foundation-blackblack-10 text-xl font-light">
 										with AI-driven automation
-									</p>
+									</p> */}
 								</div>
 
-								<button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+								{/* <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
 									Read more
 									<svg
 										width="16"
@@ -649,38 +631,38 @@ const SaasSolution = (): JSX.Element => {
 									>
 										<path d="M5 12h14M12 5l7 7-7 7" />
 									</svg>
-								</button>
+								</button> */}
 							</div>
 						</div>
 
-						{/* Success Story Card 3 */}
+						{/* Agile & Flexible */}
 						<div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
 							<div className="flex flex-col items-center text-center space-y-6">
-								<div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
+								{/* <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
 									<span className="text-foundation-blackblack-10">Logo here</span>
-								</div>
+								</div> */}
 
 								<h3 className="text-2xl font-bold text-foundationblackblack-13">
-									Company name
+									Agile & Flexible
 								</h3>
 
 								<div className="space-y-2">
 									<p className="text-foundation-blackblack-10 text-xl font-light">
-										Scaled from
+										 Our process is adaptable, ensuring quick iterations and fast response times.
 									</p>
-									<p className="text-5xl font-normal text-foundationblackblack-13">
+									{/* <p className="text-5xl font-normal text-foundationblackblack-13">
 										$xM{" "}
 										<span className="text-foundation-blackblack-10">
 											to
 										</span>{" "}
 										$yM
-									</p>
-									<p className="text-foundation-blackblack-10 text-xl font-light">
+									</p> */}
+									{/* <p className="text-foundation-blackblack-10 text-xl font-light">
 										ARR using 4AY
-									</p>
+									</p> */}
 								</div>
 
-								<button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+								{/* <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
 									Read more
 									<svg
 										width="16"
@@ -694,34 +676,34 @@ const SaasSolution = (): JSX.Element => {
 									>
 										<path d="M5 12h14M12 5l7 7-7 7" />
 									</svg>
-								</button>
+								</button> */}
 							</div>
 						</div>
 
-						{/* Success Story Card 4 */}
+						{/* User-Centered Approach */}
 						<div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
 							<div className="flex flex-col items-center text-center space-y-6">
-								<div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
+								{/* <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
 									<span className="text-foundation-blackblack-10">Logo here</span>
-								</div>
+								</div> */}
 
 								<h3 className="text-2xl font-bold text-foundationblackblack-13">
-									Company name
+									User-Centered Approach
 								</h3>
 
 								<div className="space-y-2">
 									<p className="text-foundation-blackblack-10 text-xl font-light">
-										Increased ARR by
+										 We focus on building products your users love, ensuring high adoption rates and long-term engagement.
 									</p>
-									<p className="text-5xl font-normal text-foundationblackblack-13">
+									{/* <p className="text-5xl font-normal text-foundationblackblack-13">
 										xx%
-									</p>
-									<p className="text-foundation-blackblack-10 text-xl font-light">
+									</p> */}
+									{/* <p className="text-foundation-blackblack-10 text-xl font-light">
 										in Y months
-									</p>
+									</p> */}
 								</div>
 
-								<button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+								{/* <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
 									Read more
 									<svg
 										width="16"
@@ -735,116 +717,59 @@ const SaasSolution = (): JSX.Element => {
 									>
 										<path d="M5 12h14M12 5l7 7-7 7" />
 									</svg>
-								</button>
+								</button> */}
 							</div>
 						</div>
 					</div>
 
-					<div className="mt-12 text-center">
+					{/* <div className="mt-12 text-center">
 						<button className="px-6 py-3 bg-foundation-blackblack-10 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">
 							See More Success Stories
 						</button>
-					</div>
+					</div> */}
 				</div>
 			</section>
 			<CaseStudies />
 			<BlogSection />
 
-			{/* Why Choose Us? */}
+			{/* Products Built with Adoption in Mind */}
 			<section className="md:py-20 py-8 px-0 md:px-32 ">
 				<div className="container mx-auto px-0">
 					<div className=" md:px-48 md:py-10 py-8 px-4 bg-[#F1D1D1]">
-						<h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-6 md:mb-8">
-							Why Choose Us?
-						</h2>
-						{/* <p className="relative max-w-[641px] mx-auto [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-sm md:text-base text-center tracking-[0] leading-normal px-4 mb-8">
-							We focus on building SaaS products that users love and engage with
-							regularly. Our design and development process prioritizes ease of
-							use, simplicity, and engagement to ensure high adoption rates and
-							long-term user satisfaction.
-						</p> */}
-
-						<div className="space-y-8">
-							{/* End-to-End Development: */}
-							<div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
-								<div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-									<img
-										src="/Guided-Onboarding.png"
-										alt="Guided Onboarding"
-										className="w-8 h-8"
-									/>
-								</div>
-								<div>
-									<h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
-										End-to-End Development:
-										<span className="ml-1 font-light ">
-											From planning to deployment, we handle every stage of the development lifecycle.
-										</span>
-									</h3>
-								</div>
-							</div>
-
-							{/* Scalable Solutions */}
-							<div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
-								<div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-									<img
-										src="/24-7-Support.png"
-										alt="24/7 Support"
-										className="w-8 h-8"
-									/>
-								</div>
-								<div>
-									<h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
-										Scalable Solutions
-										<span className="ml-1 font-light ">
-											Our solutions grow with your business, ensuring long-term success.
-										</span>
-									</h3>
-								</div>
-							</div>
-              {/* Agile & Flexible */}
-							<div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
-								<div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-									<img
-										src="/24-7-Support.png"
-										alt="24/7 Support"
-										className="w-8 h-8"
-									/>
-								</div>
-								<div>
-									<h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
-										Agile & Flexible
-										<span className="ml-1 font-light ">
-											Our process is adaptable, ensuring quick iterations and fast response times.
-										</span>
-									</h3>
-								</div>
-							</div>
-							{/* User-Centered Approach  */}
-							<div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
-								<div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-									<img
-										src="/Knowledge-Hub.png"
-										alt="Knowledge Hub"
-										className="w-8 h-8"
-									/>
-								</div>
-								<div>
-									<h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
-										User-Centered Approach
-										<span className="ml-1 font-light ">
-											We focus on building products your users love, ensuring high adoption rates and long-term engagement.
-										</span>
-									</h3>
-								</div>
-							</div>
-						</div>
-
-						<div className="mt-12 text-center">
-							<button className="px-8 py-3 bg-foundationblackblack-11 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">
-								Build Products for Adoption
-							</button>
-						</div>
+			<h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-6 md:mb-8">
+			  Products Built with Adoption in Mind
+			</h2>
+			<p className="relative max-w-[641px] mx-auto [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-base md:text-lg text-center tracking-[0] leading-normal px-4 mb-8">
+			  We focus on building SaaS products that users love and engage with regularly. Our design and development process prioritizes ease of use, simplicity, and engagement to ensure high adoption rates and long-term user satisfaction.
+			</p>
+			<div className="flex flex-col gap-8 mb-8">
+  <div className="bg-white rounded-2xl p-8 flex flex-row items-center text-left shadow-md hover:shadow-lg transition-all duration-300">
+	<img src="/done_for_you.svg" alt="User-centric design" className="w-10 h-10 mr-6" />
+	<div>
+	  <h3 className="text-xl font-bold text-foundationblackblack-13 mb-2">User-centric design for better adoption</h3>
+	  <p className="text-foundation-blackblack-10 text-base">We design with your users in mind, ensuring intuitive experiences and high engagement.</p>
+	</div>
+  </div>
+  <div className="bg-white rounded-2xl p-8 flex flex-row items-center text-left shadow-md hover:shadow-lg transition-all duration-300">
+	<img src="/ai_native.svg" alt="Intuitive interfaces" className="w-10 h-10 mr-6" />
+	<div>
+	  <h3 className="text-xl font-bold text-foundationblackblack-13 mb-2">Intuitive interfaces that drive engagement</h3>
+	  <p className="text-foundation-blackblack-10 text-base">Simple, beautiful interfaces make your SaaS product easy to use and enjoyable.</p>
+	</div>
+  </div>
+  <div className="bg-white rounded-2xl p-8 flex flex-row items-center text-left shadow-md hover:shadow-lg transition-all duration-300">
+	<img src="/t_shaped_growth.svg" alt="Scalable architecture" className="w-10 h-10 mr-6" />
+	<div>
+	  <h3 className="text-xl font-bold text-foundationblackblack-13 mb-2">Scalable architecture to support future growth</h3>
+	  <p className="text-foundation-blackblack-10 text-base">Our solutions are built to grow with your business, ensuring long-term success.</p>
+	</div>
+  </div>
+			</div>
+			<div className="mt-12 text-center">
+			  <button className="px-8 py-3 bg-foundationblackblack-11 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">
+				Build Products for Adoption &rarr;
+			  </button>
+			</div>
 					</div>
 				</div>
 			</section>
@@ -855,12 +780,11 @@ const SaasSolution = (): JSX.Element => {
 					<div className="[background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)] rounded-3xl md:px-8 px-4 md:py-16 py-8 text-center">
 						<div className="md:max-w-3xl max-w-full mx-auto space-y-6">
 							<h2 className="md:text-5xl text-3xl font-normal font-['Lato',Helvetica] text-foundationblackblack-13">
-								Get Your Custom Growth Report
+								Build your product with us!
 							</h2>
 
 							<p className="text-2xl font-normal text-foundation-blackblack-10">
-								Discover tailored use cases and revenue potential for your business
-								with our AI-powered insights.
+								Ready to bring your custom SaaS application to life? Let’s build smarter, faster, and stronger solutions together.
 							</p>
 
 							<div className="mt-8">
@@ -875,50 +799,50 @@ const SaasSolution = (): JSX.Element => {
 
 			{/* Client Testimonials Carousel */}
 			{/* <section className="md:py-20 py-8 px-4 md:px-32 bg-[#F8EFEF]">
-      <div className="container mx-auto px-0">
-        <div className="flex justify-between items-center mb-16">
-          <h2 className="md:text-4xl text-3xl font-bold font-['Playfair',Helvetica] text-foundationblackblack-13">
-            What Our Clients Say
-          </h2>
-          <div className="flex gap-4">
-            <button
-              onClick={() => testimonialSliderRef.current?.slickPrev()}
-              className="w-12 h-12 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center group border border-gray-200"
-              aria-label="Previous testimonial"
-            >
-              <ArrowLeft className="w-6 h-6 text-foundationredred-13 group-hover:text-foundationredred-11 transition-colors" />
-            </button>
-            <button
-              onClick={() => testimonialSliderRef.current?.slickNext()}
-              className="w-12 h-12 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center group border border-gray-200"
-              aria-label="Next testimonial"
-            >
-              <ArrowRight className="w-6 h-6 text-foundationredred-13 group-hover:text-foundationredred-11 transition-colors" />
-            </button>
-          </div>
-        </div>
+	  <div className="container mx-auto px-0">
+		<div className="flex justify-between items-center mb-16">
+		  <h2 className="md:text-4xl text-3xl font-bold font-['Playfair',Helvetica] text-foundationblackblack-13">
+			What Our Clients Say
+		  </h2>
+		  <div className="flex gap-4">
+			<button
+			  onClick={() => testimonialSliderRef.current?.slickPrev()}
+			  className="w-12 h-12 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center group border border-gray-200"
+			  aria-label="Previous testimonial"
+			>
+			  <ArrowLeft className="w-6 h-6 text-foundationredred-13 group-hover:text-foundationredred-11 transition-colors" />
+			</button>
+			<button
+			  onClick={() => testimonialSliderRef.current?.slickNext()}
+			  className="w-12 h-12 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center group border border-gray-200"
+			  aria-label="Next testimonial"
+			>
+			  <ArrowRight className="w-6 h-6 text-foundationredred-13 group-hover:text-foundationredred-11 transition-colors" />
+			</button>
+		  </div>
+		</div>
 
-        <Slider ref={testimonialSliderRef} {...testimonialSettings}>
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="md:px-4 px-0">
-              <div className="bg-white rounded-3xl md:p-12 p-4 py-8 shadow-md">
-                <div className="flex flex-col items-center text-center relative">
-                  <div className="md:text-[120px] text-[80px] font-quicksand absolute md:-top-6 -top-4 md:left-4 left-0 leading-none text-foundationredred-13 opacity-20  mb-6">
-                  ❝
-                  </div>
-                  <p className="md:text-2xl text-xl font-light text-foundation-blackblack-10 mb-8 max-w-3xl">
-                    {testimonial.content}
-                  </p>
-                  <div className="md:text-xl text-lg text-foundationredred-13">
-                    - {testimonial.name}, <span className="text-foundation-blackblack-10">{testimonial.company}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </Slider>
-        </div>
-      </section> */}
+		<Slider ref={testimonialSliderRef} {...testimonialSettings}>
+		  {testimonials.map((testimonial, index) => (
+			<div key={index} className="md:px-4 px-0">
+			  <div className="bg-white rounded-3xl md:p-12 p-4 py-8 shadow-md">
+				<div className="flex flex-col items-center text-center relative">
+				  <div className="md:text-[120px] text-[80px] font-quicksand absolute md:-top-6 -top-4 md:left-4 left-0 leading-none text-foundationredred-13 opacity-20  mb-6">
+				  ❝
+				  </div>
+				  <p className="md:text-2xl text-xl font-light text-foundation-blackblack-10 mb-8 max-w-3xl">
+					{testimonial.content}
+				  </p>
+				  <div className="md:text-xl text-lg text-foundationredred-13">
+					- {testimonial.name}, <span className="text-foundation-blackblack-10">{testimonial.company}</span>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  ))}
+		</Slider>
+		</div>
+	  </section> */}
 
 			{/* <MediaCarousel/> */}
 			<ContactUs />

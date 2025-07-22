@@ -125,7 +125,7 @@ const MicroSaas = (): JSX.Element => {
               We take a PE-like operating partner approach to your business—intervening where it matters most, aligning incentives, and deploying AI workforces to scale operations without bloating teams.
             </p>   */}
           </div>
-          {/* <div className="flex flex-col md:flex-row items-center gap-[30px] relative">
+          <div className="flex flex-col md:flex-row items-center gap-[30px] relative">
               <Button className="px-6 py-4 bg-foundationredred-13 hover:bg-foundationredred-8 transition-colors rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto">
               Explore Our Expertise
             </Button>
@@ -136,25 +136,28 @@ const MicroSaas = (): JSX.Element => {
             >
                Free Trial
             </Button>
-          </div> */}
+          </div>
           
           </div>
-          {/* <div className="md:h-[500px] h-[200px]  max-w-3xl mx-auto aspect-video bg-gray-100 rounded-lg border border-gray-200 flex items-center justify-center my-10">
+          <div className="md:h-[500px] h-[200px]  max-w-3xl mx-auto aspect-video bg-gray-100 rounded-lg border border-gray-200 flex items-center justify-center my-10">
               <div className="  flex items-center justify-center">
                 <div className="rounded-full bg-white p-3 shadow-md">
                   <Play className="h-6 w-6 text-red-500" />
                 </div>
               </div>
-            </div> */}
+            </div>
         </div>
       </section>
       <section className="md:py-20 py-8 px-4 md:px-20 ">
           <div className="container mx-auto px-0">
             <div className="bg-[#D57879] rounded-lg p-6 md:p-8 ">
               <h2 className="text-3xl md:text-4xl text-center font-bold mb-6 text-foundationblackblack-13 font-['Playfair',Helvetica]">Why MicroSaaS Works</h2>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white font-['Playfair',Helvetica]">
+              {/* <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
+                  MicroSaaS is the anti-startup:
+                </p> */}
+            <h3 className="text-3xl md:text-4xl font-bold mb-6 text-white font-['Playfair',Helvetica]">
                 MicroSaaS is the anti-startup:
-            </h2>
+            </h3>
               <div className="flex gap-6 md:flex-row flex-col items-center justify-between">
               <div className="grid md:grid-cols-1 gap-4 md:w-2/5">
                 <div className="bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold ">
@@ -174,6 +177,9 @@ const MicroSaas = (): JSX.Element => {
                 <h3 className="text-white font-['Lato',Helvetica] font-light text-2xl md:text-5xl mb-4">
                  We help you build your own or license ours. Either way—you get a lean, high-ROI tool that works 24/7 without a bloated dev team.
                 </h3>
+                {/* <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
+                  We help you build your own or license ours. Either way—you get a lean, high-ROI tool that works 24/7 without a bloated dev team.
+                </p> */}
                 {/* <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
                   🔺 Reduce your CAQ, scale MoFU, and improve LTV
                 </p>
@@ -300,7 +306,7 @@ const MicroSaas = (): JSX.Element => {
             {/* Add your logic via 4AY PaaS agents */}
             <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/ai_native.svg" alt="4AY PaaS Agents" className="w-12 h-12" />
+                <img src="/llm.png" alt="4AY PaaS Agents" className="w-12 h-12" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
@@ -311,7 +317,7 @@ const MicroSaas = (): JSX.Element => {
             {/* Automate tasks with N8n */}
             <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/no-code.png" alt="N8n Automation" className="w-12 h-12" />
+                <img src="/Operational_Discipline.svg" alt="N8n Automation" className="w-12 h-12" style={{ filter: 'brightness(0) saturate(100%)' }} />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
@@ -448,7 +454,7 @@ const MicroSaas = (): JSX.Element => {
         <p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-lg md:text-2xl text-center tracking-[0] leading-normal px-4 mb-8">
           We’ve built a complete system to go from pain-point to product in days:
         </p>
-        <div className="overflow-x-auto flex justify-center mb-10">
+        {/* <div className="overflow-x-auto flex justify-center mb-10">
 <table className="min-w-[350px] text-left border-collapse">
     <thead>
       <tr>
@@ -457,7 +463,7 @@ const MicroSaas = (): JSX.Element => {
       </tr>
     </thead>
     </table>
-</div>
+</div> */}
          <div className="space-y-6">
           {/* Frontend */}
           <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">

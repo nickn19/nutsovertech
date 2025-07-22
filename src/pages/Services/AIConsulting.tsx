@@ -126,7 +126,7 @@ const AIConsulting = (): JSX.Element => {
             </p>   */}
           </div>
 
-         {/* <div className="flex flex-col md:flex-row items-center gap-[30px] relative">
+         <div className="flex flex-col md:flex-row items-center gap-[30px] relative">
               <Button className="px-6 py-4 bg-foundationredred-13 hover:bg-foundationredred-8 transition-colors rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto">
               Explore Our Expertise
             </Button>
@@ -138,15 +138,15 @@ const AIConsulting = (): JSX.Element => {
                Free Trial
             </Button>
           </div>
-           */}
+          
           </div> 
-          {/* <div className="md:h-[500px] h-[200px]  max-w-3xl mx-auto aspect-video bg-gray-100 rounded-lg border border-gray-200 flex items-center justify-center my-10">
+          <div className="md:h-[500px] h-[200px]  max-w-3xl mx-auto aspect-video bg-gray-100 rounded-lg border border-gray-200 flex items-center justify-center my-10">
               <div className="  flex items-center justify-center">
                 <div className="rounded-full bg-white p-3 shadow-md">
                   <Play className="h-6 w-6 text-red-500" />
                 </div>
               </div>
-            </div> */}
+            </div>
         </div>
       </section>
       <section className="md:py-20 py-8 px-4 md:px-20 ">
@@ -180,69 +180,17 @@ const AIConsulting = (): JSX.Element => {
                 </p> */}
               </div>
               </div>
-           <div className="bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold ">
-                  <p>AI is a game-changer, but effective integration requires expert strategy, training, and tools. Our AI consulting services provide end-to-end support—from 4AY platform deployment to AI tool integration and team training—helping you optimize business processes and unlock new growth potential.</p>
-                </div>    
+             
+         <p className="text-white font-['Lato',Helvetica] text-base md:text-lg">
+                  AI is a game-changer, but effective integration requires expert strategy, training, and tools. Our AI consulting services provide end-to-end support—from 4AY platform deployment to AI tool integration and team training—helping you optimize business processes and unlock new growth potential.
+                </p>      
         </div>
       </div>
     </section>
     {/* <UseCaseCarousel /> */}
       
     {/* Where We Intervene Section */}
-    <section className="md:py-20 py-8 px-4 md:px-20">
-      <div className="container mx-auto px-0">
-        <h2 className="md:text-4xl text-3xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-12">
-          Where We Intervene
-        </h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* AI-Led Strategy Card */}
-          <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
-            <div className="flex flex-col items-center text-center gap-6">
-              <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/analysis.png" alt="AI Strategy" className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold text-foundationblackblack-13">AI-Led Strategy</h3>
-              <p className="text-foundation-blackblack-10 text-base">
-                Proven playbooks tailored for rapid results.
-              </p>
-            </div>
-          </div>
-
-          {/* No-Code Implementation Card */}
-          <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
-            <div className="flex flex-col items-center text-center gap-6">
-              <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/no-code.png" alt="No Code" className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold text-foundationblackblack-13">No-Code Implementation</h3>
-              <p className="text-foundation-blackblack-10 text-base">
-                Get started instantly—no heavy development required.
-              </p>
-            </div>
-          </div>
-
-          {/* Data-Driven Execution Card */}
-          <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
-            <div className="flex flex-col items-center text-center gap-6">
-              <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/execution.png" alt="Data Driven" className="w-8 h-8" />
-              </div>
-              <h3 className="text-xl font-bold text-foundationblackblack-13">Data-Driven Execution</h3>
-              <p className="text-foundation-blackblack-10 text-base">
-                AI insights power real-time decision-making.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-12 text-center">
-          <button className="px-6 py-3 bg-foundation-blackblack-10 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">
-            Explore Our IP Assets
-          </button>
-        </div>
-      </div>
-    </section>
+{/* Where We Intervene section hidden */}
      
     {/* Purpose-Built Tech Section */}
     {/*
@@ -364,8 +312,8 @@ const AIConsulting = (): JSX.Element => {
         </div>
       </div>
     </section>
-   {/* <CaseStudies />
-   <BlogSection/> */}
+   <CaseStudies />
+   <BlogSection/>
 
     {/* Building an AI-Powered SaaS App? Section */}
     <section className="md:py-20 py-8 px-0 md:px-32 ">
@@ -389,7 +337,7 @@ const AIConsulting = (): JSX.Element => {
             </div>
             <div className="bg-white rounded-2xl p-6 flex items-start gap-6 hover:shadow-lg transition-all duration-300">
               <div className="w-12 h-12 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-                <img src="/llm.png" alt="Custom AI Models" className="w-8 h-8" />
+                <img src="/ai_native.svg" alt="Custom AI Models" className="w-8 h-8" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-foundationblackblack-13 mb-2">Custom AI models</h3>

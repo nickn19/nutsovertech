@@ -246,81 +246,82 @@ const Services = (): JSX.Element => {
 					</h2>
 
 					<div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-						{/* Strategy & Ops Automation */}
-						<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
-							<div className="flex flex-col items-center text-center gap-6">
-								<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-									<img
-										src="/analysis.png"
-										alt="Strategy & Ops Automation"
-										className="w-8 h-8"
-									/>
-								</div>
-								<h3 className="text-xl font-bold text-foundationblackblack-13">
-									Strategy & Ops Automation
-								</h3>
-								<p className="text-foundation-blackblack-10 text-base">
-									Turn insights into execution. Full-funnel strategies
-									powered by plug-and-play systems and analytics.
-								</p>
-							</div>
-						</div>
-            {/* Revenue Infrastructure */}
-						<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
-							<div className="flex flex-col items-center text-center gap-6">
-								<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-									<img
-										src="/analysis.png"
-										alt="Revenue Infrastructure"
-										className="w-8 h-8"
-									/>
-								</div>
-								<h3 className="text-xl font-bold text-foundationblackblack-13">
-									Revenue Infrastructure
-								</h3>
-								<p className="text-foundation-blackblack-10 text-base">
-									Set up the foundational tech, data, and marketing stack to support sustainable, compounding growth.
-								</p>
-							</div>
-						</div>
+			{/* Strategy & Ops Automation */}
+			<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
+			  <div className="flex flex-col items-center text-center gap-6">
+				<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
+				  <img
+					src="/Operational_Discipline.svg"
+					alt="Strategy & Ops Automation"
+					className="w-8 h-8"
+					style={{ filter: 'brightness(0) saturate(100%)' }}
+				  />
+				</div>
+				<h3 className="text-xl font-bold text-foundationblackblack-13">
+				  Strategy & Ops Automation
+				</h3>
+				<p className="text-foundation-blackblack-10 text-base">
+				  Turn insights into execution. Full-funnel strategies
+				  powered by plug-and-play systems and analytics.
+				</p>
+			  </div>
+			</div>
+			{/* Revenue Infrastructure */}
+			<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
+			  <div className="flex flex-col items-center text-center gap-6">
+				<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
+				  <img
+					src="/data-index.png"
+					alt="Revenue Infrastructure"
+					className="w-8 h-8"
+				  />
+				</div>
+				<h3 className="text-xl font-bold text-foundationblackblack-13">
+				  Revenue Infrastructure
+				</h3>
+				<p className="text-foundation-blackblack-10 text-base">
+				  Set up the foundational tech, data, and marketing stack to support sustainable, compounding growth.
+				</p>
+			  </div>
+			</div>
 
-						{/* Product & Commerce Enablement */}
-						<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
-							<div className="flex flex-col items-center text-center gap-6">
-								<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-									<img
-										src="/no-code.png"
-										alt="Product & Commerce Enablement"
-										className="w-8 h-8"
-									/>
-								</div>
-								<h3 className="text-xl font-bold text-foundationblackblack-13">
-									Product & Commerce Enablement
-								</h3>
-								<p className="text-foundation-blackblack-10 text-base">
-									 Ship faster and convert better. From eComm to SaaS businesses, we help build, launch and scale intelligently.
-								</p>
-							</div>
-						</div>
+			{/* Product & Commerce Enablement */}
+			<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
+			  <div className="flex flex-col items-center text-center gap-6">
+				<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
+				  <img
+					src="/custom-retrieval.png"
+					alt="Product & Commerce Enablement"
+					className="w-8 h-8"
+				  />
+				</div>
+				<h3 className="text-xl font-bold text-foundationblackblack-13">
+				  Product & Commerce Enablement
+				</h3>
+				<p className="text-foundation-blackblack-10 text-base">
+				   Ship faster and convert better. From eComm to SaaS businesses, we help build, launch and scale intelligently.
+				</p>
+			  </div>
+			</div>
 
-						{/* Retention & Lifecycle*/}
-						<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
-							<div className="flex flex-col items-center text-center gap-6">
-								<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-									<img
-										src="/execution.png"
-										alt="Retention & Lifecycle"
-										className="w-8 h-8"
-									/>
-								</div>
-								<h3 className="text-xl font-bold text-foundationblackblack-13">
-									Retention & Lifecycle
-								</h3>
-								<p className="text-foundation-blackblack-10 text-base">
-									 Extend customer lifetime value with personalized engagement systems, loyalty flows, and automation.
-								</p>
-							</div>
-						</div>
+			{/* Retention & Lifecycle*/}
+			<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
+			  <div className="flex flex-col items-center text-center gap-6">
+				<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
+				  <img
+					src="/optimised-embedding.png"
+					alt="Retention & Lifecycle"
+					className="w-8 h-8"
+				  />
+				</div>
+				<h3 className="text-xl font-bold text-foundationblackblack-13">
+				  Retention & Lifecycle
+				</h3>
+				<p className="text-foundation-blackblack-10 text-base">
+				   Extend customer lifetime value with personalized engagement systems, loyalty flows, and automation.
+				</p>
+			  </div>
+			</div>
 					</div>
 
 					<div className="mt-12 text-center">
@@ -459,7 +460,7 @@ const Services = (): JSX.Element => {
 								<li className="text-lg font-light text-foundation-blackblack-10">
 									• Bundle optimization, retention triggers.
 								</li>
-                <li className="text-lg font-light text-foundation-blackblack-10">
+				<li className="text-lg font-light text-foundation-blackblack-10">
 									• Shopify-native growth ecosystem.
 								</li>
 							</ul>
@@ -470,7 +471,7 @@ const Services = (): JSX.Element => {
 							<h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
 								SMEs & Local Businesses
 							</h3>
-              <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
+			  <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
 								Associations, clinics, boutique retailers, startups.
 							</p>
 							<ul className="space-y-6">
@@ -491,7 +492,7 @@ const Services = (): JSX.Element => {
 							<h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
 								Digital Products
 							</h3>
-              <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
+			  <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
 								Courses, coaching, and MicroSaaS builders.
 							</p>
 							<ul className="space-y-6">
@@ -501,7 +502,7 @@ const Services = (): JSX.Element => {
 								<li className="text-lg font-light text-foundation-blackblack-10">
 									•Email + video-based nurture flows.
 								</li>
-                <li className="text-lg font-light text-foundation-blackblack-10">
+				<li className="text-lg font-light text-foundation-blackblack-10">
 									•Stripe + Kajabi/Thinkific integration.
 								</li>
 							</ul>
@@ -513,14 +514,14 @@ const Services = (): JSX.Element => {
 							<p className="text-lg font-light text-foundation-blackblack-10 mb-6">
 								Marketing, HR, Finance, Ops at scale.
 							</p>
-              <ul className="space-y-6">
+			  <ul className="space-y-6">
 								<li className="text-lg font-light text-foundation-blackblack-10">
 									• ETL + Dashboards + Notification logic.
 								</li>
 								<li className="text-lg font-light text-foundation-blackblack-10">
 									•HR ops, payout automation, project workflows.
 								</li>
-                <li className="text-lg font-light text-foundation-blackblack-10">
+				<li className="text-lg font-light text-foundation-blackblack-10">
 									•RAG-based LLM deployment & feedback loops.
 								</li>
 							</ul>
@@ -530,25 +531,25 @@ const Services = (): JSX.Element => {
 			</section>
 
 			{/* Real Businesses, Real Results Section */}
-			<section className="md:py-20 py-8 px-4 md:px-20">
-				<div className="container mx-auto px-0">
-					<h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-8 md:mb-16">
+			{/* <section className="md:py-20 py-8 px-4 md:px-20">
+				<div className="container mx-auto px-0"> */}
+					{/* <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-8 md:mb-16">
 						Real Businesses, Real Results
-					</h2>
+					</h2> */}
 
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+					{/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"> */}
 						{/* Success Story Card 1 */}
-						<div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
-							<div className="flex flex-col items-center text-center space-y-6">
-								<div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
+						{/* <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+							<div className="flex flex-col items-center text-center space-y-6"> */}
+								{/* <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
 									<span className="text-foundation-blackblack-10">Logo here</span>
-								</div>
+								</div> */}
 
-								<h3 className="text-2xl font-bold text-foundationblackblack-13">
+								{/* <h3 className="text-2xl font-bold text-foundationblackblack-13">
 									Company name
-								</h3>
+								</h3> */}
 
-								<div className="space-y-2">
+								{/* <div className="space-y-2">
 									<p className="text-foundation-blackblack-10 text-xl font-light ">
 										Increased ARR by
 									</p>
@@ -558,9 +559,9 @@ const Services = (): JSX.Element => {
 									<p className="text-foundation-blackblack-10 text-xl font-light">
 										in Y months
 									</p>
-								</div>
+								</div> */}
 
-								<button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+								{/* <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
 									Read more
 									<svg
 										width="16"
@@ -576,20 +577,20 @@ const Services = (): JSX.Element => {
 									</svg>
 								</button>
 							</div>
-						</div>
+						</div> */}
 
 						{/* Success Story Card 2 */}
-						<div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
-							<div className="flex flex-col items-center text-center space-y-6">
-								<div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
+						{/* <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+							<div className="flex flex-col items-center text-center space-y-6"> */}
+								{/* <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
 									<span className="text-foundation-blackblack-10">Logo here</span>
-								</div>
+								</div> */}
 
-								<h3 className="text-2xl font-bold text-foundationblackblack-13">
+								{/* <h3 className="text-2xl font-bold text-foundationblackblack-13">
 									Company name
-								</h3>
+								</h3> */}
 
-								<div className="space-y-2">
+								{/* <div className="space-y-2">
 									<p className="text-foundation-blackblack-10 text-xl font-light">
 										Reduced costs by
 									</p>
@@ -599,9 +600,9 @@ const Services = (): JSX.Element => {
 									<p className="text-foundation-blackblack-10 text-xl font-light">
 										with AI-driven automation
 									</p>
-								</div>
+								</div> */}
 
-								<button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+								{/* <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
 									Read more
 									<svg
 										width="16"
@@ -617,20 +618,20 @@ const Services = (): JSX.Element => {
 									</svg>
 								</button>
 							</div>
-						</div>
+						</div> */}
 
 						{/* Success Story Card 3 */}
-						<div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
-							<div className="flex flex-col items-center text-center space-y-6">
-								<div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
+						{/* <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+							<div className="flex flex-col items-center text-center space-y-6"> */}
+								{/* <div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
 									<span className="text-foundation-blackblack-10">Logo here</span>
-								</div>
+								</div> */}
 
-								<h3 className="text-2xl font-bold text-foundationblackblack-13">
+								{/* <h3 className="text-2xl font-bold text-foundationblackblack-13">
 									Company name
-								</h3>
+								</h3> */}
 
-								<div className="space-y-2">
+								{/* <div className="space-y-2">
 									<p className="text-foundation-blackblack-10 text-xl font-light">
 										Scaled from
 									</p>
@@ -644,9 +645,9 @@ const Services = (): JSX.Element => {
 									<p className="text-foundation-blackblack-10 text-xl font-light">
 										ARR using 4AY
 									</p>
-								</div>
+								</div> */}
 
-								<button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+								{/* <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
 									Read more
 									<svg
 										width="16"
@@ -662,10 +663,10 @@ const Services = (): JSX.Element => {
 									</svg>
 								</button>
 							</div>
-						</div>
+						</div> */}
 
 						{/* Success Story Card 4 */}
-						<div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+						{/* <div className="bg-foundation-redred-3 px-5 py-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
 							<div className="flex flex-col items-center text-center space-y-6">
 								<div className="w-32 h-12 bg-foundation-blackblack-4 rounded-lg flex items-center justify-center">
 									<span className="text-foundation-blackblack-10">Logo here</span>
@@ -673,9 +674,9 @@ const Services = (): JSX.Element => {
 
 								<h3 className="text-2xl font-bold text-foundationblackblack-13">
 									Company name
-								</h3>
+								</h3> */}
 
-								<div className="space-y-2">
+								{/* <div className="space-y-2">
 									<p className="text-foundation-blackblack-10 text-xl font-light ">
 										Increased ARR by
 									</p>
@@ -685,8 +686,8 @@ const Services = (): JSX.Element => {
 									<p className="text-foundation-blackblack-10 text-xl font-light">
 										in Y months
 									</p>
-								</div>
-
+								</div> */}
+{/* 
 								<button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
 									Read more
 									<svg
@@ -704,15 +705,15 @@ const Services = (): JSX.Element => {
 								</button>
 							</div>
 						</div>
-					</div>
+					</div> */}
 
-					<div className="mt-12 text-center">
+					{/* <div className="mt-12 text-center">
 						<button className="px-6 py-3 bg-foundation-blackblack-10 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">
 							See More Success Stories
 						</button>
 					</div>
 				</div>
-			</section>
+			</section> */}
 			<CaseStudies />
 			<BlogSection />
 
@@ -724,8 +725,8 @@ const Services = (): JSX.Element => {
 							Hands-On Consultation &amp; Setup
 						</h2>
 						<p className="text-base md:text-lg text-center font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-2xl mx-auto mb-8 md:mb-12">
-        We’re not just tech vendors. We operate like embedded partners—fixing real growth bottlenecks and deploying solutions that match your current maturity stage.
-      </p>
+		We’re not just tech vendors. We operate like embedded partners—fixing real growth bottlenecks and deploying solutions that match your current maturity stage.
+	  </p>
 						<div className="space-y-8">
 							{/* Application & Tech Architecture Audit: */}
 							<div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
@@ -786,7 +787,7 @@ const Services = (): JSX.Element => {
 									</h3>
 								</div>
 							</div>
-              {/* AI Tooling Recommendations: */}
+			  {/* AI Tooling Recommendations: */}
 							<div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
 								<div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
 									<img
@@ -843,52 +844,52 @@ const Services = (): JSX.Element => {
 			{/* Client Testimonials Carousel */}
 {/*
 <section className="md:py-20 py-8 px-4 md:px-32 bg-[#F8EFEF]">
-    <div className="container mx-auto px-0">
-        <div className="flex justify-between items-center mb-16">
-            <h2 className="md:text-4xl text-3xl font-bold font-['Playfair',Helvetica] text-foundationblackblack-13">
-                What Our Clients Say
-            </h2>
-            <div className="flex gap-4">
-                <button
-                    onClick={() => testimonialSliderRef.current?.slickPrev()}
-                    className="w-12 h-12 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center group border border-gray-200"
-                    aria-label="Previous testimonial"
-                >
-                    <ArrowLeft className="w-6 h-6 text-foundationredred-13 group-hover:text-foundationredred-11 transition-colors" />
-                </button>
-                <button
-                    onClick={() => testimonialSliderRef.current?.slickNext()}
-                    className="w-12 h-12 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center group border border-gray-200"
-                    aria-label="Next testimonial"
-                >
-                    <ArrowRight className="w-6 h-6 text-foundationredred-13 group-hover:text-foundationredred-11 transition-colors" />
-                </button>
-            </div>
-        </div>
+	<div className="container mx-auto px-0">
+		<div className="flex justify-between items-center mb-16">
+			<h2 className="md:text-4xl text-3xl font-bold font-['Playfair',Helvetica] text-foundationblackblack-13">
+				What Our Clients Say
+			</h2>
+			<div className="flex gap-4">
+				<button
+					onClick={() => testimonialSliderRef.current?.slickPrev()}
+					className="w-12 h-12 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center group border border-gray-200"
+					aria-label="Previous testimonial"
+				>
+					<ArrowLeft className="w-6 h-6 text-foundationredred-13 group-hover:text-foundationredred-11 transition-colors" />
+				</button>
+				<button
+					onClick={() => testimonialSliderRef.current?.slickNext()}
+					className="w-12 h-12 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow duration-200 flex items-center justify-center group border border-gray-200"
+					aria-label="Next testimonial"
+				>
+					<ArrowRight className="w-6 h-6 text-foundationredred-13 group-hover:text-foundationredred-11 transition-colors" />
+				</button>
+			</div>
+		</div>
 
-        <Slider ref={testimonialSliderRef} {...testimonialSettings}>
-            {testimonials.map((testimonial, index) => (
-                <div key={index} className="md:px-4 px-0">
-                    <div className="bg-white rounded-3xl md:p-12 p-4 py-8 shadow-md">
-                        <div className="flex flex-col items-center text-center relative">
-                            <div className="md:text-[120px] text-[80px] font-quicksand absolute md:-top-6 -top-4 md:left-4 left-0 leading-none text-foundationredred-13 opacity-20  mb-6">
-                                ❝
-                            </div>
-                            <p className="md:text-2xl text-xl font-light text-foundation-blackblack-10 mb-8 max-w-3xl">
-                                {testimonial.content}
-                            </p>
-                            <div className="md:text-xl text-lg text-foundationredred-13">
-                                - {testimonial.name},{" "}
-                                <span className="text-foundation-blackblack-10">
-                                    {testimonial.company}
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            ))}
-        </Slider>
-    </div>
+		<Slider ref={testimonialSliderRef} {...testimonialSettings}>
+			{testimonials.map((testimonial, index) => (
+				<div key={index} className="md:px-4 px-0">
+					<div className="bg-white rounded-3xl md:p-12 p-4 py-8 shadow-md">
+						<div className="flex flex-col items-center text-center relative">
+							<div className="md:text-[120px] text-[80px] font-quicksand absolute md:-top-6 -top-4 md:left-4 left-0 leading-none text-foundationredred-13 opacity-20  mb-6">
+								❝
+							</div>
+							<p className="md:text-2xl text-xl font-light text-foundation-blackblack-10 mb-8 max-w-3xl">
+								{testimonial.content}
+							</p>
+							<div className="md:text-xl text-lg text-foundationredred-13">
+								- {testimonial.name},{" "}
+								<span className="text-foundation-blackblack-10">
+									{testimonial.company}
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			))}
+		</Slider>
+	</div>
 </section>
 */}
 			{/* <MediaCarousel /> */}
