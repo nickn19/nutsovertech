@@ -152,12 +152,12 @@ const MicroSaas = (): JSX.Element => {
           <div className="container mx-auto px-0">
             <div className="bg-[#D57879] rounded-lg p-6 md:p-8 ">
               <h2 className="text-3xl md:text-4xl text-center font-bold mb-6 text-foundationblackblack-13 font-['Playfair',Helvetica]">Why MicroSaaS Works</h2>
-             {/* <p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-lg md:text-[21px] text-center tracking-[0] leading-normal px-4">
-             MicroSaaS is the anti-startup:
-            </p> */}
-             <h3 className="text-white font-['Lato',Helvetica] font-light text-2xl md:text-5xl mb-4">
-                 MicroSaaS is the anti-startup:
-                </h3>
+              {/* <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
+                  MicroSaaS is the anti-startup:
+                </p> */}
+            <h3 className="text-3xl md:text-4xl font-bold mb-6 text-white font-['Playfair',Helvetica]">
+                MicroSaaS is the anti-startup:
+            </h3>
               <div className="flex gap-6 md:flex-row flex-col items-center justify-between">
               <div className="grid md:grid-cols-1 gap-4 md:w-2/5">
                 <div className="bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold ">
@@ -177,6 +177,9 @@ const MicroSaas = (): JSX.Element => {
                 <h3 className="text-white font-['Lato',Helvetica] font-light text-2xl md:text-5xl mb-4">
                  We help you build your own or license ours. Either way—you get a lean, high-ROI tool that works 24/7 without a bloated dev team.
                 </h3>
+                {/* <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
+                  We help you build your own or license ours. Either way—you get a lean, high-ROI tool that works 24/7 without a bloated dev team.
+                </p> */}
                 {/* <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
                   🔺 Reduce your CAQ, scale MoFU, and improve LTV
                 </p>
@@ -199,89 +202,73 @@ const MicroSaas = (): JSX.Element => {
         <h2 className="md:text-4xl text-3xl text-center font-bold font-['Playfair',Helvetica] text-foundationblackblack-13 mb-12">
           What Makes MicroSaaS Special
         </h2>
-        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Laser-focused: */}
+          {/* Laser-focused */}
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/analysis.png" alt="AI Strategy" className="w-8 h-8" />
+                <img src="/analysis.png" alt="Laser-focused" className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">Laser-focused</h3>
-              <p className="text-foundation-blackblack-10 text-base">
-                Built for edge cases that big SaaS platforms ignore.
-              </p>
+              <p className="text-foundation-blackblack-10 text-base">Built for edge cases that big SaaS platforms ignore.</p>
             </div>
           </div>
-
           {/* Low cost, high automation */}
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/no-code.png" alt="No Code" className="w-8 h-8" />
+                <img src="/no-code.png" alt="Low cost, high automation" className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">Low cost, high automation</h3>
-              <p className="text-foundation-blackblack-10 text-base">
-                No need for big infra—most are near-passive once live.
-              </p>
+              <p className="text-foundation-blackblack-10 text-base">No need for big infra—most are near-passive once live.</p>
             </div>
           </div>
-
           {/* AI-native */}
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/execution.png" alt="Data Driven" className="w-8 h-8" />
+                <img src="/ai_native.svg" alt="AI-native" className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">AI-native</h3>
-              <p className="text-foundation-blackblack-10 text-base">
-                 Leverage 4ay, workflow automation, and no-code tools.
-              </p>
+              <p className="text-foundation-blackblack-10 text-base">Leverage 4ay, workflow automation, and no-code tools.</p>
             </div>
           </div>
           {/* Highly profitable */}
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/execution.png" alt="Data Driven" className="w-8 h-8" />
+                <img src="/t_shaped_growth.svg" alt="Highly profitable" className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">Highly profitable</h3>
-              <p className="text-foundation-blackblack-10 text-base">
-                  Most of our apps hit breakeven in weeks, not years.
-              </p>
+              <p className="text-foundation-blackblack-10 text-base">Most of our apps hit breakeven in weeks, not years.</p>
             </div>
           </div>
-          {/*Truly yours */}
+          {/* Truly yours */}
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/execution.png" alt="Data Driven" className="w-8 h-8" />
+                <img src="/done_for_you.svg" alt="Truly yours" className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">Truly yours</h3>
-              <p className="text-foundation-blackblack-10 text-base">
-                 Host it, sell it, use it—your IP, your cash flow.
-              </p>
+              <p className="text-foundation-blackblack-10 text-base">Host it, sell it, use it—your IP, your cash flow.</p>
             </div>
           </div>
-          {/*Acquisition engine */}
+          {/* Acquisition engine */}
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/execution.png" alt="Data Driven" className="w-8 h-8" />
+                <img src="/Strategic_Infrastructure.svg" alt="Acquisition engine" className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">Acquisition engine</h3>
-              <p className="text-foundation-blackblack-10 text-base">
-                 Acquisition engine on top of which you can create SaaS apps.
-              </p>
+              <p className="text-foundation-blackblack-10 text-base">Acquisition engine on top of which you can create SaaS app.</p>
             </div>
           </div>
         </div>
-
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <button className="px-6 py-3 bg-foundation-blackblack-10 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">
             Explore Our IP Assets
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
      
@@ -307,44 +294,35 @@ const MicroSaas = (): JSX.Element => {
             {/* Use our React Boilerplate */}
             <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/data-index.png" alt="Data Indexing" className="w-12 h-12" />
+                <img src="/Guided-Onboarding.png" alt="React Boilerplate" className="w-12 h-12" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
                  Use our React Boilerplate
                 </h3>
-                {/* <p className="text-foundation-blackblack-10">
-                  Index data in any format or language for seamless retrieval and interoperability.
-                </p> */}
               </div>
             </div>
 
             {/* Add your logic via 4AY PaaS agents */}
             <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/llm.png" alt="LLM Insights" className="w-12 h-12" />
+                <img src="/llm.png" alt="4AY PaaS Agents" className="w-12 h-12" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
                  Add your logic via 4AY PaaS agents
                 </h3>
-                {/* <p className="text-foundation-blackblack-10 text-lg font-light">
-                  High-value free content, data-driven insights, and expert consulting to build trust and engagement.
-                </p> */}
               </div>
             </div>
-             {/* Automate tasks with N8n */}
+            {/* Automate tasks with N8n */}
             <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/llm.png" alt="LLM Insights" className="w-12 h-12" />
+                <img src="/Operational_Discipline.svg" alt="N8n Automation" className="w-12 h-12" style={{ filter: 'brightness(0) saturate(100%)' }} />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
                 Automate tasks with N8n
                 </h3>
-                {/* <p className="text-foundation-blackblack-10 text-lg font-light">
-                  High-value free content, data-driven insights, and expert consulting to build trust and engagement.
-                </p> */}
               </div>
             </div>
 
@@ -357,24 +335,18 @@ const MicroSaas = (): JSX.Element => {
                 <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
                   Host with our infra or your own
                 </h3>
-                {/* <p className="text-foundation-blackblack-10 text-lg font-light">
-                  Define tailored chunking and retrieval strategies for optimized data access.
-                </p> */}
               </div>
             </div>
 
-            {/* Own 100% of the IP */}
+            {/* Optimised Embedding Models */}
             <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/optimised-embedding.png" alt="Embedding Models" className="w-12 h-12" />
+                <img src="/optimised-embedding.png" alt="Optimised Embedding Models" className="w-12 h-12" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
                   Optimised Embedding Models
                 </h3>
-                {/* <p className="text-foundation-blackblack-10 text-lg font-light">
-                  Select and implement the best embedding models to maximize search accuracy and performance.
-                </p> */}
               </div>
             </div>
           </div>
@@ -383,95 +355,7 @@ const MicroSaas = (): JSX.Element => {
     </section>
 
     {/* Industry Verticals Section */}
-    <section className="md:py-20 py-8 px-4 md:px-20 bg-foundation-blackblack-4">
-      <div className="container mx-auto px-0">
-        <div className="text-center md:mb-16 mb-8">
-          <h2 className="text-3xl md:text-4xl text-center font-bold font-['Playfair',Helvetica] text-foundationredred-13 mb-4">
-            Industry Verticals We Power
-          </h2>
-          <p className="text-2xl font-light text-foundation-blackblack-10 font-['Lato',Helvetica]">
-            Dummy
-          </p>
-        </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Dual Deployment Models Card */}
-          <div className="bg-white px-5 py-8 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300">
-            <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
-              Dual Deployment Models
-            </h3>
-            <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
-              The platform supports two setup configurations:
-            </p>
-            <ul className="space-y-4">
-              <li className="text-lg font-light text-foundation-blackblack-10">
-                • Organisational-Level Setup for full-scale, cross-departmental enterprise deployments.
-              </li>
-              <li className="text-lg font-light text-foundation-blackblack-10">
-                • Micro SaaS Setup for lightweight, niche applications with pre-built templates and prompts.
-              </li>
-            </ul>
-          </div>
-
-          {/* Three Core Dimensions Card */}
-          <div className="bg-white px-5 py-8 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300">
-            <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
-              Three Core Dimensions
-            </h3>
-            <ul className="space-y-6">
-              <li className="text-lg font-light text-foundation-blackblack-10">
-                • Dimension 1 (SOP): Captures workflows, best practices, and decision-making logic to train AI agents.
-              </li>
-              <li className="text-lg font-light text-foundation-blackblack-10">
-                • Dimension 2 (Integration): Connects with third-party tools, APIs, and data sources for real-time data flow and task execution.
-              </li>
-              <li className="text-lg font-light text-foundation-blackblack-10">
-                • Dimension 3 (Customer Data): Manages user-specific data to generate tailored, AI-powered workflows.
-              </li>
-            </ul>
-          </div>
-
-          {/* Integration Dimension Card */}
-            <div className="bg-white px-5 py-8 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300">
-            <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
-              Integration Dimension
-            </h3>
-            <ul className="space-y-6">
-              <li className="text-lg font-light text-foundation-blackblack-10">
-                • Enriching Integrations: Fetch real-time data from tools like Bloomberg, SEMrush, Google Trends, and CRMs to enhance insights.
-              </li>
-              <li className="text-lg font-light text-foundation-blackblack-10">
-                • Performing Actions: Enables AI agents to act within tools like Slack, Jira, Salesforce, Trello, and Mailchimp—automating tasks like posting messages, updating leads, or scheduling posts.
-              </li>
-            </ul>
-          </div>
-          <div className="bg-white px-5 py-8 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300">
-            <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
-            Rich API & Data Connector Support
-            </h3>
-            <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
-            Offers dynamic API interfaces for Slack, Teams, social media, Google Sheets, CRMs, ERPs, and more, supporting both structured and unstructured data sources—including scraping capabilities.
-            </p>
-          </div>
-          <div className="bg-white px-5 py-8 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300">
-            <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
-            Tagging & Content Structuring System
-            </h3>
-            <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
-            Every input is tagged (e.g., SOP, BP, Training, TP) to ensure accurate data parsing, vectorisation (when needed), and LLM interpretation. The DNS tag (Do Not Summarise) is used to govern sensitive or structured information.
-            </p>
-          </div>
-          <div className="bg-white px-5 py-8 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300">
-            <h3 className="text-2xl text-center font-bold text-foundationblackblack-13 mb-6">
-            Continuous Learning & Updates
-            </h3>
-            <p className="text-lg font-light text-foundation-blackblack-10 mb-6">
-            All dimensions are designed to be iteratively refined with feedback, performance data, and updated SOPs to ensure relevance and alignment with evolving organisational needs.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    {/* Industry Verticals Section hidden as requested */}
 
     {/* MicroSaaS Products You Can Start Using Today */}
     <section className="md:py-20 py-8 px-4 md:px-20">
@@ -557,8 +441,8 @@ const MicroSaas = (): JSX.Element => {
         </div> */}
       </div>
     </section>
-   <CaseStudies />
-   <BlogSection/>
+   {/* <CaseStudies /> */}
+   {/* <BlogSection/> */}
 
     {/* Our MicroSaaS Stack */}
     <section className="md:py-20 py-8 px-0 md:px-32 ">
@@ -570,7 +454,7 @@ const MicroSaas = (): JSX.Element => {
         <p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-lg md:text-2xl text-center tracking-[0] leading-normal px-4 mb-8">
           We’ve built a complete system to go from pain-point to product in days:
         </p>
-        <div className="overflow-x-auto flex justify-center mb-10">
+        {/* <div className="overflow-x-auto flex justify-center mb-10">
 <table className="min-w-[350px] text-left border-collapse">
     <thead>
       <tr>
@@ -579,7 +463,7 @@ const MicroSaas = (): JSX.Element => {
       </tr>
     </thead>
     </table>
-</div>
+</div> */}
          <div className="space-y-6">
           {/* Frontend */}
           <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
@@ -674,7 +558,7 @@ const MicroSaas = (): JSX.Element => {
 
         <div className="mt-12 text-center">
           <button className="px-8 py-3 bg-foundationblackblack-11 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">
-            See it in action (contact form)
+            See it in action
           </button>
         </div>
       </div>
