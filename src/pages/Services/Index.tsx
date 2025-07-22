@@ -113,7 +113,24 @@ const testimonials = [
 		image: "/author.png",
 	},
 ];
-
+const useCaseData = [
+	{
+    title: "Agency Owners:",
+    description: "Productize your internal workflows",
+  },
+  {
+    title: "D2C Brands:",
+    description: "Spin up niche tools for community & conversion",
+  },
+  {
+    title: "Consultants & Creator",
+    description: "Sell tools alongside services",
+  },
+  {
+    title: "Operators",
+    description: "Solve for that one annoying problem (and monetize it)",
+  },
+  ];
 const Services = (): JSX.Element => {
 	const testimonialSliderRef = React.useRef<Slider | null>(null);
 	const testimonialSettings = {
@@ -236,7 +253,11 @@ const Services = (): JSX.Element => {
 					</div>
 				</div>
 			</section>
-			<UseCaseCarousel />
+			<UseCaseCarousel
+      useCases={useCaseData}
+      title="Most Common Use Cases"
+      ctaText="Contact Us for a Consultation"
+    />
 
 			{/* Where We Intervene Section */}
 			<section className="md:py-20 py-8 px-4 md:px-20">

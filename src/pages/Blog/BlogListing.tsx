@@ -96,9 +96,6 @@ useEffect(() => {
   // Placeholder data for development
   const placeholderAuthors = [
     { id: 1, name: "Saurav Mishra", acf: { role: "Founder and Partner" } },
-    { id: 2, name: "Saurav Mishra", acf: { role: "Founder and Partner" } },
-    { id: 3, name: "Saurav Mishra", acf: { role: "Founder and Partner" } },
-    { id: 4, name: "Saurav Mishra", acf: { role: "Founder and Partner" } },
   ];
 
   const placeholderPosts = [
