@@ -98,21 +98,41 @@ export const VideoCarousel = (): JSX.Element => {
           </p>
         </div>
         <div className="flex items-center gap-4">
-          <button
+          {/* <button
             onClick={handlePrev}
             className="video-arrow-prev rounded-full text-slate-400 hover:text-foundationredred-13 transition-colors"
             aria-label="Previous slide"
           >
             <ArrowLeftCircle size={32} />
+          </button> */}
+          {/* <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" fill="#C54648"/>
+<path d="M24 16L16 24L24 32" fill="#C54648"/>
+<path d="M24 16L16 24M16 24L24 32M16 24H32M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> */}
+          <button
+            onClick={handlePrev}
+            className="video-arrow-prev rounded-full transition-colors"
+            aria-label="Previous slide"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#c54648"><path d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zm1.289-15.7 1.422 1.4-4.3 4.344 4.289 4.245-1.4 1.422-5.714-5.648z"/></svg>
           </button>
           <button
+            onClick={handleNext}
+            className="video-arrow-next rounded-full transition-colors"
+            aria-label="Next slide"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#c54648"><path d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zM8.711 4.3l5.7 5.766L8.7 15.711l-1.4-1.422 4.289-4.242-4.3-4.347z"/></svg>
+          </button>
+          {/* <button
             onClick={handleNext}
             className="video-arrow-next rounded-full text-slate-400 hover:text-foundationredred-13 transition-colors"
             aria-label="Next slide"
           >
             <ArrowRightCircle size={32} />
-          </button>
+          </button> */}
         </div>
+       
       </div>
 
       <div className="video-carousel-container w-full max-w-[1282px]">

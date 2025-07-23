@@ -159,14 +159,17 @@ const Services = (): JSX.Element => {
 
 							<p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-lg md:text-[21px] text-center tracking-[0] leading-normal px-4">
 								Deep, vertical expertise powered by a wide, horizontal
-								ecosystem of capabilities.
-							</p>
-							<p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-sm md:text-base text-center tracking-[0] leading-normal px-4">
-								We take a PE-like operating partner approach to your
+								ecosystem of capabilities.We take a PE-like operating partner approach to your
 								business—intervening where it matters most, aligning
 								incentives, and deploying AI workforces to scale
 								operations without bloating teams.
 							</p>
+							{/* <p className="relative max-w-[641px] [text-shadow:2px_2px_9px_#ffffff2e] [font-family:'Lato',Helvetica] font-light text-foundation-blackblack-10 text-sm md:text-base text-center tracking-[0] leading-normal px-4">
+								We take a PE-like operating partner approach to your
+								business—intervening where it matters most, aligning
+								incentives, and deploying AI workforces to scale
+								operations without bloating teams.
+							</p> */}
 						</div>
 
 						<div className="flex flex-col md:flex-row items-center gap-[30px] relative">
@@ -250,12 +253,16 @@ const Services = (): JSX.Element => {
 			<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
 			  <div className="flex flex-col items-center text-center gap-6">
 				<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-				  <img
-					src="/Operational_Discipline.svg"
-					alt="Strategy & Ops Automation"
-					className="w-8 h-8"
-					style={{ filter: 'brightness(0) saturate(100%)' }}
-				  />
+		  {/* Inline SVG for Strategy & Ops Automation (lighter style) */}
+		  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
+			<circle cx="12" cy="12" r="10" stroke="#C54648" strokeWidth="1.2" fill="none"/>
+			<circle cx="12" cy="12" r="5" stroke="#C54648" strokeWidth="1.1" fill="none"/>
+			<circle cx="12" cy="12" r="2" fill="#C54648"/>
+			<line x1="12" y1="2" x2="12" y2="7" stroke="#C54648" strokeWidth="1.1"/>
+			<line x1="12" y1="17" x2="12" y2="22" stroke="#C54648" strokeWidth="1.1"/>
+			<line x1="2" y1="12" x2="7" y2="12" stroke="#C54648" strokeWidth="1.1"/>
+			<line x1="17" y1="12" x2="22" y2="12" stroke="#C54648" strokeWidth="1.1"/>
+		  </svg>
 				</div>
 				<h3 className="text-xl font-bold text-foundationblackblack-13">
 				  Strategy & Ops Automation
@@ -270,11 +277,13 @@ const Services = (): JSX.Element => {
 			<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
 			  <div className="flex flex-col items-center text-center gap-6">
 				<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-				  <img
-					src="/data-index.png"
-					alt="Revenue Infrastructure"
-					className="w-8 h-8"
-				  />
+		  {/* Inline SVG for Revenue Infrastructure (lighter style) */}
+		  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
+			<rect x="4.6" y="4.6" width="14.8" height="14.8" rx="4" stroke="#C54648" strokeWidth="1.2" fill="none"/>
+			<rect x="7.5" y="7.5" width="9" height="1.2" fill="#C54648" rx="0.6"/>
+			<rect x="7.5" y="11.5" width="9" height="1.2" fill="#C54648" rx="0.6"/>
+			<rect x="7.5" y="15.5" width="9" height="1.2" fill="#C54648" rx="0.6"/>
+		  </svg>
 				</div>
 				<h3 className="text-xl font-bold text-foundationblackblack-13">
 				  Revenue Infrastructure
@@ -289,11 +298,14 @@ const Services = (): JSX.Element => {
 			<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
 			  <div className="flex flex-col items-center text-center gap-6">
 				<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-				  <img
-					src="/custom-retrieval.png"
-					alt="Product & Commerce Enablement"
-					className="w-8 h-8"
-				  />
+		  {/* Inline SVG for Product & Commerce Enablement (distinct style) */}
+		  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
+			<rect x="3.5" y="7" width="17" height="10" rx="3" stroke="#C54648" strokeWidth="1.2" fill="none"/>
+			<rect x="7" y="10" width="3" height="3" fill="#C54648" rx="1.5"/>
+			<rect x="14" y="10" width="3" height="3" fill="#C54648" rx="1.5"/>
+			<rect x="10.5" y="13.5" width="3" height="2" fill="#C54648" rx="1"/>
+			<circle cx="12" cy="9" r="1" fill="#C54648"/>
+		  </svg>
 				</div>
 				<h3 className="text-xl font-bold text-foundationblackblack-13">
 				  Product & Commerce Enablement
@@ -308,11 +320,12 @@ const Services = (): JSX.Element => {
 			<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
 			  <div className="flex flex-col items-center text-center gap-6">
 				<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-				  <img
-					src="/optimised-embedding.png"
-					alt="Retention & Lifecycle"
-					className="w-8 h-8"
-				  />
+		  {/* Inline SVG for Retention & Lifecycle (lighter style) */}
+		  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
+			<circle cx="12" cy="12" r="10" stroke="#C54648" strokeWidth="1.2" fill="none"/>
+			<path d="M8 12a4 4 0 0 1 8 0" stroke="#C54648" strokeWidth="1.1" fill="none"/>
+			<circle cx="12" cy="12" r="2" fill="#C54648"/>
+		  </svg>
 				</div>
 				<h3 className="text-xl font-bold text-foundationblackblack-13">
 				  Retention & Lifecycle
@@ -352,81 +365,85 @@ const Services = (): JSX.Element => {
 
 						{/* Right Column - Feature List */}
 						<div className="space-y-8">
-							{/* 4AY PaaS */}
-							<div className="flex gap-6 items-start">
-								<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-									<img
-										src="/data-index.png"
-										alt="Data Indexing"
-										className="w-12 h-12"
-									/>
-								</div>
-								<div>
-									<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-										4AY PaaS
-									</h3>
-									<p className="text-foundation-blackblack-10">
-										A robust AI workflow development platform for rapidly building and deploying LLM-powered business tools with integrated automations.
-									</p>
-								</div>
-							</div>
+			  {/* 4AY PaaS */}
+			  <div className="flex gap-6 items-start">
+				<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+				  <img
+					src="/data-index.png"
+					alt="Data Indexing"
+					className="w-12 h-12"
+					style={{ filter: 'invert(27%) sepia(77%) saturate(1162%) hue-rotate(334deg) brightness(92%) contrast(97%)' }}
+				  />
+				</div>
+				<div>
+				  <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
+					4AY PaaS
+				  </h3>
+				  <p className="text-foundation-blackblack-10">
+					A robust AI workflow development platform for rapidly building and deploying LLM-powered business tools with integrated automations.
+				  </p>
+				</div>
+			  </div>
 
-							{/* SaaS Boilerplates */}
-							<div className="flex gap-6 items-start">
-								<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-									<img
-										src="/llm.png"
-										alt="LLM Insights"
-										className="w-12 h-12"
-									/>
-								</div>
-								<div>
-									<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-										SaaS Boilerplates
-									</h3>
-									<p className="text-foundation-blackblack-10 text-lg font-light">
-										Production-ready React templates like Var80 (built for D2C growth), bundled with 1000+ native integration presets across CRM, email, analytics, and more.
-									</p>
-								</div>
-							</div>
+			  {/* SaaS Boilerplates */}
+			  <div className="flex gap-6 items-start">
+				<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+				  <img
+					src="/llm.png"
+					alt="LLM Insights"
+					className="w-12 h-12"
+					style={{ filter: 'invert(27%) sepia(77%) saturate(1162%) hue-rotate(334deg) brightness(92%) contrast(97%)' }}
+				  />
+				</div>
+				<div>
+				  <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
+					SaaS Boilerplates
+				  </h3>
+				  <p className="text-foundation-blackblack-10 text-lg font-light">
+					Production-ready React templates like Var80 (built for D2C growth), bundled with 1000+ native integration presets across CRM, email, analytics, and more.
+				  </p>
+				</div>
+			  </div>
 
-							{/*MicroSaaS Tools */}
-							<div className="flex gap-6 items-start">
-								<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-									<img
-										src="/custom-retrieval.png"
-										alt="Custom Retrieval"
-										className="w-12 h-12"
-									/>
-								</div>
-								<div>
-									<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-										MicroSaaS Tools
-									</h3>
-									<p className="text-foundation-blackblack-10 text-lg font-light">
-										From Omnicapture (automated content digitization) to single-purpose AI workforces — instantly deployable micro tools with embedded logic and automation flows.
-									</p>
-								</div>
-							</div>
+			  {/*MicroSaaS Tools */}
+			  <div className="flex gap-6 items-start">
+				<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+				  <img
+					src="/custom-retrieval.png"
+					alt="Custom Retrieval"
+					className="w-12 h-12"
+					style={{ filter: 'invert(27%) sepia(77%) saturate(1162%) hue-rotate(334deg) brightness(92%) contrast(97%)' }}
+				  />
+				</div>
+				<div>
+				  <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
+					MicroSaaS Tools
+				  </h3>
+				  <p className="text-foundation-blackblack-10 text-lg font-light">
+					From Omnicapture (automated content digitization) to single-purpose AI workforces — instantly deployable micro tools with embedded logic and automation flows.
+				  </p>
+				</div>
+			  </div>
 
-							{/* Digital Growth Assets */}
-							<div className="flex gap-6 items-start">
-								<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-									<img
-										src="/optimised-embedding.png"
-										alt="Embedding Models"
-										className="w-12 h-12"
-									/>
-								</div>
-								<div>
-									<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
-										Digital Growth Assets
-									</h3>
-									<p className="text-foundation-blackblack-10 text-lg font-light">
-										Access a library of proven SOPs, playbooks, growth checklists, and prebuilt landing/email templates — designed for instant implementation.
-									</p>
-								</div>
-							</div>
+			  {/* Digital Growth Assets */}
+			  <div className="flex gap-6 items-start">
+				<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+				  <img
+					src="/optimised-embedding.png"
+					alt="Embedding Models"
+					className="w-12 h-12"
+					style={{ filter: 'invert(27%) sepia(77%) saturate(1162%) hue-rotate(334deg) brightness(92%) contrast(97%)' }}
+				  />
+				</div>
+				<div>
+				  <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
+					Digital Growth Assets
+				  </h3>
+				  <p className="text-foundation-blackblack-10 text-lg font-light">
+					Access a library of proven SOPs, playbooks, growth checklists, and prebuilt landing/email templates — designed for instant implementation.
+				  </p>
+				</div>
+			  </div>
 						</div>
 					</div>
 				</div>
@@ -732,9 +749,10 @@ const Services = (): JSX.Element => {
 							<div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
 								<div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
 									<img
-										src="/Guided-Onboarding.png"
-										alt="Application & Tech Architecture Audit:"
-										className="w-8 h-8"
+					src="/Guided-Onboarding.png"
+					alt="Application & Tech Architecture Audit:"
+					className="w-8 h-8"
+					style={{ filter: 'invert(27%) sepia(77%) saturate(1162%) hue-rotate(334deg) brightness(92%) contrast(97%)' }}
 									/>
 								</div>
 								<div>
@@ -752,9 +770,10 @@ const Services = (): JSX.Element => {
 							<div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
 								<div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
 									<img
-										src="/24-7-Support.png"
-										alt="Growth Bottleneck Identification:"
-										className="w-8 h-8"
+					src="/24-7-Support.png"
+					alt="Growth Bottleneck Identification:"
+					className="w-8 h-8"
+					style={{ filter: 'invert(27%) sepia(77%) saturate(1162%) hue-rotate(334deg) brightness(92%) contrast(97%)' }}
 									/>
 								</div>
 								<div>
@@ -772,9 +791,10 @@ const Services = (): JSX.Element => {
 							<div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
 								<div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
 									<img
-										src="/Knowledge-Hub.png"
-										alt="MarTech Stack Audit:"
-										className="w-8 h-8"
+					src="/Knowledge-Hub.png"
+					alt="MarTech Stack Audit:"
+					className="w-8 h-8"
+					style={{ filter: 'invert(27%) sepia(77%) saturate(1162%) hue-rotate(334deg) brightness(92%) contrast(97%)' }}
 									/>
 								</div>
 								<div>
@@ -791,9 +811,10 @@ const Services = (): JSX.Element => {
 							<div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
 								<div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
 									<img
-										src="/Knowledge-Hub.png"
-										alt="AI Tooling Recommendations:"
-										className="w-8 h-8"
+					src="/Operational_Discipline.svg"
+					alt="AI Tooling Recommendations:"
+					className="w-8 h-8"
+					style={{ filter: 'invert(27%) sepia(77%) saturate(1162%) hue-rotate(334deg) brightness(92%) contrast(97%)' }}
 									/>
 								</div>
 								<div>

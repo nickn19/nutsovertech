@@ -152,9 +152,10 @@ const TShapeGrowth = (): JSX.Element => {
           <div className="container mx-auto px-0">
             <div className="bg-[#D57879] rounded-lg p-6 md:p-8 ">
               <h2 className="text-3xl md:text-4xl text-center font-bold mb-6 text-foundationblackblack-13 font-['Playfair',Helvetica]">Why T-Shaped Growth?</h2>
-              <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
+              <h2 className="text-3xl md:text-4xl text-center font-bold mb-6 text-white font-['Playfair',Helvetica]">With our AI-driven T-Shaped Growth approach, we apply:</h2>
+              {/* <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
                   With our AI-driven T-Shaped Growth approach, we apply:
-                </p>
+                </p> */}
               <div className="flex gap-6 md:flex-row flex-col items-center justify-between">
               <div className="grid md:grid-cols-1 gap-4 md:w-2/5">
                 <div className="bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold ">

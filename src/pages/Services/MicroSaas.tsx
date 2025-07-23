@@ -155,9 +155,10 @@ const MicroSaas = (): JSX.Element => {
               {/* <p className="text-white font-['Lato',Helvetica] text-base md:text-lg mb-2">
                   MicroSaaS is the anti-startup:
                 </p> */}
-            <h3 className="text-3xl md:text-4xl font-bold mb-6 text-white font-['Playfair',Helvetica]">
+              <h2 className="text-3xl md:text-4xl text-center font-bold mb-6 text-white font-['Playfair',Helvetica]">MicroSaaS is the anti-startup:</h2>
+             {/* <h3 className="text-3xl md:text-4xl font-bold mb-6 text-white font-['Playfair',Helvetica]">
                 MicroSaaS is the anti-startup:
-            </h3>
+             </h3> */}
               <div className="flex gap-6 md:flex-row flex-col items-center justify-between">
               <div className="grid md:grid-cols-1 gap-4 md:w-2/5">
                 <div className="bg-white text-foundationblackblack-13 rounded-3xl py-8 px-5  text-lg font-bold ">
@@ -207,7 +208,12 @@ const MicroSaas = (): JSX.Element => {
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/analysis.png" alt="Laser-focused" className="w-8 h-8" />
+                {/* Inline SVG for Laser-focused */}
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#C54648" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
+                  <circle cx="12" cy="12" r="10" fill="#C54648"/>
+                  <rect x="11" y="6" width="2" height="8" fill="#fff"/>
+                  <rect x="11" y="15" width="2" height="2" fill="#fff"/>
+                </svg>
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">Laser-focused</h3>
               <p className="text-foundation-blackblack-10 text-base">Built for edge cases that big SaaS platforms ignore.</p>
@@ -217,7 +223,11 @@ const MicroSaas = (): JSX.Element => {
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/no-code.png" alt="Low cost, high automation" className="w-8 h-8" />
+                {/* Inline SVG for Low cost, high automation */}
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#C54648" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
+                  <rect x="4" y="4" width="16" height="16" rx="4" fill="#C54648"/>
+                  <circle cx="12" cy="12" r="4" fill="#fff"/>
+                </svg>
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">Low cost, high automation</h3>
               <p className="text-foundation-blackblack-10 text-base">No need for big infra—most are near-passive once live.</p>
@@ -227,7 +237,11 @@ const MicroSaas = (): JSX.Element => {
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/ai_native.svg" alt="AI-native" className="w-8 h-8" />
+                {/* Inline SVG for AI-native */}
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#C54648" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
+                  <rect x="6" y="6" width="12" height="12" rx="6" fill="#C54648"/>
+                  <circle cx="12" cy="12" r="3" fill="#fff"/>
+                </svg>
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">AI-native</h3>
               <p className="text-foundation-blackblack-10 text-base">Leverage 4ay, workflow automation, and no-code tools.</p>
@@ -237,7 +251,12 @@ const MicroSaas = (): JSX.Element => {
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/t_shaped_growth.svg" alt="Highly profitable" className="w-8 h-8" />
+                {/* Inline SVG for Highly profitable */}
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#C54648" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
+                  <rect x="10" y="4" width="4" height="16" fill="#C54648"/>
+                  <rect x="4" y="10" width="16" height="4" fill="#C54648"/>
+                  <rect x="11" y="11" width="2" height="2" fill="#fff"/>
+                </svg>
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">Highly profitable</h3>
               <p className="text-foundation-blackblack-10 text-base">Most of our apps hit breakeven in weeks, not years.</p>
@@ -247,7 +266,11 @@ const MicroSaas = (): JSX.Element => {
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/done_for_you.svg" alt="Truly yours" className="w-8 h-8" />
+                {/* Inline SVG for Truly yours */}
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#C54648" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
+                  <circle cx="12" cy="12" r="10" fill="#C54648"/>
+                  <path d="M8 12l2 2 4-4" stroke="#fff" strokeWidth="2" fill="none"/>
+                </svg>
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">Truly yours</h3>
               <p className="text-foundation-blackblack-10 text-base">Host it, sell it, use it—your IP, your cash flow.</p>
@@ -257,7 +280,12 @@ const MicroSaas = (): JSX.Element => {
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                <img src="/Strategic_Infrastructure.svg" alt="Acquisition engine" className="w-8 h-8" />
+                {/* Inline SVG for Acquisition engine */}
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#C54648" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
+                  <rect x="4" y="4" width="16" height="16" rx="8" fill="#C54648"/>
+                  <path d="M8 12h8" stroke="#fff" strokeWidth="2"/>
+                  <path d="M12 8v8" stroke="#fff" strokeWidth="2"/>
+                </svg>
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">Acquisition engine</h3>
               <p className="text-foundation-blackblack-10 text-base">Acquisition engine on top of which you can create SaaS app.</p>
