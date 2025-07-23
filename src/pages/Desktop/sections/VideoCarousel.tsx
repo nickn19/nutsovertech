@@ -1,7 +1,7 @@
 "use client"
 
-import React, { useRef, useState, useEffect } from "react"
-import { ArrowLeftCircle, ArrowRightCircle, PauseCircle } from "lucide-react"
+import React, { useRef, useState } from "react"
+import { ArrowLeftCircle, ArrowRightCircle } from "lucide-react"
 // @ts-ignore
 import Slider from "react-slick"
 // @ts-ignore
@@ -11,8 +11,6 @@ import "slick-carousel/slick/slick-theme.css"
 
 export const VideoCarousel = (): JSX.Element => {
   const sliderRef = useRef<Slider | null>(null)
-  const iframesRef = useRef<{ [key: number]: HTMLIFrameElement | null }>({})
-  const [currentSlide, setCurrentSlide] = useState(0)
 
   const videoItems = [
     { id: 1, videoId: "Bh5cNesp3DU", title: "Profit Increase Strategy" },
@@ -28,60 +26,12 @@ export const VideoCarousel = (): JSX.Element => {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
-    afterChange: (current: number) => {
-      setCurrentSlide(current)
-      pauseAllVideos()
-    },
     responsive: [
       { breakpoint: 1200, settings: { slidesToShow: 3 } },
       { breakpoint: 768, settings: { slidesToShow: 2 } },
       { breakpoint: 576, settings: { slidesToShow: 1, dots: true } },
     ],
   }
-
-  const pauseAllVideos = (exceptIndex?: number) => {
-    Object.entries(iframesRef.current).forEach(([key, iframe]) => {
-      if (iframe && Number(key) !== exceptIndex) {
-        iframe.contentWindow?.postMessage(
-          JSON.stringify({ event: "command", func: "pauseVideo", args: [] }),
-          "*"
-        )
-      }
-    })
-  }
-
-  const handleMessage = (event: MessageEvent) => {
-    if (!event.data) return
-    try {
-      const data = typeof event.data === "string" ? JSON.parse(event.data) : event.data
-      if (data.event === "onStateChange") {
-        if (data.info === 1) {
-          // playing → pause others
-          const playingIndex = Object.entries(iframesRef.current).findIndex(
-            ([, iframe]) => iframe?.contentWindow === event.source
-          )
-          pauseAllVideos(playingIndex)
-        }
-        if (data.info === 0) {
-          // ended → go to next
-          const playingIndex = Object.entries(iframesRef.current).findIndex(
-            ([, iframe]) => iframe?.contentWindow === event.source
-          )
-          const nextIndex = (playingIndex + 1) % videoItems.length
-          sliderRef.current?.slickGoTo(nextIndex)
-        }
-      }
-    } catch {
-      // Ignore unrelated messages
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener("message", handleMessage)
-    return () => window.removeEventListener("message", handleMessage)
-  }, [])
-
-  useEffect(() => pauseAllVideos, [])
 
   const handlePrev = () => sliderRef.current?.slickPrev()
   const handleNext = () => sliderRef.current?.slickNext()
@@ -137,25 +87,17 @@ export const VideoCarousel = (): JSX.Element => {
 
       <div className="video-carousel-container w-full max-w-[1282px]">
         <Slider ref={sliderRef} {...settings}>
-          {videoItems.map((item, idx) => (
+          {videoItems.map((item) => (
             <div key={item.id} className="p-3">
               <div className="relative w-full h-[480px] rounded-lg overflow-hidden">
                 <div className="relative w-full h-full aspect-[9/16]">
                   <iframe
-                    ref={(el) => (iframesRef.current[idx] = el)}
                     className="w-full h-full rounded-lg"
-                    src={`https://www.youtube.com/embed/${item.videoId}?enablejsapi=1&rel=0&modestbranding=1`}
+                    src={`https://www.youtube.com/embed/${item.videoId}?rel=0&modestbranding=1`}
                     title={item.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   ></iframe>
-                  {/* <button
-                    onClick={() => pauseAllVideos()}
-                    className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 rounded-full p-2 transition-colors z-10"
-                    aria-label="Pause video"
-                  >
-                    <PauseCircle className="w-6 h-6 text-white" />
-                  </button> */}
                 </div>
               </div>
             </div>

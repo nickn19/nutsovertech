@@ -167,7 +167,7 @@ const Services = (): JSX.Element => {
 
 				{/* Hero content */}
 				<div className="relative flex flex-col w-full items-center justify-center  px-4">
-					<div className="flex flex-col max-w-[757px] items-center gap-10 mt-40">
+					<div className="flex flex-col max-w-[757px] items-center gap-10 my-40">
 						<div className="flex flex-col items-center justify-center gap-[30px] w-full">
 							<h1 className="relative w-full  [font-family:'Playfair',Helvetica] font-bold text-foundationblackblack-13 text-3xl md:text-[42px] text-center line-height-[1.2] leading-normal">
 								We embed ourselves in your business to orchestrate
@@ -202,13 +202,13 @@ const Services = (): JSX.Element => {
 							</Button>
 						</div>
 					</div>
-					<div className="md:h-[500px] h-[200px]  max-w-3xl mx-auto aspect-video bg-gray-100 rounded-lg border border-gray-200 flex items-center justify-center my-10">
+					{/* <div className="md:h-[500px] h-[200px]  max-w-3xl mx-auto aspect-video bg-gray-100 rounded-lg border border-gray-200 flex items-center justify-center my-10">
 						<div className="  flex items-center justify-center">
 							<div className="rounded-full bg-white p-3 shadow-md">
 								<Play className="h-6 w-6 text-red-500" />
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</section>
 			<section className="md:py-20 py-8 px-4 md:px-20 ">

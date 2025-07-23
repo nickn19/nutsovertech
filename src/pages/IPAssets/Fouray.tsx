@@ -84,7 +84,24 @@ const testimonials = [
     image: "/author.png"
   }
 ];
-
+const useCaseData = [
+	{
+    title: "Agency Owners:",
+    description: "Productize your internal workflows",
+  },
+  {
+    title: "D2C Brands:",
+    description: "Spin up niche tools for community & conversion",
+  },
+  {
+    title: "Consultants & Creator",
+    description: "Sell tools alongside services",
+  },
+  {
+    title: "Operators",
+    description: "Solve for that one annoying problem (and monetize it)",
+  },
+  ];
 const Fouray = (): JSX.Element => {
   const testimonialSliderRef = React.useRef<Slider | null>(null);
   const testimonialSettings = {
@@ -112,7 +129,7 @@ const Fouray = (): JSX.Element => {
 
   {/* Hero content */}
         <div className="relative flex flex-col w-full items-center justify-center  px-4">
-          <div className="flex flex-col max-w-[757px] items-center gap-10 mt-40">
+          <div className="flex flex-col max-w-[757px] items-center gap-10 my-40">
           <div className="flex flex-col items-center justify-center gap-[30px] w-full">
               <h1 className="relative w-full  [font-family:'Playfair',Helvetica] font-bold text-foundationblackblack-13 text-3xl md:text-[42px] text-center line-height-[1.2] leading-normal">
               Recruit Your AI-Workforce for Workflow Automation with <span className="text-foundationredred-13">4AY PaaS</span>
@@ -137,13 +154,13 @@ const Fouray = (): JSX.Element => {
           </div>
           
           </div>
-          <div className="md:h-[500px] h-[200px]  max-w-3xl mx-auto aspect-video bg-gray-100 rounded-lg border border-gray-200 flex items-center justify-center my-10">
+          {/* <div className="md:h-[500px] h-[200px]  max-w-3xl mx-auto aspect-video bg-gray-100 rounded-lg border border-gray-200 flex items-center justify-center my-10">
               <div className="  flex items-center justify-center">
                 <div className="rounded-full bg-white p-3 shadow-md">
                   <Play className="h-6 w-6 text-red-500" />
                 </div>
               </div>
-            </div>
+            </div> */}
         </div>
       </section>
       <section className="md:py-20 py-8 px-4 md:px-20 ">
@@ -168,7 +185,11 @@ const Fouray = (): JSX.Element => {
         </div>
       </div>
     </section>
-    <UseCaseCarousel />
+    <UseCaseCarousel
+      useCases={useCaseData}
+      title="Most Common Use Cases"
+      ctaText="Contact Us for a Consultation"
+    />
       
     {/* Where We Intervene Section */}
     <section className="md:py-20 py-8 px-4 md:px-20">
