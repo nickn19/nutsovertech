@@ -52,8 +52,8 @@ const UseCaseCarousel: React.FC<Props> = ({ useCases, title, ctaText }) => {
               <div
                 className={`overflow-hidden transition-all duration-300 ease-in-out mx-2 rounded-2xl mb-4 p-6 shadow-md bg-white flex flex-col items-center justify-center ${
                   index === activeSlide
-                    ? "h-[450px] mt-0"
-                    : "h-[200px] mt-[250px] "
+                    ? "h-[550px] mt-0"
+                    : "h-[300px] mt-[250px] "
                 }`}
               >
                 {index === activeSlide && (

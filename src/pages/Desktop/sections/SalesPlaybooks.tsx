@@ -32,9 +32,9 @@ export const SalesPlaybooks = (): JSX.Element => {
           Accelerating Growth Through a Proven Sales Engine
         </h2>
 
-        <div className="flex flex-col md:flex-row justify-between items-center w-full gap-8 md:mb-16 mb-8">
+        <div className="flex flex-col md:flex-row justify-between items-center w-full gap-16 md:mb-16 mb-8">
           {/* Funnel Visualization */}
-          <div className="relative w-full md:w-[518px] h-auto">
+          <div className="relative w-full md:w-1/2 h-auto">
           
             <img
               className="size-full"
@@ -44,7 +44,7 @@ export const SalesPlaybooks = (): JSX.Element => {
           </div>
 
           {/* Funnel Cards */}
-          <div className="flex flex-col md:gap-[39px] gap-8 w-full md:w-[429px]">
+          <div className="flex flex-col md:gap-[39px] gap-8 w-full md:w-1/2">
             {funnelStages.map((stage, index) => (
               <Card
                 key={stage.id}
@@ -64,7 +64,7 @@ export const SalesPlaybooks = (): JSX.Element => {
         </div>
 
         <Button className="bg-foundationredred-13 text-foundation-blackblack-1 rounded-[70px] px-4 py-3 font-['Lato',Helvetica] font-medium text-base">
-           Dive deep on why it matters!
+          <a href="services/t-shape-growth"> Dive deep on why it matters! </a>
         </Button>
       </div>
     </section>
