@@ -109,7 +109,24 @@ const testimonials = [
 		image: "/author.png",
 	},
 ];
-
+const useCaseData = [
+	{
+	  title: "Secure:",
+	  description: "SaaS applications built with robust security standards to protect your data and ensure privacy compliance.",
+	},
+	{
+	  title: "Uptime:",
+	  description: "High availability, with 99.9% uptime and proactive monitoring for minimal downtime.",
+	},
+	{
+	  title: "Scalable:",
+	  description: "Infrastructure designed to handle high traffic and adapt to your growing business needs.",
+	},
+	{
+	  title: "Track:",
+	  description: "Real-time performance tracking to optimize workflows and business operations.",
+	},
+  ];
 const SaasSolution = (): JSX.Element => {
 	const testimonialSliderRef = React.useRef<Slider | null>(null);
 	const testimonialSettings = {
@@ -229,7 +246,11 @@ const SaasSolution = (): JSX.Element => {
 					</div>
 				</div>
 			</section>
-			<UseCaseCarousel />
+			<UseCaseCarousel
+      useCases={useCaseData}
+      title="What to Expect: Enterprise-Grade Solutions"
+      ctaText="Contact Us for a Consultation"
+    />
 
 			{/* UI/UX Design Approach */}
 			<section className="md:py-20 py-8 px-4 md:px-20">

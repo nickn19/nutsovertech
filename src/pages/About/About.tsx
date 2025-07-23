@@ -10,7 +10,7 @@ const leadership = [
   {
     name: "Nitesh Mulchandani",
     role: "Ecom Growth specialist - Var80",
-    image: "",
+    image: "/leadership/nitesh.png",
   },
   {
     name: "Amulay Prakash",
@@ -25,7 +25,7 @@ const leadership = [
   {
     name: "Bhumika VJ",
     role: "Lead SEO and Martech",
-    image: "",
+    image: "/leadership/bhumika.jpg",
   },
   {
     name: "Balbir Heer",
@@ -35,12 +35,12 @@ const leadership = [
   {
     name: "Ravindra Thandu",
     role: "Martech automation specialist and RoR engineer",
-    image: "",
+    image: "/leadership/ravindra.JPG",
   },
   {
     name: "Sakshi Prajapati",
     role: "ROR Developer",
-    image: "/leadership/sakshi.jpeg",
+    image: "/leadership/sakshi.jpg",
   },
   {
     name: "Neeraj Sharma",

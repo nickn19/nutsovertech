@@ -84,7 +84,24 @@ const testimonials = [
     image: "/author.png"
   }
 ];
-
+const useCaseData = [
+	{
+    title: "Agency Owners:",
+    description: "Productize your internal workflows",
+  },
+  {
+    title: "D2C Brands:",
+    description: "Spin up niche tools for community & conversion",
+  },
+  {
+    title: "Consultants & Creator",
+    description: "Sell tools alongside services",
+  },
+  {
+    title: "Operators",
+    description: "Solve for that one annoying problem (and monetize it)",
+  },
+  ];
 const MicroSaas = (): JSX.Element => {
   const testimonialSliderRef = React.useRef<Slider | null>(null);
   const testimonialSettings = {
@@ -196,7 +213,11 @@ const MicroSaas = (): JSX.Element => {
         </div>
       </div>
     </section>
-    <UseCaseCarousel />
+    <UseCaseCarousel
+      useCases={useCaseData}
+      title="What to Expect: Enterprise-Grade Solutions"
+      ctaText="Contact Us for a Consultation"
+    />
     {/* What Makes MicroSaaS Special */}
     <section className="md:py-20 py-8 px-4 md:px-20">
       <div className="container mx-auto px-0">

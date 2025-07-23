@@ -84,7 +84,24 @@ const testimonials = [
     image: "/author.png"
   }
 ];
-
+const useCaseData = [
+	{
+	  title: "Enterprises",
+	  description: "Leverage the full power of T-Shaped Growth across large teams and complex systems to optimize every facet of your organization, from HR to customer experience.",
+	},
+	{
+	  title: "Local Businesses",
+	  description: "Optimize your lead generation systems with custom AI workflows and automated appointment scheduling to increase conversions without manual effort.",
+	},
+	{
+	  title: "SaaS Applications",
+	  description: "Leverage deep expertise in sales psychology, partnerships, and collaborations to scale SaaS businesses and enhance customer lifetime value.",
+	},
+	{
+	  title: "Track",
+	  description: "Real-time performance tracking to optimize workflows and business operations.",
+	},
+  ];
 const TShapeGrowth = (): JSX.Element => {
   const testimonialSliderRef = React.useRef<Slider | null>(null);
   const testimonialSettings = {
@@ -189,7 +206,11 @@ const TShapeGrowth = (): JSX.Element => {
         </div>
       </div>
     </section>
-    <UseCaseCarousel />
+    <UseCaseCarousel
+      useCases={useCaseData}
+      title="Targeted Solutions for Every Business"
+      ctaText="Contact Us for a Consultation"
+    />
       
     {/* T-Shaped Growth in Action */}
     <section className="md:py-20 py-8 px-4 md:px-20">
