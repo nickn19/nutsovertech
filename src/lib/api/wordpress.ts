@@ -1,5 +1,5 @@
 
-const WORDPRESS_API_URL = "https://nutsovertech.com/wp-json/wp/v2";
+const WORDPRESS_API_URL = "https://blog.nutsovertech.com/wp-json/wp/v2";
 
 // Types for WordPress API responses remain the same
 export interface WordPressPost {
