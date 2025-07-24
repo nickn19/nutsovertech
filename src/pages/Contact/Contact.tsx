@@ -44,7 +44,27 @@ const Contact = (): JSX.Element => {
     </section>
    
     <ContactUs />
-     
+    <section className="md:py-20 pb-8 px-4 md:px-32">
+      <div className="container mx-auto px-0">
+        <div className="[background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)] rounded-3xl md:px-8 px-4 md:py-16 py-8 text-center">
+          <div className="md:max-w-3xl max-w-full mx-auto space-y-6">
+            <h2 className="md:text-3xl text-3xl font-bold font-['Lato',Helvetica] text-foundationblackblack-13">
+              Ready to Fire up Your Growth engines?
+            </h2>
+            
+            <p className="text-xl font-normal text-foundation-blackblack-10">
+              Have a breakfast or be a breakfast! Make AI-Led growth work for you or be on recieving end! Ride the wave now!
+            </p>
+
+            <div className="mt-8">
+              <button className="px-8 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+                Get Started with free audit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
       {/* <section className="py-16 px-4 md:px-20">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
          

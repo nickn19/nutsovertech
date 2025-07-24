@@ -10,7 +10,7 @@ const Footer = (): JSX.Element => {
     {
       title: "Our Story",
       links: [
-        { name: "About Us", path: "" },
+        { name: "About Us", path: "/about" },
         { name: "Partners", path: "" },
         { name: "Careers", path: "" }
       ]
@@ -18,22 +18,22 @@ const Footer = (): JSX.Element => {
     {
       title: "Ecosystem",
       links: [
-        { name: "Our Services", path: "" },
-        { name: "IP Assets", path: "" },
-        { name: "Sales Engine", path: "" }
+        { name: "Our Services", path: "/services" },
+        { name: "IP Assets", path: "/fouray" },
+        // { name: "Sales Engine", path: "" }
       ]
     },
     {
       title: "Insights",
       links: [
-        { name: "Trending Insights", path: "" },
-        { name: "Case Studies", path: "" }
+        { name: "Trending Insights", path: "/blog" },
+        { name: "Case Studies", path: "/blog" }
       ]
     },
     {
       title: "Contact Us",
       links: [
-        { name: "Contact Us", path: "" }
+        { name: "Contact Us", path: "/contact" }
       ]
     },
   ];

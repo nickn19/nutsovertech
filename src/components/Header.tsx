@@ -24,7 +24,7 @@ const navItems = [
       { name: "Omnicapture", path: "https://omnicapture.us/", external: true },
     ],
   },
-  { name: "Sales Engine", path: "" },
+  // { name: "Sales Engine", path: "" },
   { name: "Insights", path: "blog" },
   { name: "About us", path: "about" },
   { name: "Contact Us", path: "contact" },
