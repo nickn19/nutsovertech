@@ -9,6 +9,9 @@ import { BlogSection } from "../Desktop/sections/BlogSection";
 import Slider from "react-slick";
 import { MediaCarousel } from "../Desktop/sections/MediaCarousel";
 import { ContactUs } from "../Desktop/sections/ContactUs";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBullseye, faHandHoldingUsd, faRobot, faDollarSign, faUserCheck, faCogs, faCode, faNetworkWired, faTasks, faServer, faDatabase, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
+
 // Service data for the grid
 const services = [
   {
@@ -229,12 +232,7 @@ const MicroSaas = (): JSX.Element => {
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                {/* Inline SVG for Laser-focused */}
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="#C54648" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
-                  <circle cx="12" cy="12" r="10" fill="#C54648"/>
-                  <rect x="11" y="6" width="2" height="8" fill="#fff"/>
-                  <rect x="11" y="15" width="2" height="2" fill="#fff"/>
-                </svg>
+                <FontAwesomeIcon icon={faBullseye} style={{ color: "#c54648" }} size="2x" />
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">Laser-focused</h3>
               <p className="text-foundation-blackblack-10 text-base">Built for edge cases that big SaaS platforms ignore.</p>
@@ -244,11 +242,7 @@ const MicroSaas = (): JSX.Element => {
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                {/* Inline SVG for Low cost, high automation */}
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="#C54648" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
-                  <rect x="4" y="4" width="16" height="16" rx="4" fill="#C54648"/>
-                  <circle cx="12" cy="12" r="4" fill="#fff"/>
-                </svg>
+                <FontAwesomeIcon icon={faHandHoldingUsd} style={{ color: "#c54648" }} size="2x" />
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">Low cost, high automation</h3>
               <p className="text-foundation-blackblack-10 text-base">No need for big infra—most are near-passive once live.</p>
@@ -258,11 +252,7 @@ const MicroSaas = (): JSX.Element => {
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                {/* Inline SVG for AI-native */}
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="#C54648" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
-                  <rect x="6" y="6" width="12" height="12" rx="6" fill="#C54648"/>
-                  <circle cx="12" cy="12" r="3" fill="#fff"/>
-                </svg>
+                <FontAwesomeIcon icon={faRobot} style={{ color: "#c54648" }} size="2x" />
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">AI-native</h3>
               <p className="text-foundation-blackblack-10 text-base">Leverage 4ay, workflow automation, and no-code tools.</p>
@@ -272,12 +262,7 @@ const MicroSaas = (): JSX.Element => {
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                {/* Inline SVG for Highly profitable */}
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="#C54648" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
-                  <rect x="10" y="4" width="4" height="16" fill="#C54648"/>
-                  <rect x="4" y="10" width="16" height="4" fill="#C54648"/>
-                  <rect x="11" y="11" width="2" height="2" fill="#fff"/>
-                </svg>
+                <FontAwesomeIcon icon={faDollarSign} style={{ color: "#c54648" }} size="2x" />
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">Highly profitable</h3>
               <p className="text-foundation-blackblack-10 text-base">Most of our apps hit breakeven in weeks, not years.</p>
@@ -287,11 +272,7 @@ const MicroSaas = (): JSX.Element => {
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                {/* Inline SVG for Truly yours */}
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="#C54648" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
-                  <circle cx="12" cy="12" r="10" fill="#C54648"/>
-                  <path d="M8 12l2 2 4-4" stroke="#fff" strokeWidth="2" fill="none"/>
-                </svg>
+                <FontAwesomeIcon icon={faUserCheck} style={{ color: "#c54648" }} size="2x" />
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">Truly yours</h3>
               <p className="text-foundation-blackblack-10 text-base">Host it, sell it, use it—your IP, your cash flow.</p>
@@ -301,12 +282,7 @@ const MicroSaas = (): JSX.Element => {
           <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-                {/* Inline SVG for Acquisition engine */}
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="#C54648" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
-                  <rect x="4" y="4" width="16" height="16" rx="8" fill="#C54648"/>
-                  <path d="M8 12h8" stroke="#fff" strokeWidth="2"/>
-                  <path d="M12 8v8" stroke="#fff" strokeWidth="2"/>
-                </svg>
+                <FontAwesomeIcon icon={faCogs} style={{ color: "#c54648" }} size="2x" />
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">Acquisition engine</h3>
               <p className="text-foundation-blackblack-10 text-base">Acquisition engine on top of which you can create SaaS app.</p>
@@ -345,7 +321,7 @@ const MicroSaas = (): JSX.Element => {
             {/* Use our React Boilerplate */}
             <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/Guided-Onboarding.png" alt="React Boilerplate" className="w-12 h-12" />
+                <FontAwesomeIcon icon={faCode} style={{ color: "#c54648" }} size="2x" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
@@ -357,7 +333,7 @@ const MicroSaas = (): JSX.Element => {
             {/* Add your logic via 4AY PaaS agents */}
             <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/llm.png" alt="4AY PaaS Agents" className="w-12 h-12" />
+                <FontAwesomeIcon icon={faRobot} style={{ color: "#c54648" }} size="2x" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
@@ -368,7 +344,7 @@ const MicroSaas = (): JSX.Element => {
             {/* Automate tasks with N8n */}
             <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/Operational_Discipline.svg" alt="N8n Automation" className="w-12 h-12" style={{ filter: 'brightness(0) saturate(100%)' }} />
+                <FontAwesomeIcon icon={faTasks} style={{ color: "#c54648" }} size="2x" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
@@ -380,7 +356,7 @@ const MicroSaas = (): JSX.Element => {
             {/*  Host with our infra or your own */}
             <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/custom-retrieval.png" alt="Custom Retrieval" className="w-12 h-12" />
+                <FontAwesomeIcon icon={faServer} style={{ color: "#c54648" }} size="2x" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
@@ -392,7 +368,7 @@ const MicroSaas = (): JSX.Element => {
             {/* Optimised Embedding Models */}
             <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-                <img src="/optimised-embedding.png" alt="Optimised Embedding Models" className="w-12 h-12" />
+                <FontAwesomeIcon icon={faDatabase} style={{ color: "#c54648" }} size="2x" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
@@ -519,7 +495,7 @@ const MicroSaas = (): JSX.Element => {
           {/* Frontend */}
           <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
             <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/Guided-Onboarding.png" alt="Guided Onboarding" className="w-8 h-8" />
+              <FontAwesomeIcon icon={faCode} style={{ color: "#c54648" }} size="2x" />
             </div>
             <div>
               <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
@@ -535,7 +511,7 @@ const MicroSaas = (): JSX.Element => {
           {/* Automation */}
           <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
             <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/24-7-Support.png" alt="24/7 Support" className="w-8 h-8" />
+              <FontAwesomeIcon icon={faTasks} style={{ color: "#c54648" }} size="2x" />
             </div>
             <div >
               <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
@@ -549,7 +525,7 @@ const MicroSaas = (): JSX.Element => {
             {/* Data Pipelines */}
           <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
             <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/24-7-Support.png" alt="24/7 Support" className="w-8 h-8" />
+              <FontAwesomeIcon icon={faDatabase} style={{ color: "#c54648" }} size="2x" />
             </div>
             <div >
               <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
@@ -563,7 +539,7 @@ const MicroSaas = (): JSX.Element => {
             {/* AI Workforce Layer */}
           <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
             <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/24-7-Support.png" alt="24/7 Support" className="w-8 h-8" />
+              <FontAwesomeIcon icon={faRobot} style={{ color: "#c54648" }} size="2x" />
             </div>
             <div >
               <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
@@ -578,7 +554,7 @@ const MicroSaas = (): JSX.Element => {
           {/* Deployment */}
           <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
             <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/Knowledge-Hub.png" alt="Knowledge Hub" className="w-8 h-8" />
+              <FontAwesomeIcon icon={faServer} style={{ color: "#c54648" }} size="2x" />
             </div>
             <div>
               <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
@@ -593,7 +569,7 @@ const MicroSaas = (): JSX.Element => {
            {/* Mobile App */}
           <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
             <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/Knowledge-Hub.png" alt="Knowledge Hub" className="w-8 h-8" />
+              <FontAwesomeIcon icon={faMobileAlt} style={{ color: "#c54648" }} size="2x" />
             </div>
             <div>
               <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
