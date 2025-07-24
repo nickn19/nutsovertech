@@ -339,7 +339,9 @@ const MicroSaas = (): JSX.Element => {
           </div>
 
           {/* Right Column - Feature List */}
-          <div className="space-y-8">
+          
+
+           <div className="space-y-8">
             {/* Use our React Boilerplate */}
             <div className="flex gap-6 items-start">
               <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
@@ -398,7 +400,7 @@ const MicroSaas = (): JSX.Element => {
                 </h3>
               </div>
             </div>
-          </div>
+          </div> 
         </div>
       </div>
     </section>
