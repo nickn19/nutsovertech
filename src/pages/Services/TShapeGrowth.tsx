@@ -9,6 +9,9 @@ import { BlogSection } from "../Desktop/sections/BlogSection";
 import Slider from "react-slick";
 import { MediaCarousel } from "../Desktop/sections/MediaCarousel";
 import { ContactUs } from "../Desktop/sections/ContactUs";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBullseye, faUsers, faCogs, faChartLine, faShieldAlt, faFileInvoiceDollar, faBriefcase, faUserTie, faTasks, faBalanceScale, faMoneyBillTrendUp } from "@fortawesome/free-solid-svg-icons";
+
 // Service data for the grid
 const services = [
   {
@@ -231,7 +234,7 @@ const TShapeGrowth = (): JSX.Element => {
   <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
     <div className="flex flex-col items-center text-center gap-6">
       <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-        <img src="/Guided-Onboarding.png" alt="Sales & Marketing" className="w-8 h-8" />
+        <FontAwesomeIcon icon={faBullseye} style={{ color: "#c54648" }} size="2x" />
       </div>
       <h3 className="text-xl font-bold text-foundationblackblack-13">Sales & Marketing Expertise:</h3>
       <p className="text-foundation-blackblack-10 text-base">
@@ -244,7 +247,7 @@ const TShapeGrowth = (): JSX.Element => {
   <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
     <div className="flex flex-col items-center text-center gap-6">
       <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-        <img src="/24-7-Support.png" alt="HR & People" className="w-8 h-8" />
+        <FontAwesomeIcon icon={faUsers} style={{ color: "#c54648" }} size="2x" />
       </div>
       <h3 className="text-xl font-bold text-foundationblackblack-13">HR & People</h3>
       <p className="text-foundation-blackblack-10 text-base">
@@ -257,7 +260,7 @@ const TShapeGrowth = (): JSX.Element => {
   <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
     <div className="flex flex-col items-center text-center gap-6">
       <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-        <img src="/Knowledge-Hub.png" alt="Operations & Efficiency" className="w-8 h-8" />
+        <FontAwesomeIcon icon={faCogs} style={{ color: "#c54648" }} size="2x" />
       </div>
       <h3 className="text-xl font-bold text-foundationblackblack-13">Operations & Efficiency</h3>
       <p className="text-foundation-blackblack-10 text-base">
@@ -270,7 +273,7 @@ const TShapeGrowth = (): JSX.Element => {
   <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
     <div className="flex flex-col items-center text-center gap-6">
       <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-        <img src="/Knowledge-Hub.png" alt="Valuation" className="w-8 h-8" />
+        <FontAwesomeIcon icon={faMoneyBillTrendUp} style={{ color: "#c54648" }} size="2x" />
       </div>
       <h3 className="text-xl font-bold text-foundationblackblack-13">Valuation</h3>
       <p className="text-foundation-blackblack-10 text-base">
@@ -283,7 +286,7 @@ const TShapeGrowth = (): JSX.Element => {
   <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
     <div className="flex flex-col items-center text-center gap-6">
       <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-        <img src="/Knowledge-Hub.png" alt="Data & Analytics" className="w-8 h-8" />
+        <FontAwesomeIcon icon={faChartLine} style={{ color: "#c54648" }} size="2x" />
       </div>
       <h3 className="text-xl font-bold text-foundationblackblack-13">Data & Analytics:</h3>
       <p className="text-foundation-blackblack-10 text-base">
@@ -296,7 +299,7 @@ const TShapeGrowth = (): JSX.Element => {
   <div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
     <div className="flex flex-col items-center text-center gap-6">
       <div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-        <img src="/Knowledge-Hub.png" alt="Data Security" className="w-8 h-8" />
+        <FontAwesomeIcon icon={faShieldAlt} style={{ color: "#c54648" }} size="2x" />
       </div>
       <h3 className="text-xl font-bold text-foundationblackblack-13">Data Security:</h3>
       <p className="text-foundation-blackblack-10 text-base">
@@ -590,7 +593,7 @@ const TShapeGrowth = (): JSX.Element => {
           {/* Marketing & Sales */}
           <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
             <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/Guided-Onboarding.png" alt="Guided Onboarding" className="w-8 h-8" />
+              <FontAwesomeIcon icon={faBriefcase} style={{ color: "#c54648" }} size="2x" />
             </div>
             <div>
               <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
@@ -606,7 +609,7 @@ const TShapeGrowth = (): JSX.Element => {
           {/* HR & People */}
           <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
             <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/24-7-Support.png" alt="24/7 Support" className="w-8 h-8" />
+              <FontAwesomeIcon icon={faUserTie} style={{ color: "#c54648" }} size="2x" />
             </div>
             <div >
               <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
@@ -620,7 +623,7 @@ const TShapeGrowth = (): JSX.Element => {
             {/* HR & People */}
           <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
             <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/24-7-Support.png" alt="24/7 Support" className="w-8 h-8" />
+              <FontAwesomeIcon icon={faUserTie} style={{ color: "#c54648" }} size="2x" />
             </div>
             <div >
               <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
@@ -634,7 +637,7 @@ const TShapeGrowth = (): JSX.Element => {
           {/* Operations */}
           <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
             <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/Knowledge-Hub.png" alt="Knowledge Hub" className="w-8 h-8" />
+              <FontAwesomeIcon icon={faTasks} style={{ color: "#c54648" }} size="2x" />
             </div>
             <div>
               <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
@@ -648,7 +651,7 @@ const TShapeGrowth = (): JSX.Element => {
           {/* Valuation & Finance */}
           <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
             <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/Knowledge-Hub.png" alt="Knowledge Hub" className="w-8 h-8" />
+              <FontAwesomeIcon icon={faFileInvoiceDollar} style={{ color: "#c54648" }} size="2x" />
             </div>
             <div>
               <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
@@ -662,7 +665,7 @@ const TShapeGrowth = (): JSX.Element => {
           {/* Legal & Compliance */}
           <div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
             <div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-              <img src="/Knowledge-Hub.png" alt="Knowledge Hub" className="w-8 h-8" />
+              <FontAwesomeIcon icon={faBalanceScale} style={{ color: "#c54648" }} size="2x" />
             </div>
             <div>
               <h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
