@@ -9,6 +9,8 @@ import { BlogSection } from "../Desktop/sections/BlogSection";
 import Slider from "react-slick";
 import { MediaCarousel } from "../Desktop/sections/MediaCarousel";
 import { ContactUs } from "../Desktop/sections/ContactUs";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBrain, faHandshake, faChartLine, faPuzzlePiece, faMicrochip, faSitemap, faRocket } from "@fortawesome/free-solid-svg-icons";
 // Service data for the grid
 const services = [
   {
@@ -277,7 +279,7 @@ const AIConsulting = (): JSX.Element => {
           <div className="bg-white px-5 py-8 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
             <div className="flex flex-col items-center text-center gap-4">
               <div className="w-16 h-16 flex items-center justify-center bg-[#F1D1D1] rounded-full">
-                <img src="/ai_native.svg" alt="Expertise" className="w-8 h-8" />
+                <FontAwesomeIcon icon={faBrain} style={{ color: "#c54648" }} size="2x" />
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">Expertise Across Industries</h3>
               <p className="text-foundation-blackblack-10 text-base">
@@ -289,7 +291,7 @@ const AIConsulting = (): JSX.Element => {
           <div className="bg-white px-5 py-8 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
             <div className="flex flex-col items-center text-center gap-4">
               <div className="w-16 h-16 flex items-center justify-center bg-[#F1D1D1] rounded-full">
-                <img src="/done_for_you.svg" alt="End-to-End Support" className="w-8 h-8" />
+                <FontAwesomeIcon icon={faHandshake} style={{ color: "#c54648" }} size="2x" />
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">End-to-End Support</h3>
               <p className="text-foundation-blackblack-10 text-base">
@@ -301,7 +303,7 @@ const AIConsulting = (): JSX.Element => {
           <div className="bg-white px-5 py-8 rounded-3xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
             <div className="flex flex-col items-center text-center gap-4">
               <div className="w-16 h-16 flex items-center justify-center bg-[#F1D1D1] rounded-full">
-                <img src="/analysis.png" alt="Proven Results" className="w-8 h-8" />
+                <FontAwesomeIcon icon={faChartLine} style={{ color: "#c54648" }} size="2x" />
               </div>
               <h3 className="text-xl font-bold text-foundationblackblack-13">Proven Results</h3>
               <p className="text-foundation-blackblack-10 text-base">
@@ -328,7 +330,7 @@ const AIConsulting = (): JSX.Element => {
           <div className="space-y-6 max-w-xl mx-auto">
             <div className="bg-white rounded-2xl p-6 flex items-start gap-6 hover:shadow-lg transition-all duration-300">
               <div className="w-12 h-12 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-                <img src="/ai_native.svg" alt="Platform Integration" className="w-8 h-8" />
+                <FontAwesomeIcon icon={faPuzzlePiece} style={{ color: "#c54648" }} size="2x" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-foundationblackblack-13 mb-2">Platform integration</h3>
@@ -337,7 +339,7 @@ const AIConsulting = (): JSX.Element => {
             </div>
             <div className="bg-white rounded-2xl p-6 flex items-start gap-6 hover:shadow-lg transition-all duration-300">
               <div className="w-12 h-12 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-                <img src="/ai_native.svg" alt="Custom AI Models" className="w-8 h-8" />
+                <FontAwesomeIcon icon={faMicrochip} style={{ color: "#c54648" }} size="2x" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-foundationblackblack-13 mb-2">Custom AI models</h3>
@@ -346,7 +348,7 @@ const AIConsulting = (): JSX.Element => {
             </div>
             <div className="bg-white rounded-2xl p-6 flex items-start gap-6 hover:shadow-lg transition-all duration-300">
               <div className="w-12 h-12 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-                <img src="/full_stack_thinking.svg" alt="Scalable Architecture" className="w-8 h-8" />
+                <FontAwesomeIcon icon={faSitemap} style={{ color: "#c54648" }} size="2x" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-foundationblackblack-13 mb-2">Scalable architecture</h3>
@@ -355,7 +357,7 @@ const AIConsulting = (): JSX.Element => {
             </div>
             <div className="bg-white rounded-2xl p-6 flex items-start gap-6 hover:shadow-lg transition-all duration-300">
               <div className="w-12 h-12 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-                <img src="/done_for_you.svg" alt="End-to-end Deployment" className="w-8 h-8" />
+                <FontAwesomeIcon icon={faRocket} style={{ color: "#c54648" }} size="2x" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-foundationblackblack-13 mb-2">End-to-end deployment</h3>

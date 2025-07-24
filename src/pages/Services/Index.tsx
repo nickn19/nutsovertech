@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faServer, faChartBar, faCogs, faRobot, faSitemap, faBolt, faBoxesStacked, faSyncAlt, faMicrochip, faLayerGroup, faMagnifyingGlassChart, faGears } from "@fortawesome/free-solid-svg-icons";
 import { SolutionsCarousel } from "../Desktop/sections/SolutionsCarousel";
 import { Button } from "../../components/ui/button";
 import { Play, ArrowLeft, ArrowRight } from "lucide-react";
@@ -115,20 +117,20 @@ const testimonials = [
 ];
 const useCaseData = [
 	{
-    title: "Agency Owners:",
-    description: "Productize your internal workflows",
+	title: "Agency Owners:",
+	description: "Productize your internal workflows",
   },
   {
-    title: "D2C Brands:",
-    description: "Spin up niche tools for community & conversion",
+	title: "D2C Brands:",
+	description: "Spin up niche tools for community & conversion",
   },
   {
-    title: "Consultants & Creator",
-    description: "Sell tools alongside services",
+	title: "Consultants & Creator",
+	description: "Sell tools alongside services",
   },
   {
-    title: "Operators",
-    description: "Solve for that one annoying problem (and monetize it)",
+	title: "Operators",
+	description: "Solve for that one annoying problem (and monetize it)",
   },
   ];
 const Services = (): JSX.Element => {
@@ -257,10 +259,10 @@ const Services = (): JSX.Element => {
 				</div>
 			</section>
 			<UseCaseCarousel
-      useCases={useCaseData}
-      title="Most Common Use Cases"
-      ctaText="Contact Us for a Consultation"
-    />
+	  useCases={useCaseData}
+	  title="Most Common Use Cases"
+	  ctaText="Contact Us for a Consultation"
+	/>
 
 			{/* Where We Intervene Section */}
 			<section className="md:py-20 py-8 px-4 md:px-20">
@@ -274,16 +276,7 @@ const Services = (): JSX.Element => {
 			<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
 			  <div className="flex flex-col items-center text-center gap-6">
 				<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-		  {/* Inline SVG for Strategy & Ops Automation (lighter style) */}
-		  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
-			<circle cx="12" cy="12" r="10" stroke="#C54648" strokeWidth="1.2" fill="none"/>
-			<circle cx="12" cy="12" r="5" stroke="#C54648" strokeWidth="1.1" fill="none"/>
-			<circle cx="12" cy="12" r="2" fill="#C54648"/>
-			<line x1="12" y1="2" x2="12" y2="7" stroke="#C54648" strokeWidth="1.1"/>
-			<line x1="12" y1="17" x2="12" y2="22" stroke="#C54648" strokeWidth="1.1"/>
-			<line x1="2" y1="12" x2="7" y2="12" stroke="#C54648" strokeWidth="1.1"/>
-			<line x1="17" y1="12" x2="22" y2="12" stroke="#C54648" strokeWidth="1.1"/>
-		  </svg>
+				  <FontAwesomeIcon icon={faSitemap} className="text-[#C54648]" size="2x" />
 				</div>
 				<h3 className="text-xl font-bold text-foundationblackblack-13">
 				  Strategy & Ops Automation
@@ -298,13 +291,7 @@ const Services = (): JSX.Element => {
 			<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
 			  <div className="flex flex-col items-center text-center gap-6">
 				<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-		  {/* Inline SVG for Revenue Infrastructure (lighter style) */}
-		  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
-			<rect x="4.6" y="4.6" width="14.8" height="14.8" rx="4" stroke="#C54648" strokeWidth="1.2" fill="none"/>
-			<rect x="7.5" y="7.5" width="9" height="1.2" fill="#C54648" rx="0.6"/>
-			<rect x="7.5" y="11.5" width="9" height="1.2" fill="#C54648" rx="0.6"/>
-			<rect x="7.5" y="15.5" width="9" height="1.2" fill="#C54648" rx="0.6"/>
-		  </svg>
+				  <FontAwesomeIcon icon={faLayerGroup} className="text-[#C54648]" size="2x" />
 				</div>
 				<h3 className="text-xl font-bold text-foundationblackblack-13">
 				  Revenue Infrastructure
@@ -319,14 +306,7 @@ const Services = (): JSX.Element => {
 			<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
 			  <div className="flex flex-col items-center text-center gap-6">
 				<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-		  {/* Inline SVG for Product & Commerce Enablement (distinct style) */}
-		  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
-			<rect x="3.5" y="7" width="17" height="10" rx="3" stroke="#C54648" strokeWidth="1.2" fill="none"/>
-			<rect x="7" y="10" width="3" height="3" fill="#C54648" rx="1.5"/>
-			<rect x="14" y="10" width="3" height="3" fill="#C54648" rx="1.5"/>
-			<rect x="10.5" y="13.5" width="3" height="2" fill="#C54648" rx="1"/>
-			<circle cx="12" cy="9" r="1" fill="#C54648"/>
-		  </svg>
+				  <FontAwesomeIcon icon={faBoxesStacked} className="text-[#C54648]" size="2x" />
 				</div>
 				<h3 className="text-xl font-bold text-foundationblackblack-13">
 				  Product & Commerce Enablement
@@ -341,12 +321,7 @@ const Services = (): JSX.Element => {
 			<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
 			  <div className="flex flex-col items-center text-center gap-6">
 				<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-		  {/* Inline SVG for Retention & Lifecycle (lighter style) */}
-		  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8">
-			<circle cx="12" cy="12" r="10" stroke="#C54648" strokeWidth="1.2" fill="none"/>
-			<path d="M8 12a4 4 0 0 1 8 0" stroke="#C54648" strokeWidth="1.1" fill="none"/>
-			<circle cx="12" cy="12" r="2" fill="#C54648"/>
-		  </svg>
+				  <FontAwesomeIcon icon={faSyncAlt} className="text-[#C54648]" size="2x" />
 				</div>
 				<h3 className="text-xl font-bold text-foundationblackblack-13">
 				  Retention & Lifecycle
@@ -389,12 +364,7 @@ const Services = (): JSX.Element => {
 			  {/* 4AY PaaS */}
 			  <div className="flex gap-6 items-start">
 				<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-				  <img
-					src="/data-index.png"
-					alt="Data Indexing"
-					className="w-12 h-12"
-					style={{ filter: 'invert(27%) sepia(77%) saturate(1162%) hue-rotate(334deg) brightness(92%) contrast(97%)' }}
-				  />
+				  <FontAwesomeIcon icon={faSitemap} className="text-[#C54648]" size="2x" />
 				</div>
 				<div>
 				  <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
@@ -409,12 +379,7 @@ const Services = (): JSX.Element => {
 			  {/* SaaS Boilerplates */}
 			  <div className="flex gap-6 items-start">
 				<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-				  <img
-					src="/llm.png"
-					alt="LLM Insights"
-					className="w-12 h-12"
-					style={{ filter: 'invert(27%) sepia(77%) saturate(1162%) hue-rotate(334deg) brightness(92%) contrast(97%)' }}
-				  />
+				  <FontAwesomeIcon icon={faLayerGroup} className="text-[#C54648]" size="2x" />
 				</div>
 				<div>
 				  <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
@@ -429,12 +394,7 @@ const Services = (): JSX.Element => {
 			  {/*MicroSaaS Tools */}
 			  <div className="flex gap-6 items-start">
 				<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-				  <img
-					src="/custom-retrieval.png"
-					alt="Custom Retrieval"
-					className="w-12 h-12"
-					style={{ filter: 'invert(27%) sepia(77%) saturate(1162%) hue-rotate(334deg) brightness(92%) contrast(97%)' }}
-				  />
+				  <FontAwesomeIcon icon={faGears} className="text-[#C54648]" size="2x" />
 				</div>
 				<div>
 				  <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
@@ -449,12 +409,7 @@ const Services = (): JSX.Element => {
 			  {/* Digital Growth Assets */}
 			  <div className="flex gap-6 items-start">
 				<div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-				  <img
-					src="/optimised-embedding.png"
-					alt="Embedding Models"
-					className="w-12 h-12"
-					style={{ filter: 'invert(27%) sepia(77%) saturate(1162%) hue-rotate(334deg) brightness(92%) contrast(97%)' }}
-				  />
+				  <FontAwesomeIcon icon={faBolt} className="text-[#C54648]" size="2x" />
 				</div>
 				<div>
 				  <h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">
@@ -769,12 +724,7 @@ const Services = (): JSX.Element => {
 							{/* Application & Tech Architecture Audit: */}
 							<div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
 								<div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-									<img
-					src="/Guided-Onboarding.png"
-					alt="Application & Tech Architecture Audit:"
-					className="w-8 h-8"
-					style={{ filter: 'invert(27%) sepia(77%) saturate(1162%) hue-rotate(334deg) brightness(92%) contrast(97%)' }}
-									/>
+									<FontAwesomeIcon icon={faMicrochip} className="text-[#C54648]" size="2x" />
 								</div>
 								<div>
 									<h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
@@ -790,12 +740,7 @@ const Services = (): JSX.Element => {
 							{/*Growth Bottleneck Identification: */}
 							<div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
 								<div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-									<img
-					src="/24-7-Support.png"
-					alt="Growth Bottleneck Identification:"
-					className="w-8 h-8"
-					style={{ filter: 'invert(27%) sepia(77%) saturate(1162%) hue-rotate(334deg) brightness(92%) contrast(97%)' }}
-									/>
+									<FontAwesomeIcon icon={faMagnifyingGlassChart} className="text-[#C54648]" size="2x" />
 								</div>
 								<div>
 									<h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
@@ -811,12 +756,7 @@ const Services = (): JSX.Element => {
 							{/* MarTech Stack Audit: */}
 							<div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
 								<div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-									<img
-					src="/Knowledge-Hub.png"
-					alt="MarTech Stack Audit:"
-					className="w-8 h-8"
-					style={{ filter: 'invert(27%) sepia(77%) saturate(1162%) hue-rotate(334deg) brightness(92%) contrast(97%)' }}
-									/>
+									<FontAwesomeIcon icon={faGears} className="text-[#C54648]" size="2x" />
 								</div>
 								<div>
 									<h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
@@ -831,12 +771,7 @@ const Services = (): JSX.Element => {
 			  {/* AI Tooling Recommendations: */}
 							<div className="bg-white rounded-2xl p-6 flex md:flex-row flex-col items-center gap-6 hover:shadow-lg transition-all duration-300">
 								<div className="w-16 h-16 bg-[#F1D1D1] rounded-full flex items-center justify-center flex-shrink-0">
-									<img
-					src="/Operational_Discipline.svg"
-					alt="AI Tooling Recommendations:"
-					className="w-8 h-8"
-					style={{ filter: 'invert(27%) sepia(77%) saturate(1162%) hue-rotate(334deg) brightness(92%) contrast(97%)' }}
-									/>
+									<FontAwesomeIcon icon={faRobot} className="text-[#C54648]" size="2x" />
 								</div>
 								<div>
 									<h3 className="md:text-xl text-lg md:text-left text-center font-bold text-foundationblackblack-13 mb-2 ">
