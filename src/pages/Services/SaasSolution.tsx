@@ -9,6 +9,8 @@ import { BlogSection } from "../Desktop/sections/BlogSection";
 import Slider from "react-slick";
 import { MediaCarousel } from "../Desktop/sections/MediaCarousel";
 import { ContactUs } from "../Desktop/sections/ContactUs";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUsers, faFileAlt, faVial, faHandshake, faLaptopCode, faSyncAlt, faTasks, faRocket, faUserFriends, faLightbulb, faChartLine } from "@fortawesome/free-solid-svg-icons";
 // Service data for the grid
 const services = [
 	{
@@ -266,11 +268,7 @@ const SaasSolution = (): JSX.Element => {
 						<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
 							<div className="flex flex-col items-center text-center gap-6">
 								<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-									<img
-										src="/analysis.png"
-										alt="AI Strategy"
-										className="w-8 h-8"
-									/>
+									<FontAwesomeIcon icon={faUsers} style={{ color: "#c54648" }} size="2x" />
 								</div>
 								<h3 className="text-xl font-bold text-foundationblackblack-13">
 									Persona Development
@@ -285,7 +283,7 @@ const SaasSolution = (): JSX.Element => {
 						<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
 							<div className="flex flex-col items-center text-center gap-6">
 								<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-									<img src="/no-code.png" alt="No Code" className="w-8 h-8" />
+									<FontAwesomeIcon icon={faFileAlt} style={{ color: "#c54648" }} size="2x" />
 								</div>
 								<h3 className="text-xl font-bold text-foundationblackblack-13">
 									Wireframes & User Flows
@@ -300,7 +298,7 @@ const SaasSolution = (): JSX.Element => {
 						<div className="bg-foundation-redred-3 p-8 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 group">
 							<div className="flex flex-col items-center text-center gap-6">
 								<div className="w-16 h-16 flex items-center justify-center bg-red-50 rounded-full group-hover:bg-red-100 transition-colors">
-									<img src="/execution.png" alt="Data Driven" className="w-8 h-8" />
+									<FontAwesomeIcon icon={faVial} style={{ color: "#c54648" }} size="2x" />
 								</div>
 								<h3 className="text-xl font-bold text-foundationblackblack-13">
 									Prototyping & Testing
@@ -339,7 +337,7 @@ const SaasSolution = (): JSX.Element => {
 		{/* Collaborative Pre-Phase */}
 		<div className="flex gap-6 items-start">
 		  <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-			<img src="/analysis.png" alt="Collaborative Pre-Phase" className="w-12 h-12" />
+			<FontAwesomeIcon icon={faHandshake} style={{ color: "#c54648" }} size="2x" />
 		  </div>
 		  <div>
 			<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">Collaborative Pre-Phase</h3>
@@ -352,7 +350,7 @@ const SaasSolution = (): JSX.Element => {
 		{/* Design-Led Development */}
 		<div className="flex gap-6 items-start">
 		  <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-			<img src="/no-code.png" alt="Design-Led Development" className="w-12 h-12" />
+			<FontAwesomeIcon icon={faLaptopCode} style={{ color: "#c54648" }} size="2x" />
 		  </div>
 		  <div>
 			<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">Design-Led Development</h3>
@@ -365,7 +363,7 @@ const SaasSolution = (): JSX.Element => {
 		{/* Agile Sprints */}
 		<div className="flex gap-6 items-start">
 		  <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-			<img src="/execution.png" alt="Agile Sprints" className="w-12 h-12" />
+			<FontAwesomeIcon icon={faSyncAlt} style={{ color: "#c54648" }} size="2x" />
 		  </div>
 		  <div>
 			<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">Agile Sprints</h3>
@@ -378,7 +376,7 @@ const SaasSolution = (): JSX.Element => {
 		{/* QA & User Testing */}
 		<div className="flex gap-6 items-start">
 		  <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-			<img src="/Operational_Discipline.svg" alt="QA & User Testing" className="w-12 h-12" />
+			<FontAwesomeIcon icon={faTasks} style={{ color: "#c54648" }} size="2x" />
 		  </div>
 		  <div>
 			<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">QA & User Testing</h3>
@@ -391,7 +389,7 @@ const SaasSolution = (): JSX.Element => {
 		{/* Go Live with Confidence */}
 		<div className="flex gap-6 items-start">
 		  <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
-			<img src="/Strategic_Infrastructure.svg" alt="Go Live with Confidence" className="w-12 h-12" />
+			<FontAwesomeIcon icon={faRocket} style={{ color: "#c54648" }} size="2x" />
 		  </div>
 		  <div>
 			<h3 className="text-2xl font-bold text-foundationblackblack-13 mb-2">Go Live with Confidence</h3>
@@ -765,21 +763,21 @@ const SaasSolution = (): JSX.Element => {
 			</p>
 			<div className="flex flex-col gap-8 mb-8">
   <div className="bg-white rounded-2xl p-8 flex flex-row items-center text-left shadow-md hover:shadow-lg transition-all duration-300">
-	<img src="/done_for_you.svg" alt="User-centric design" className="w-10 h-10 mr-6" />
+	<FontAwesomeIcon icon={faUserFriends} style={{ color: "#c54648" }} size="2x" className="mr-6" />
 	<div>
 	  <h3 className="text-xl font-bold text-foundationblackblack-13 mb-2">User-centric design for better adoption</h3>
 	  <p className="text-foundation-blackblack-10 text-base">We design with your users in mind, ensuring intuitive experiences and high engagement.</p>
 	</div>
   </div>
   <div className="bg-white rounded-2xl p-8 flex flex-row items-center text-left shadow-md hover:shadow-lg transition-all duration-300">
-	<img src="/ai_native.svg" alt="Intuitive interfaces" className="w-10 h-10 mr-6" />
+	<FontAwesomeIcon icon={faLightbulb} style={{ color: "#c54648" }} size="2x" className="mr-6" />
 	<div>
 	  <h3 className="text-xl font-bold text-foundationblackblack-13 mb-2">Intuitive interfaces that drive engagement</h3>
 	  <p className="text-foundation-blackblack-10 text-base">Simple, beautiful interfaces make your SaaS product easy to use and enjoyable.</p>
 	</div>
   </div>
   <div className="bg-white rounded-2xl p-8 flex flex-row items-center text-left shadow-md hover:shadow-lg transition-all duration-300">
-	<img src="/t_shaped_growth.svg" alt="Scalable architecture" className="w-10 h-10 mr-6" />
+	<FontAwesomeIcon icon={faChartLine} style={{ color: "#c54648" }} size="2x" className="mr-6" />
 	<div>
 	  <h3 className="text-xl font-bold text-foundationblackblack-13 mb-2">Scalable architecture to support future growth</h3>
 	  <p className="text-foundation-blackblack-10 text-base">Our solutions are built to grow with your business, ensuring long-term success.</p>
