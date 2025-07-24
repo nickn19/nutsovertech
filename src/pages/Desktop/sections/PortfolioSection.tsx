@@ -100,11 +100,11 @@ export const PortfolioSection = (): JSX.Element => {
   return (
     <section id="portfolio" className="flex flex-col items-start justify-center gap-8 md:py-[60px] py-8 md:px-20 px-4 relative  [background:linear-gradient(136deg,rgba(151,51,53,0.03)_0%,rgba(197,70,72,0.09)_37%,rgba(51,51,51,0.12)_100%)]">
       <div className="flex flex-col items-center justify-center gap-[21px] relative self-stretch w-full">
-        <h2 className="relative w-fit mt-[-1.00px] [font-family:'Playfair',Helvetica] font-bold text-foundationblackblack-11 text-4xl tracking-[0] leading-[normal] whitespace-nowrap">
+        <h2 className="relative w-fit mt-[-1.00px] [font-family:'Playfair',Helvetica] font-bold text-foundationblackblack-11 md:text-4xl text-3xl tracking-[0] leading-[normal] whitespace-nowrap">
           Who we are
         </h2>
 
-        <p className="relative max-w-[918px] w-full [font-family:'Lato',Helvetica] font-normal text-foundation-blackblack-10 text-2xl text-center tracking-[0] leading-[34px]">
+        <p className="relative max-w-[918px] w-full [font-family:'Lato',Helvetica] font-normal text-foundation-blackblack-10 md:text-2xl text-lg text-center tracking-[0] leading-[34px]">
           We help businesses achieve rapid ROI and scalable growth with proven
           AI playbooks—no experimentation, no custom development. Our
           ready-to-deploy solutions and trusted ecosystem ensure seamless AI
@@ -138,7 +138,7 @@ export const PortfolioSection = (): JSX.Element => {
           </div>
         </div>
 
-        <p className="relative max-w-[892px] w-full [font-family:'Lato',Helvetica] font-light text-foundationblackblack-11 text-4xl text-center tracking-[0] leading-[normal]">
+        <p className="relative max-w-[892px] w-full [font-family:'Lato',Helvetica] font-light text-foundationblackblack-11 md:text-4xl text-2xl text-center tracking-[0] leading-[normal]">
           Purpose-Built AI Workforces for Ambitious Companies — Whether You’re Starting Up or Scaling Up.
         </p>
 

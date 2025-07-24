@@ -86,10 +86,10 @@ export const MediaCarousel = (): JSX.Element => {
     <section className="flex flex-col w-full items-start justify-center gap-6 px-4 md:px-20 py-8">
      <div className="flex items-end md:flex-row flex-col gap-4 justify-between w-full">
         <div className="flex flex-col items-start justify-center gap-1 flex-1">
-          <h2 className="font-bold text-4xl text-foundationblackblack-11 [font-family:'Playfair',Helvetica] tracking-normal md:text-left text-center">
+          <h2 className="font-bold md:text-4xl text-2xl text-foundationblackblack-11 [font-family:'Playfair',Helvetica] tracking-normal md:text-left text-center">
           Our Media Features
           </h2>
-          <p className="text-lg text-foundationblackblack-11 [font-family:'Lato',Helvetica] font-light tracking-normal md:text-left text-center">
+          <p className="md:text-lg text-base text-foundationblackblack-11 [font-family:'Lato',Helvetica] font-light tracking-normal md:text-left text-center">
           Discover how our AI-driven innovations are making headlines in top media and industry publications.
           </p>
         </div>

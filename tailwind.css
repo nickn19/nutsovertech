@@ -461,17 +461,22 @@
   .video-carousel-container {
     padding: 10px 0;
   }
-  
-  
+  .stars{
+    height: 90vh;
+    gap:0.5rem;
+  }
+  .star{
+    width: 80px
+  }
   .star h2{
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 10px 20px;
   }
   .star.expanded h2 {
-    bottom: 50px;
+    bottom: 0px;
     left: 0px;
     margin: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 10px 10px;
     
   }
@@ -488,6 +493,13 @@
   .media-card img {
     height: auto;
     max-height: 280px;
+  }
+  .ais2023__slide-panel{
+    padding: 10px;
+    margin: 0 10px;
+  }
+  .ais2023__slide-panel__heading{
+font-size: 20px;
   }
 }
 

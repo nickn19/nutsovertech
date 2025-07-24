@@ -73,7 +73,7 @@ export const GrowthStageSlider = (): JSX.Element => {
   return (
     <section className="flex flex-col items-center  justify-center gap-10 md:px-[114px] px-4 md:py-[60px] py-8 bg-foundationblackblack-3">
       <div className="flex md:flex-row flex-col items-center gap-4 justify-between w-full">
-        <h2 className="md:w-[735px] w-full [font-family:'Playfair',Helvetica] font-bold text-foundationblackblack-11 text-4xl">
+        <h2 className="md:w-[735px] w-full [font-family:'Playfair',Helvetica] font-bold text-foundationblackblack-11 md:text-4xl text-2xl">
           Tailored Advisory for Every Growth Stage
         </h2>
 

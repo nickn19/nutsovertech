@@ -111,7 +111,7 @@ export const BlogSection = (): JSX.Element => {
   return (
     <div className="flex flex-col items-center justify-center gap-[34px] w-full md:px-20 px-4 md:py-[60px] py-8">
       <div className="flex md:flex-row flex-col gap-4 items-center md:justify-between justify-center w-full">
-        <h2 className="[font-family:'Playfair',Helvetica] font-bold text-foundationblackblack-11 text-4xl md:text-left text-center">
+        <h2 className="[font-family:'Playfair',Helvetica] font-bold text-foundationblackblack-11 md:text-4xl text-2xl md:text-left text-center">
           Insights to Drive Smarter Decisions
         </h2>
 
@@ -169,7 +169,7 @@ export const BlogSection = (): JSX.Element => {
           {displayedPosts.map((card) => (
             <Card
               key={card.id}
-              className="w-full h-[510px] rounded-[16px] overflow-hidden shadow-none border-none group"
+              className="w-full md:h-[510px] h-auto rounded-[16px] overflow-hidden shadow-none border-none group"
             >
               <div className="relative h-[302px] overflow-hidden cursor-pointer" onClick={() => navigate(`/blog/${card.slug}`)}>
                 <img
@@ -180,14 +180,14 @@ export const BlogSection = (): JSX.Element => {
               </div>
 
               <div
-                className={`${card.bgColor} rounded-b-[16px] p-[21px]`}
+                className={`${card.bgColor} rounded-b-[16px] md:p-[21px] p-3`}
               >
                 <CardContent className="p-0">
                   <div className="flex flex-col gap-[9px]">
                     <div className="flex items-center justify-between w-full">
                       <Link
                         to={`/blog/${card.slug}`}
-                        className="[font-family:'Lato',Helvetica] font-bold text-foundationredred-13 text-2xl flex-1 line-clamp-2 hover:underline focus:underline"
+                        className="[font-family:'Lato',Helvetica] font-bold text-foundationredred-13 md:text-2xl text-xl flex-1 line-clamp-2 hover:underline focus:underline"
                         tabIndex={0}
                       >
                         {card.title}
@@ -201,7 +201,7 @@ export const BlogSection = (): JSX.Element => {
                       </Link>
                     </div>
 
-                    <p className="[font-family:'Lato',Helvetica] font-light text-foundationblackblack-11 text-lg line-clamp-3">
+                    <p className="[font-family:'Lato',Helvetica] font-light text-foundationblackblack-11 md:text-lg text-base line-clamp-3">
                       {card.description}
                     </p>
                   </div>

@@ -40,10 +40,10 @@ export const VideoCarousel = (): JSX.Element => {
     <section className="flex flex-col items-center justify-center md:gap-[34px] gap-4 w-full md:px-20 px-4 md:py-[30px] py-8">
       <div className="flex items-end md:flex-row flex-col gap-4 justify-between w-full">
         <div className="flex flex-col items-start justify-center gap-1 flex-1">
-          <h2 className="font-bold text-4xl text-foundationblackblack-11 [font-family:'Playfair',Helvetica] tracking-normal md:text-left text-center">
+          <h2 className="font-bold md:text-4xl text-2xl text-foundationblackblack-11 [font-family:'Playfair',Helvetica] tracking-normal md:text-left text-center">
             AI in Action: Insights and Innovations
           </h2>
-          <p className="text-lg text-foundationblackblack-11 [font-family:'Lato',Helvetica] font-light tracking-normal md:text-left text-center">
+          <p className="md:text-lg text-base text-foundationblackblack-11 [font-family:'Lato',Helvetica] font-light tracking-normal md:text-left text-center">
             Explore expert talks, success stories, and deep dives into AI-driven growth—watch, learn, and stay ahead.
           </p>
         </div>

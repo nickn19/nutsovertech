@@ -7,7 +7,7 @@ export const CaseStudies = (): JSX.Element => {
   return (
     <div className="flex flex-col items-center justify-center gap-[34px] w-full md:px-20 px-4 md:py-[30px] py-8">
       <div className="flex items-center justify-between w-full md:flex-row flex-col gap-4">
-        <h2 className="[font-family:'Playfair',Helvetica] font-bold text-foundationblackblack-11 text-4xl md:text-left text-center">
+        <h2 className="[font-family:'Playfair',Helvetica] font-bold text-foundationblackblack-11 md:text-4xl text-2xl md:text-left text-center">
           Proven Transformations for Every Stage of Growth
         </h2>
 
@@ -22,16 +22,16 @@ export const CaseStudies = (): JSX.Element => {
         <div className="relative w-full md:w-[827px] h-[410px] bg-[url(/mask-group-10.png)]  bg-cover" />
 
         <CardContent className="flex flex-col md:w-[388px] w-full items-start gap-10 p-0 rounded-2xl backdrop-blur-sm">
-          <div className="flex flex-col items-start md:gap-[49px] gap-4 w-full">
-            <div className="flex flex-col items-start gap-6 w-full">
+          <div className="flex flex-col items-start md:gap-[49px] gap-4 w-full p-3">
+            <div className="flex flex-col items-start gap-6 w-full ">
               <div className="flex items-center w-full">
-                <h3 className="[font-family:'Lato',Helvetica] font-bold text-foundationredred-13 text-2xl">
+                <h3 className="[font-family:'Lato',Helvetica] font-bold text-foundationredred-13 md:text-2xl text-xl">
                   15 reasons why relying 100% on remote work can turn out to be
                   disastrous
                 </h3>
               </div>
 
-              <p className="[font-family:'Lato',Helvetica] font-normal text-foundation-blackblack-10 text-lg">
+              <p className="[font-family:'Lato',Helvetica] font-normal text-foundation-blackblack-10 md:text-lg text-base">
                 Work from home? Why it can prove to be disastrous &apos;If army
                 men decide to work from home even one season, we are all
                 screwed!&quot; So let&apos;s start by saying that there are few

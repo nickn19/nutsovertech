@@ -94,7 +94,6 @@ export const SolutionsCarousel = (): JSX.Element => {
           slidesToShow: 1,
           centerMode: false,
           arrows: false,
-          dots: true
         }
       }
     ],
@@ -138,7 +137,7 @@ export const SolutionsCarousel = (): JSX.Element => {
 
   return (
     <section className="flex flex-col items-center  px-4 md:px-20 md:py-[30px] py-8 w-full">
-      <h2 className="max-w-[735px] font-['Playfair',Helvetica] font-bold text-foundationblackblack-11 text-3xl md:text-4xl text-center leading-normal">
+      <h2 className="max-w-[735px] font-['Playfair',Helvetica] font-bold text-foundationblackblack-11 text-2xl md:text-4xl text-center leading-normal">
         Our proprietary Solutions, Built to Scale Your Business
       </h2>
 
