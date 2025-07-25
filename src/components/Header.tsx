@@ -39,7 +39,7 @@ const Header = (): JSX.Element => {
 
   return (
     <header className="fixed top-5 z-50 w-full flex justify-center px-4">
-      <div className="flex flex-col items-center justify-center gap-2.5 px-4 md:px-10 py-3 bg-[#ffffff99] rounded-[58px] shadow-[0px_4px_12px_#00000014] backdrop-blur-[6.5px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(6.5px)_brightness(100%)] w-[95%] md:w-auto max-w-7xl">
+      <div className="flex flex-col items-center justify-center gap-2.5 px-4 md:px-10 py-3 bg-[#ffffff99] md:rounded-[58px] rounded-[40px] shadow-[0px_4px_12px_#00000014] backdrop-blur-[6.5px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(6.5px)_brightness(100%)] w-[95%] md:w-auto max-w-7xl">
         <div className="flex items-center justify-between w-full md:gap-[71px]">
           <Link to="/">
             <img
@@ -136,7 +136,7 @@ const Header = (): JSX.Element => {
             className="hidden md:block px-4 py-3 bg-foundation-blackblack-10 rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-white text-base"
             asChild
           >
-            <Link to="/contact">Get Started</Link>
+            <Link to="/contact" className="text-white">Get Started</Link>
           </Button>
         </div>
 
@@ -213,7 +213,7 @@ const Header = (): JSX.Element => {
               asChild
               onClick={() => setIsMenuOpen(false)}
             >
-              <Link to="/contact">Get Started</Link>
+              <Link to="/contact" className="text-white">Get Started</Link>
             </Button>
           </nav>
         )}

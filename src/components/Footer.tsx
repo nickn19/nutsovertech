@@ -45,10 +45,10 @@ const Footer = (): JSX.Element => {
           {/* Left Column */}
           <div className="flex flex-col items-start gap-8 md:w-auto w-full">
             {/* Logo and Social Media */}
-            <div className="flex flex-col items-start justify-center gap-8 md:w-auto w-full">
+            <div className="flex flex-col md:items-start items-center justify-center gap-8 md:w-auto w-full">
               <Link to="/">
                 <img
-                  className="md:w-[239px] w-full md:h-[89.62px] h-auto object-cover"
+                  className="md:w-[239px] w-full md:h-[89.62px] h-14 object-cover"
                   alt="Company Logo"
                   src="/image-41-1.png"
                 />
@@ -125,11 +125,12 @@ const Footer = (): JSX.Element => {
             </div>
 
             {/* Bottom Section */}
-            <div className="flex flex-col md:flex-row items-center md:items-end justify-end w-full mt-10">
-              <div className="flex items-center gap-6 mt-4 md:mt-0">
+            <div className="flex flex-col md:flex-row items-center md:items-end justify-end w-full md:mt-10">
+              <div className="flex md:flex-row flex-col items-center gap-6 mt-4 md:mt-0">
                 <div className="font-['Lato',Helvetica] font-normal text-[#454545] text-sm text-center">
                   © Copyright 2024 NutsOverTech
                 </div>
+                <div className="flex gap-6">
                 <Link
                   to="/privacy-policy"
                   className="font-['Lato',Helvetica] font-bold text-foundation-blackblack-9 text-base hover:underline"
@@ -143,6 +144,7 @@ const Footer = (): JSX.Element => {
                 >
                   Terms Of Service
                 </Link>
+                </div>
               </div>
             </div>
           </div>

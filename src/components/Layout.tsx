@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom"; // 👈 add useLocation
 import Header from "./Header";
 import Footer from "./Footer";
 import Loader3D from "./ui/loader3d";
 
 const Layout = (): JSX.Element => {
   const [siteLoaded, setSiteLoaded] = useState(false);
+  const location = useLocation(); // 👈 get current route
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]); // 👈 trigger when pathname changes
 
   useEffect(() => {
     if (document.readyState === "complete") {
@@ -24,13 +30,13 @@ const Layout = (): JSX.Element => {
           <Loader3D />
         </div>
       )} */}
-    <Header />
-    <main className="flex-grow bg-foundation-redred-2 overflow-hidden ">
-      <Outlet />
-    </main>
-    <Footer />
-  </div>
+      <Header />
+      <main className="flex-grow bg-foundation-redred-2 overflow-hidden">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
   );
 };
 
-export default Layout; 
+export default Layout;

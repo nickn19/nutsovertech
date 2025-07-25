@@ -856,7 +856,7 @@ const Fouray = (): JSX.Element => {
       </section>
 
     {/* FAQ Section */}
-    <section className="md:py-20 py-8 px-4 md:px-32 bg-[#F0F0F0]">
+    {/* <section className="md:py-20 py-8 px-4 md:px-32 bg-[#F0F0F0]">
       <div className="container mx-auto px-0">
         <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
           <div className="md:w-1/3 w-full flex flex-col md:items-start items-center justify-center">
@@ -894,7 +894,7 @@ const Fouray = (): JSX.Element => {
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
 
 <MediaCarousel/>
 <ContactUs/>

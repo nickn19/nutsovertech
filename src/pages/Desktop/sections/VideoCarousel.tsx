@@ -25,12 +25,22 @@ export const VideoCarousel = (): JSX.Element => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: false, // Hide default arrows since we're using custom ones
     responsive: [
-      { breakpoint: 1200, settings: { slidesToShow: 3 } },
-      { breakpoint: 768, settings: { slidesToShow: 2 } },
-      { breakpoint: 576, settings: { slidesToShow: 1, dots: true } },
-    ],
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          dots: true
+        }
+      }
+    ]
   }
 
   const handlePrev = () => sliderRef.current?.slickPrev()
