@@ -154,11 +154,11 @@ export const SolutionsCarousel = (): JSX.Element => {
         </Slider>
       </div>
 
-      <Button className="bg-foundationblackblack-11 text-foundation-blackblack-1 rounded-[70px] px-4 py-3">
+      <a href="/contact" className="bg-foundationblackblack-11 text-foundation-blackblack-1 rounded-[70px] px-4 py-3">
         <span className="font-['Lato',Helvetica] font-medium text-base whitespace-nowrap">
           Talk to US
         </span>
-      </Button>
+      </a>
     </section>
   );
 };

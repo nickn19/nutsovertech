@@ -43,7 +43,7 @@ export const HeroSection = (): JSX.Element => {
             </a>
 
             <a
-              href="#portfolio-title"
+              href="/portfolio"
               className="px-4 py-3 rounded-[70px] border border-solid border-[#c54648] [font-family:'Lato',Helvetica] font-medium text-foundationredred-13 text-base w-full md:w-auto flex items-center justify-center"
             >
               Meet Our Portfolio
