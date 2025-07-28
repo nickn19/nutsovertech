@@ -146,13 +146,14 @@ const TShapeGrowth = (): JSX.Element => {
           </div>
 
           <div className="flex flex-col md:flex-row items-center gap-[30px] relative">
-              <Button className="px-6 py-4 bg-foundationredred-13 hover:bg-foundationredred-8 transition-colors rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto">
+              <Button className="px-6 py-4 bg-foundationredred-13 hover:bg-foundationredred-8 transition-colors rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto" onClick={() => window.location.href = '/services'}>
               Explore Our Expertise
             </Button>
 
             <Button
               variant="outline"
                 className="px-6 py-4 rounded-[70px] border-2 border-solid border-foundationredred-13 hover:bg-foundationredred-13 hover:text-foundation-blackblack-1 transition-colors [font-family:'Lato',Helvetica] font-medium text-foundationredred-13 text-base w-full md:w-auto"
+                onClick={() => window.location.href = '/contact'}
             >
                Free Trial
             </Button>
@@ -354,7 +355,7 @@ const TShapeGrowth = (): JSX.Element => {
                 </li>
               </ul>
               <div className="w-full flex justify-center mt-8">
-                <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+                <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/contact'}>
                   Get Started
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -384,7 +385,7 @@ const TShapeGrowth = (): JSX.Element => {
               </li>
             </ul>
             <div className="w-full flex justify-center">
-              <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+              <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/contact'}>
                  Book a Strategy Session
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -411,7 +412,7 @@ const TShapeGrowth = (): JSX.Element => {
                 </li>
               </ul>
               <div className="w-full flex justify-center mt-8">
-                <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+                <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/contact'}>
                  Try Our AI Tools
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -475,7 +476,7 @@ const TShapeGrowth = (): JSX.Element => {
                 <p className="text-foundation-blackblack-10 text-xl font-light">in Y months</p> */}
               </div>
               <div className="w-full flex justify-center mt-8">
-                <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+                <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/contact'}>
                   Deploy Now
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -500,7 +501,7 @@ const TShapeGrowth = (): JSX.Element => {
                 <p className="text-foundation-blackblack-10 text-xl font-light">with AI-driven automation</p> */}
               </div>
               <div className="w-full flex justify-center mt-8">
-                <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+                <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/contact'}>
                   Get Access
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -525,7 +526,7 @@ const TShapeGrowth = (): JSX.Element => {
                 <p className="text-foundation-blackblack-10 text-xl font-light">ARR using 4AY</p> */}
               </div>
               <div className="w-full flex justify-center mt-8">
-                <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+                <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/services/micro-saas'}>
                    Build Your App
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -550,7 +551,7 @@ const TShapeGrowth = (): JSX.Element => {
                 <p className="text-foundation-blackblack-10 text-xl font-light">in Y months</p> */}
               </div>
               <div className="w-full flex justify-center mt-8">
-                <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+                <button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/contact'}>
                   Get Started
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -701,7 +702,7 @@ const TShapeGrowth = (): JSX.Element => {
             </p>
 
             <div className="mt-8">
-              <button className="px-8 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+              <button className="px-8 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/contact'}>
                  Schedule a Free Consultation
               </button>
             </div>

@@ -95,9 +95,9 @@ const UseCaseCarousel: React.FC<Props> = ({ useCases, title, ctaText }) => {
       </div>
 
       {/* CTA Button */}
-      <button className="whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 text-primary-foreground shadow inline-flex items-center justify-center gap-2.5 px-4 py-3 bg-foundationredred-13 rounded-[70px] hover:bg-foundationredred-13/90">
-        <span className="relative w-fit font-medium text-foundation-blackblack-1 text-base">
-          {ctaText}
+			<button className="whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 text-primary-foreground shadow inline-flex items-center justify-center gap-2.5 px-4 py-3 bg-foundationredred-13 rounded-[70px] hover:bg-foundationredred-13/90" onClick={() => window.location.href = '/contact'}>
+				<span className="relative w-fit font-medium text-foundation-blackblack-1 text-base">
+					{ctaText}
         </span>
       </button>
     </div>

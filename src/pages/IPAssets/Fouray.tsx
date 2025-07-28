@@ -141,13 +141,14 @@ const Fouray = (): JSX.Element => {
           </div>
 
           <div className="flex flex-col md:flex-row items-center gap-[30px] relative">
-              <Button className="px-6 py-4 bg-foundationredred-13 hover:bg-foundationredred-8 transition-colors rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto">
+              <Button className="px-6 py-4 bg-foundationredred-13 hover:bg-foundationredred-8 transition-colors rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto" onClick={() => window.location.href = '/services'}>
               Explore Our Expertise
             </Button>
 
             <Button
               variant="outline"
                 className="px-6 py-4 rounded-[70px] border-2 border-solid border-foundationredred-13 hover:bg-foundationredred-13 hover:text-foundation-blackblack-1 transition-colors [font-family:'Lato',Helvetica] font-medium text-foundationredred-13 text-base w-full md:w-auto"
+                onClick={() => window.location.href = '/contact'}
             >
                Free Trial
             </Button>

@@ -28,13 +28,14 @@ const Contact = (): JSX.Element => {
           </div>
 
           <div className="flex flex-col md:flex-row items-center gap-[30px] relative">
-            <Button className="px-4 py-3 bg-foundationredred-13 rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto">
+            <Button className="px-4 py-3 bg-foundationredred-13 rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto" onClick={() => window.location.href = '/services'}>
               Explore Our Expertise
             </Button>
 
             <Button
               variant="outline"
               className="px-4 py-3 rounded-[70px] border border-solid border-[#c54648] [font-family:'Lato',Helvetica] font-medium text-foundationredred-13 text-base w-full md:w-auto"
+              onClick={() => window.location.href = '/ipassets'}
             >
               Meet Our Portfolio
             </Button>
@@ -57,7 +58,7 @@ const Contact = (): JSX.Element => {
             </p>
 
             <div className="mt-8">
-              <button className="px-8 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+              <button className="px-8 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/contact'}>
                 Get Started with free audit
               </button>
             </div>
@@ -189,4 +190,4 @@ const Contact = (): JSX.Element => {
   );
 };
 
-export default Contact; 
+export default Contact;
