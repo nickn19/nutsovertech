@@ -15,7 +15,7 @@ export default defineConfig({
       ],
     }),
   ],
-  base: "./",
+  base: "/",
   css: {
     postcss: {
       plugins: [tailwind()],
