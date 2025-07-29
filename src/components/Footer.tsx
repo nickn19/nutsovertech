@@ -19,7 +19,7 @@ const Footer = (): JSX.Element => {
       title: "Ecosystem",
       links: [
         { name: "Our Services", path: "/services" },
-        { name: "IP Assets", path: "/fouray" },
+        { name: "IP Assets", path: "/ip-assets/fouray" },
         // { name: "Sales Engine", path: "" }
       ]
     },
@@ -139,7 +139,7 @@ const Footer = (): JSX.Element => {
                 </Link>
                 <Separator orientation="vertical" className="h-6" />
                 <Link
-                  to="/terms-of-service"
+                  to="/terms-and-conditions"
                   className="font-['Lato',Helvetica] font-bold text-foundation-blackblack-9 text-base hover:underline"
                 >
                   Terms Of Service

@@ -17,6 +17,8 @@ import AIConsulting from "./pages/Services/AIConsulting";
 import SaasSolution from "./pages/Services/SaasSolution";
 import TShapeGrowth from "./pages/Services/TShapeGrowth";
 import Fouray from "./pages/IPAssets/Fouray";
+import Privacy from "./pages/Privacy";
+import TermsConditions from "./pages/TermsConditions";
 createRoot(document.getElementById("app") as HTMLElement).render(
   <StrictMode>
     <BrowserRouter>
@@ -36,6 +38,8 @@ createRoot(document.getElementById("app") as HTMLElement).render(
           <Route path="blog/:slug" element={<BlogDetails />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="privacy-policy" element={<Privacy/>} />
+          <Route path="terms-and-conditions" element={<TermsConditions/>} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
