@@ -15,10 +15,27 @@ const Privacy = (): JSX.Element => {
         <p>Nutsovertech Technologies ("Nutsovertech," "we," "us," or "our") is committed to respecting your privacy and preferences. This Privacy Statement outlines our practices for collecting, processing, and safeguarding your Personal Information in compliance with applicable data privacy regulations.</p>
 
         <h3 className="text-xl font-bold">Objective</h3>
-        <p>This Privacy Statement provides an overview of our privacy practices regarding the collection and use of Personal Information through various sources. While the primary focus is on data collected via Nutsovertech’s websites, such as <a href="http://www.nutsovertech.com" className="underline">www.nutsovertech.com</a> and its subdomains ("Nutsovertech Websites"), our adherence to the privacy principles described here extends to all data processing activities across our organization.</p>
+        <p>This Privacy Statement provides an overview of our privacy practices regarding the collection and use of Personal Information through various sources. While the primary focus is on data collected via Nutsovertech’s websites, such as <a href="http://www.nutsovertech.com" className=" text-foundationredred-13">www.nutsovertech.com</a> and its subdomains ("Nutsovertech Websites"), our adherence to the privacy principles described here extends to all data processing activities across our organization.</p>
 
         <p>Additional privacy details may be provided for specific purposes or relationships, which are accessible below.</p>
         <p>The Statement applies globally, but region-specific terms may apply depending on your location. In case of discrepancies between translated versions, the English version will take precedence.</p>
+        <h3 className="text-xl font-bold">Omnicapture Mobile Privacy</h3>
+        <p>
+        Omnicapture Mobile is a product developed and operated by Nutsovertech, with current information and support available at <a href="https://omnicapture.nutsovertech.com/" className=" text-foundationredred-13">https://omnicapture.nutsovertech.com/</a>. As part of the Nutsovertech ecosystem, Omnicapture Mobile adheres to the privacy principles and commitments outlined on this page, with the following additional details specific to its use:
+        </p>
+        <ul className="list-disc list-inside">
+            <li><strong>Data Collection</strong>: Omnicapture Mobile may collect technical information related to device type, operating system, app usage statistics, content captured or processed by the app, and diagnostic data to improve service reliability and efficiency. Omnicapture Mobile does not collect more personal information than is necessary for the app’s features and user experience.</li>
+            <li><strong>User Consent</strong>: Users are informed about the data Omnicapture Mobile collects and must actively provide consent where required by law before these data are captured or sent to Nutsovertech servers.</li>
+            <li><strong>Data Security</strong>: All data transmitted by Omnicapture Mobile is encrypted both in transit and at rest, and is subject to Nutsovertech’s rigorous security and access protocols.</li>
+            <li><strong>Third-Party Sharing</strong>: Omnicapture Mobile does not share personal or usage data with third parties except as required by law, or as essential to deliver the app’s services (such as using cloud storage/providers under strict privacy agreements).</li>
+            <li><strong>User Rights</strong>: Users may contact Nutsovertech to request access, correction, or deletion of personal data collected via Omnicapture Mobile, following the processes described in the general privacy policy.</li>
+            <li><strong>Updates</strong>: Any privacy-specific updates affecting Omnicapture Mobile will be communicated via app updates or the Omnicapture website.</li>
+           
+        </ul>
+      
+<p>
+If you have further questions regarding privacy in Omnicapture Mobile, please contact Nutsovertech directly or refer to information on the official Omnicapture website.
+</p>
 
         <h3 className="text-xl font-bold">1. Personal Information We Collect and Process</h3>
         <h4 className="font-semibold">1.1 Categories of Personal Information</h4>
