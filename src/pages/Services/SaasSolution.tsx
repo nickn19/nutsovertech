@@ -183,13 +183,14 @@ const SaasSolution = (): JSX.Element => {
 						</div>
 
 						<div className="flex flex-col md:flex-row items-center gap-[30px] relative">
-							<Button className="px-6 py-4 bg-foundationredred-13 hover:bg-foundationredred-8 transition-colors rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto">
+							<Button className="px-6 py-4 bg-foundationredred-13 hover:bg-foundationredred-8 transition-colors rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto" onClick={() => window.location.href = '/services'}>
 								Explore Our Expertise
 							</Button>
 
 							<Button
 								variant="outline"
 								className="px-6 py-4 rounded-[70px] border-2 border-solid border-foundationredred-13 hover:bg-foundationredred-13 hover:text-foundation-blackblack-1 transition-colors [font-family:'Lato',Helvetica] font-medium text-foundationredred-13 text-base w-full md:w-auto"
+								onClick={() => window.location.href = '/contact'}
 							>
 								Free Trial
 							</Button>
@@ -311,7 +312,7 @@ const SaasSolution = (): JSX.Element => {
 					</div>
 
 					<div className="mt-12 text-center">
-						<button className="px-6 py-3 bg-foundation-blackblack-10 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">
+						<button className="px-6 py-3 bg-foundation-blackblack-10 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/contact'}>
 							 Learn More About UI/UX
 						</button>
 					</div>
@@ -437,7 +438,7 @@ const SaasSolution = (): JSX.Element => {
 							</ul>
 							<div className="flex-grow" />
 							<div className="flex justify-center mt-auto">
-								<button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+								<button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/services/micro-saas'}>
 									Build Your SaaS
 									<svg
 										width="16"
@@ -476,7 +477,7 @@ const SaasSolution = (): JSX.Element => {
 							</ul>
 							<div className="flex-grow" />
 							<div className="flex justify-center mt-auto">
-								<button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+								<button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/contact'}>
 									Integrate Your SaaS
 									<svg
 										width="16"
@@ -515,7 +516,7 @@ const SaasSolution = (): JSX.Element => {
 							</ul>
 							<div className="flex-grow" />
 							<div className="flex justify-center mt-auto">
-								<button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+								<button className="flex items-center gap-2 px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/services/micro-saas'}>
 									 Design Your SaaS
 									<svg
 										width="16"
@@ -785,7 +786,7 @@ const SaasSolution = (): JSX.Element => {
   </div>
 			</div>
 			<div className="mt-12 text-center">
-			  <button className="px-8 py-3 bg-foundationblackblack-11 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">
+			  <button className="px-8 py-3 bg-foundationblackblack-11 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/services/micro-saas'}>
 				Build Products for Adoption &rarr;
 			  </button>
 			</div>
@@ -807,7 +808,7 @@ const SaasSolution = (): JSX.Element => {
 							</p>
 
 							<div className="mt-8">
-								<button className="px-8 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+								<button className="px-8 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/services/t-shape-growth'}>
 									Get My Custom Report
 								</button>
 							</div>

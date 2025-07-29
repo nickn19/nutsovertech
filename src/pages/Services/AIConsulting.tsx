@@ -129,13 +129,14 @@ const AIConsulting = (): JSX.Element => {
           </div>
 
          <div className="flex flex-col md:flex-row items-center gap-[30px] relative">
-              <Button className="px-6 py-4 bg-foundationredred-13 hover:bg-foundationredred-8 transition-colors rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto">
+              <Button className="px-6 py-4 bg-foundationredred-13 hover:bg-foundationredred-8 transition-colors rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto" onClick={() => window.location.href = '/services'}>
               Explore Our Expertise
             </Button>
 
             <Button
               variant="outline"
                 className="px-6 py-4 rounded-[70px] border-2 border-solid border-foundationredred-13 hover:bg-foundationredred-13 hover:text-foundation-blackblack-1 transition-colors [font-family:'Lato',Helvetica] font-medium text-foundationredred-13 text-base w-full md:w-auto"
+                onClick={() => window.location.href = '/contact'}
             >
                Free Trial
             </Button>
@@ -258,7 +259,7 @@ const AIConsulting = (): JSX.Element => {
                 </ul>
               </div>
               <div className="text-center mt-auto">
-                <a href={service.button.link} className="inline-block px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+                <a onClick={() => window.location.href = '/contact'} className="inline-block px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
                   {service.button.label}
                 </a>
               </div>
@@ -366,7 +367,7 @@ const AIConsulting = (): JSX.Element => {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <button className="px-8 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+            <button className="px-8 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/contact'}>
               Build Your SaaS App &rarr;
             </button>
           </div>
@@ -386,7 +387,7 @@ const AIConsulting = (): JSX.Element => {
               Let us help you harness the power of AI to automate, optimize, and scale your business.
             </p>
             <div className="mt-8">
-              <button className="px-8 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+              <button className="px-8 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/contact'}>
                 Schedule a Free Consultation &rarr;
               </button>
             </div>

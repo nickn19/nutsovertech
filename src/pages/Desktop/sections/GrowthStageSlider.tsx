@@ -77,9 +77,9 @@ export const GrowthStageSlider = (): JSX.Element => {
           Tailored Advisory for Every Growth Stage
         </h2>
 
-        <Button className="px-4 py-3 bg-foundationredred-13 rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base">
+        <a href="/services" className="px-4 py-3 bg-foundationredred-13 rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base">
           Discover Our Services
-        </Button>
+        </a>
       </div>
 
       <div className="stars" id="star-slider-section">

@@ -142,11 +142,11 @@ export const PortfolioSection = (): JSX.Element => {
           Purpose-Built AI Workforces for Ambitious Companies — Whether You’re Starting Up or Scaling Up.
         </p>
 
-        <Button className="inline-flex items-center justify-center gap-2.5 px-4 py-3 bg-foundationredred-13 rounded-[70px] hover:bg-foundationredred-13/90">
+        <a href="/about" className="inline-flex items-center justify-center gap-2.5 px-4 py-3 bg-foundationredred-13 rounded-[70px] hover:bg-foundationredred-13/90">
           <span className="relative w-fit mt-[-1.00px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base tracking-[0] leading-[normal] whitespace-nowrap">
             Learn about our Journey
           </span>
-        </Button>
+        </a>
       </div>
     </section>
   );

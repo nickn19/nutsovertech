@@ -11,11 +11,11 @@ export const CaseStudies = (): JSX.Element => {
           Proven Transformations for Every Stage of Growth
         </h2>
 
-        <Button className="bg-foundationredred-13 text-foundation-blackblack-1 rounded-[70px] px-4 py-3">
+        <a href="/blog" className="bg-foundationredred-13 text-foundation-blackblack-1 rounded-[70px] px-4 py-3">
           <span className="[font-family:'Lato',Helvetica] font-medium text-base">
             View All Case Studies
           </span>
-        </Button>
+        </a>
       </div>
 
       <Card className="flex md:flex-row flex-col md:h-[410px] h-auto w-full bg-foundationblackblack-3 rounded-[20px] gap-5 items-center overflow-hidden border-none">

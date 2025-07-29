@@ -192,14 +192,14 @@ const Services = (): JSX.Element => {
 						</div>
 
 						<div className="flex flex-col md:flex-row items-center gap-[30px] relative">
-							<Button className="px-6 py-4 bg-foundationredred-13 hover:bg-foundationredred-8 transition-colors rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto">
+							<Button className="px-6 py-4 bg-foundationredred-13 hover:bg-foundationredred-8 transition-colors rounded-[70px] [font-family:'Lato',Helvetica] font-medium text-foundation-blackblack-1 text-base w-full md:w-auto" onClick={() => window.location.href = 'http://localhost:5173/services'}>
 								Explore Our Expertise
 							</Button>
 
 							<Button
 								variant="outline"
 								className="px-6 py-4 rounded-[70px] border-2 border-solid border-foundationredred-13 hover:bg-foundationredred-13 hover:text-foundation-blackblack-1 transition-colors [font-family:'Lato',Helvetica] font-medium text-foundationredred-13 text-base w-full md:w-auto"
-							>
+								onClick={() => window.location.href = '/contact'}>
 								Free Trial
 							</Button>
 						</div>
@@ -334,7 +334,7 @@ const Services = (): JSX.Element => {
 					</div>
 
 					<div className="mt-12 text-center">
-						<button className="px-6 py-3 bg-foundation-blackblack-10 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">
+						<button className="px-6 py-3 bg-foundation-blackblack-10 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/contact'}>
 							Get in touch
 						</button>
 					</div>
@@ -354,7 +354,7 @@ const Services = (): JSX.Element => {
 							<p className="text-2xl md:text-left text-center font-light text-foundation-blackblack-10 font-['Lato',Helvetica] max-w-xl">
 								Leverage our pre-built infrastructure, templates, and micro tools to cut down dev time and ship faster without compromising flexibility.
 							</p>
-							<button className="px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+							<button className="px-6 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/ip-assets'}>
 								See our IP Assets
 							</button>
 						</div>
@@ -786,7 +786,7 @@ const Services = (): JSX.Element => {
 						</div>
 
 						<div className="mt-12 text-center">
-							<button className="px-8 py-3 bg-foundationblackblack-11 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium">
+							<button className="px-8 py-3 bg-foundationblackblack-11 text-white rounded-full hover:bg-foundationblackblack-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/contact'}>
 								Book a Free Consultation
 							</button>
 						</div>
@@ -809,7 +809,7 @@ const Services = (): JSX.Element => {
 							</p> */}
 
 							<div className="mt-8">
-								<button className="px-8 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium">
+								<button className="px-8 py-3 bg-foundationredred-13 text-white rounded-full hover:bg-foundationredred-11 transition-colors font-['Lato',Helvetica] font-medium" onClick={() => window.location.href = '/services/t-shape-growth'}>
 									 Get Your Custom Growth Report 
 								</button>
 							</div>
