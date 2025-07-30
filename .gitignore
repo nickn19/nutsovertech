@@ -10,5 +10,5 @@ yarn-error.log*
 .env
 
 # build output
-dist/
+# dist/
 build/
