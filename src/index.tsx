@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
 import Layout from "./components/Layout";
 import { Home } from "./pages/Desktop/Home";
 import Services from "./pages/Services/Index";
@@ -41,6 +42,8 @@ createRoot(document.getElementById("app") as HTMLElement).render(
           <Route path="privacy-policy" element={<Privacy/>} />
           <Route path="terms-and-conditions" element={<TermsConditions/>} />
           <Route path="*" element={<NotFound />} />
+          <Route path="consumer-internet" element={<Navigate to="/blog" replace />} />
+          <Route path="author/sauravmishra" element={<Navigate to="/blog" replace />} />
         </Route>
       </Routes>
     </BrowserRouter>

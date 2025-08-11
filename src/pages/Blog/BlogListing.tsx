@@ -385,7 +385,7 @@ useEffect(() => {
       <section className="px-4 py-8 md:py-10 md:px-16">
         <h2 className="text-4xl font-bold mb-6 font-['Playfair',Helvetica]">Authors</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {displayedAuthors.map((author) => (
+          {placeholderAuthors.map((author) => (
             <div key={author.id} className="bg-[#be4948] text-white overflow-hidden rounded-lg">
               <img 
                 src="/author.png" 
